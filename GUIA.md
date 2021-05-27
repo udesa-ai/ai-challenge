@@ -1,16 +1,16 @@
-# Guia de Programación
+# Guía de Programación
 
-## Prueba un partido
+## Probá un partido
 1. Abrir el proyecto desde unity Hub haciendo doble click y esperar que cargue
-2. Una vez en Unity, en la pestaña Project, navega hasta la escena `Assets/Scenes/Application` y abrela en el editor dando doble click.
+2. Una vez en Unity, en la pestaña Project, navegá hasta la escena `Assets/Scenes/Application` y abrela en el editor dando doble click.
 3. Clicar en el botón de play ubicado en la parte central superior del editor
 4. Listo, deberias ver la seleción de equipos
  
 tip: en la parte superior derecha de la ventana podés apagar el audio, encender los gizmos y otras cosas.
 
-## Construye tu equipo
+## Construí tu equipo
 
-1. Copia todo el directorio llamado `ParticipantTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
+1. Creá una copia de directorio llamado `ParticipantTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
 2. Luego dentro de PaticipantTeam.cs hay que cambiar el nombre default por el que elijas para tu equipo como se ve en la imagen:
    
 ![Team name chage](ReadmeResources/team_name.png)
