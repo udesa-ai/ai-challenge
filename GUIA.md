@@ -6,7 +6,7 @@
 3. Clicar en el botón de play ubicado en la parte central superior del editor
 4. Listo, deberias ver la seleción de equipos
  
-tip: en la parte superior derecha de la ventana podés apagar el audio, encender los gizmos y otras cosas.
+tip: en la parte superior derecha de la ventana podés apagar el audio
 
 ## Construí tu equipo
 
@@ -17,16 +17,14 @@ tip: en la parte superior derecha de la ventana podés apagar el audio, encender
 
 3. Luego dentro de `Offensive.cs`, `mid.cs` y `Goalkeeper.cs` se debe cambiar el *namespace* de la misma manera.
 
-Además de esto, necesitamos definir algunas características del equipo:
-* Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName() como se ve en la image de arriba
+### Customizá tu equipo
+
+* Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName() como se ve en la imagen de arriba
 * Escudo: Podemos importar un png a gusto en la ruta `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo.
-* Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad PrimaryColor. Para definir un nuevo color desde los valores RGB podemos usar el constructor new Color(float r, float g, float b). Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo.
-  
-Si bién no es nesesario, también es buena idea cambiar el nombre de los scripts y la carpeta contenedora, para mantener el orden.
+* Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad PrimaryColor. Para definir un nuevo color desde los valores RGB podemos usar el constructor new Color(float r, float g, float b). Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo.  
+* Si bién no es nesesario, también es buena idea cambiar el nombre de los scripts y la carpeta contenedora, para mantener el orden.
 
-
-
-El proyecto incluye un equipo pre-armado con su código visible para poder inspirarte en el y usarlo como contrincante, este equipo se encuentran en la ruta `Assets/Teams/ExampleTeam`
+### Estructura
 
 Dentro del directorio de equipo deberían haber 4 scripts:
 - `ExampleTeam.cs`
@@ -38,8 +36,49 @@ Este script representa la información general de tu equipo, puedes renombrar la
  
 Cada uno de estos representa un jugador diferente. Dentro de estos scripts encontrarás métodos que debes implementar para lograr que tus jugadores respondan de manera inteligente a lo que pasa dentro del partido.
 En la sección [API](#api) de este documento encontrarás toda la información necesaria para programar a tus jugadores.
-Se puede editar el nombre de cualquier jugador para que sea visible durante el partido.
-  
+
+Se puede editar el nombre de cualquier jugador para que sea visible durante el partido modificando dentro de `GetPlayerDisplayName`
+
+
+### Comportamientos
+
+Te vamos a mostrar las cosas que pueden hacer los jugadores una por una para que sepas algunas de las herramientas que tenés disponibles.
+	
+Vamos a empezar simple, abrí el código de uno de los jugadores y cambiale el nombre que está enrte comillas entre comillas:
+```csharp
+public override string GetPlayerDisplayName()
+{
+	return "Turing";
+}
+```
+Cuando le des play en el botón de play ubicado en la parte central superior del editor y elijas tu nuevo equipo deberias ver... como no hace nada aún, ahora le vamos a enseñar a moverse.
+Dentro de `OnUpdate` camos a agregar la linea `GoTo` y darle una [posición](#posición-en-el-campo) dentro de la cancha
+```csharp
+public override void OnUpdate()
+{
+ GoTo(FieldPosition.C3);
+}
+```
+Al probarlo vas a ver como uno de los jugadores va hasta la linea central.
+Si queremos que el jugador vaya hacia a pelota podemos usar `MoveBy()` que nos deja mover un jugador en una dirección.
+Luego `GetDirectionTo()` nos dirve apra obtener la dirección hacia una posición.
+Finalemte udaremos `GetBallPosition()` que nos devuelve la posición de la pelota.
+Todo junto quedará como:
+```csharp
+public override void OnUpdate()
+{
+ MoveBy(GetDirectionTo(GetBallPosition()));
+}
+```
+Al probarlo (contra *participant team*) vas a notar como un jugador va a toda velocidad a buscar la pelota, muy bién ya tenemos movimiento.
+
+
+### Probá tu equipo
+
+El proyecto incluye un equipo pre-armado con su código visible para poder inspirarte en el y usarlo como contrincante, este equipo se encuentran en la ruta `Assets/Teams/ExampleTeam`
+
+Estás listo para crear tu propio equipo, te recomendomos empezar de "0" y pensar ¿Como me gustaria que se comporten los jugadores?
+ 
  
 ## API
  
