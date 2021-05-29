@@ -29,7 +29,7 @@ Te presentamos la AI challenge, el objetivo del evento es programar la inteligen
 ## Reglas
 
 - No se pueden usar métodos que interactúen directamente con el motor físico. (preguntar a los organizadores si hay dudas acerca de qué está permitido)
-- Solo está permitido usar FieldPositions como posiciones iniciales (no customizarlas), y estas deben ser distintas para cada jugador.
+- Solo está permitido usar FieldPositions como posiciones iniciales (no customizarlas), deben estar de tu lado de la cancha y estas deben ser distintas para cada jugador.
 
 ## Instalación
 Para poder participar deberás contar con Unity, un IDE y Discord.
