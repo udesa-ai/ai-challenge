@@ -44,7 +44,7 @@ Se puede editar el nombre de cualquier jugador para que sea visible durante el p
 
 Te vamos a mostrar las cosas que pueden hacer los jugadores una por una para que sepas algunas de las herramientas que tenés disponibles.
 
-Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo).
+Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo) .
 
 Como en muchos tutoriales de progrmaciñon recomendamos tipear el codigo en vez de hacer copy-paste para así retenerlo mejor.
 
@@ -107,7 +107,7 @@ public override void OnReachBall()
 	Debug.DrawLine(GetRivalGoalPosition(), GetPosition(), Color.magenta, 0.2f);
 }
 ```
-Cuando pruebes esto vas a ver como aparece una linea rosa cuando el jugador patea al arco.
+Cuando pruebes esto vas a ver como aparece una linea rosa cuando el jugador patea al arco. Hay otras funciones de debuggeo disponibles, las podes ver en la sección de [Debugging](#debugging)
 
 Ahora vamos a hacer algo más interesante, un pase entre jugadores.
 
@@ -131,15 +131,26 @@ public override void OnReachBall()
 	Debug.DrawLine(GetTeamMatesInformation()[2].Position, GetPosition(), Color.magenta, 0.5f);
 }
 ```
+Cuando lo pruebes vas a ver como un jugador se la pasa a otro. Igual que en la realidad es mas facil patear si uno está de frente a la pelota y detenido, para tenerlo en cuenta!
+
 ![Pase](ReadmeResources/pase.png)
+
+¿Podes hacer que el jugador de adelante la tire al arco caundo la recibe? vas a tener que modificar dentro de `OnReachBall()` de la misma manera que hicimos antes.
+
+¿Podes hacer que el otro jugador se acerque para recibirla cuando la pelota esta cerca? Hay una funcion llamada `Vector3.Distance()` que te puede servir.
+
+De la misma manera que vimos la información de los jugadores de nuestro equipo podemos hacer lo mismo con el equipo contrario usando `GetRivalsInformation()`
+
+Si uno quiere usar Field positions como posiciones primero hay que convetirlos a *Vector3* con `GetPositionFor(FieldPosition.C2);`
+
+Hay muchas otras funciones disponibles que dan información util o hacen cosas, las podes mirar en:[Funciones públicas](#funciones-públicas)
 
 ### Probá tu equipo
 
 El proyecto incluye un equipo pre-armado con su código visible para poder inspirarte en el y usarlo como contrincante, este equipo se encuentran en la ruta `Assets/Teams/ExampleTeam`
 
-Estás listo para crear tu propio equipo, te recomendomos empezar de "0" y pensar ¿Como me gustaria que se comporten los jugadores?
- 
- 
+Ya estás listo para crear tu propio equipo, te recomendomos empezar de "0" y pensar ¿Como me gustaria que se comporten los jugadores?¿Cuales son sus roles?¿todos hacen lo mismo?
+  
 ## API
  
 ## clase TeamPlayer
@@ -153,7 +164,7 @@ Estás listo para crear tu propio equipo, te recomendomos empezar de "0" y pensa
  
 `OnScoreBoardChanged(Scoreboard)` ->  Cada vez que alguien anota un gol, esta función se llama, recibiendo el parámetro acorde. Ideal para implementar estrategias según la diferencia de goles.
  
-`GetInitialPosition() : FieldPosition` -> Devuelve la posición inicial del jugador al comenzar el partido. Útil si deseas mantener formaciones defensivas. Solo está permitido usar FieldPositions como posiciones iniciales (no customizarlas), y estas deben ser distintas para cada jugador.
+`GetInitialPosition() : FieldPosition` -> Devuelve la posición inicial del jugador al comenzar el partido. Útil si deseas mantener formaciones defensivas. Solo está permitido usar FieldPositions como posiciones iniciales (no customizarlas), deben estar de tu lado de la cancha y estas deben ser distintas para cada jugador.
  
 `GetPlayerDisplayName() : string` -> Devuelve el nombre del jugador para mostrar en el partido.
  
@@ -223,6 +234,26 @@ public enum ShootForce
 }
 ```
  
+## Debugging
+
+Para ayudar al debuggeo hay disponibles alguna funciones adicionales que permiten imprimir el valor de las variables y otros mensajes.
+Todas estos mensajes aparecen en la console de Unity, es una de las pestañas de abajo que dice console, al lado de projects.
+
+    Debug.Log("aquí va un mensaje");
+    Debug.Log("Ball direction:" + ballVelocity.ToString());
+    
+Esta funcion dentro de uno de los jugadores imprime posición, direcciónn y velocidad de ese jugador:
+    
+    Debug.Log(ToString()); 
+
+Así como tambien dibujar lineas de guía (presionar el botón Gizmos en la parte superior derecha de la ventana para verlos):
+
+    Debug.DrawLine(GetRivalGoalPosition(), GetPosition(), Color.magenta, 0.5f);
+    recibe: Vector3 start, Vector3 end, Color, Float duration
+    
+    Debug.DrawRay(GetPosition(), GetDirectionTo(ballPosition), Color.blue, 0.2f);
+    recibe: Vector3 start, Vector3 dir, Color, Float duration
+     
 ## Ejemplos
  
 Mover el jugador hacia la pelota:
