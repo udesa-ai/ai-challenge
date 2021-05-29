@@ -43,16 +43,24 @@ Se puede editar el nombre de cualquier jugador para que sea visible durante el p
 ### Comportamientos
 
 Te vamos a mostrar las cosas que pueden hacer los jugadores una por una para que sepas algunas de las herramientas que tenés disponibles.
+
+Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo).
+
+Como en muchos tutoriales de progrmaciñon recomendamos tipear el codigo en vez de hacer copy-paste para así retenerlo mejor.
+
+Acordate de guardar para que los cambios que hagas surtan efecto!
 	
-Vamos a empezar simple, abrí el código de uno de los jugadores y cambiale el nombre que está enrte comillas entre comillas:
+Vamos a empezar simple, abrí el código de uno de los jugadores por ejemplo `PlayerThree.cs` y cambiale el nombre que está entre comillas.
+Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automaticamnte en tu IDE.
 ```csharp
 public override string GetPlayerDisplayName()
 {
 	return "Turing";
 }
 ```
-Cuando le des play en el botón de play ubicado en la parte central superior del editor y elijas tu nuevo equipo deberias ver... como no hace nada aún, ahora le vamos a enseñar a moverse.
-Dentro de `OnUpdate` camos a agregar la linea `GoTo` y darle una [posición](#posición-en-el-campo) dentro de la cancha
+Cuando le des play en el botón de play ubicado en la parte central superior del editor y elijas tu nuevo equipo deberias ver... como no hace nada aún, pero el jugador tiene un nuevo naombre, ahora le vamos a enseñar a moverse.
+
+Dentro de `OnUpdate` función que se ejecuta continuamente, vamos a agregar la linea `GoTo` y darle una [posición](#posición-en-el-campo) dentro de la cancha
 ```csharp
 public override void OnUpdate()
 {
@@ -60,8 +68,11 @@ public override void OnUpdate()
 }
 ```
 Al probarlo vas a ver como uno de los jugadores va hasta la linea central.
+
 Si queremos que el jugador vaya hacia a pelota podemos usar `MoveBy()` que nos deja mover un jugador en una dirección.
+
 Luego `GetDirectionTo()` nos dirve apra obtener la dirección hacia una posición.
+
 Finalemte udaremos `GetBallPosition()` que nos devuelve la posición de la pelota.
 Todo junto quedará como:
 ```csharp
@@ -70,8 +81,57 @@ public override void OnUpdate()
  MoveBy(GetDirectionTo(GetBallPosition()));
 }
 ```
-Al probarlo (contra *participant team*) vas a notar como un jugador va a toda velocidad a buscar la pelota, muy bién ya tenemos movimiento.
+Al probarlo (contra *participant team*) vas a notar como un jugador va a toda velocidad a buscar la pelota, muy bien ya tenemos movimiento.
 
+Ahor vamos a ver otra de las funciones, `OnReachBall()` se llama cada vez que el jugador toca la pelota.
+
+Vamos a usar `ShootBall()` para patear la pelota, en la dirección del arco enemigo usando `GetRivalGoalPosition()`
+```csharp
+public override void OnReachBall()
+{
+	ShootBall(GetDirectionTo(GetRivalGoalPosition()),ShootForce.Medium);
+}
+```
+Para ayudarle a uno a visualizar lo que está ocurriendo en la cancha podesmos crear ayudad visuales, que encendemos arriba a la derecha de la ventana clicando en *Gizmos*
+
+Para hacer esto vamos a usar `DrawLine()` que dibuja una linea de una posición a otra.
+
+También podes ver qeu usamos `GetPosition()` que es la posición de tu propio jugador en la cancha.
+
+(Puede que par usar las funciones *Debug* tengas que agregar la linea `using UnityEngine;` al principio del documento donde estan los otros *using*)
+
+```csharp
+public override void OnReachBall()
+{
+	ShootBall(GetDirectionTo(GetRivalGoalPosition()),ShootForce.Medium);
+	Debug.DrawLine(GetRivalGoalPosition(), GetPosition(), Color.magenta, 0.2f);
+}
+```
+Cuando pruebes esto vas a ver como aparece una linea rosa cuando el jugador patea al arco.
+
+Ahora vamos a hacer algo más interesante, un pase entre jugadores.
+
+Primero vamos a abrir otro jugador y hacerle ir arriba rapidamente, de la misma manera que vimos antes:
+```csharp
+public override void OnUpdate()
+{
+	GoTo(FieldPosition.D1);
+}
+```
+tip: podes tener varios archivos abiertos a al vez en el IDE, incluso ponerlos lado a lado si tenes un monitor grande.
+
+Ahora vamos a volver al primer jugador que programamos y decirle que patee hacia su compañero.
+
+Para esto usaremos `GetTeamMatesInformation()` en programación solemos empezar a contar desde el 0 así que tus jugadores va a estar ordenado por nombre de aechivo ynumerados 0, 1 y 2, podes ir probando a ver cual es el correcto en este caso es el dos y como nos interesa la posición de el jugador dos agregamos `.Position`
+
+```csharp
+public override void OnReachBall()
+{
+	ShootBall(GetDirectionTo(GetTeamMatesInformation()[2].Position),ShootForce.High);
+	Debug.DrawLine(GetTeamMatesInformation()[2].Position, GetPosition(), Color.magenta, 0.5f);
+}
+```
+![Pase](ReadmeResources/pase.png)
 
 ### Probá tu equipo
 
@@ -99,7 +159,7 @@ Estás listo para crear tu propio equipo, te recomendomos empezar de "0" y pensa
  
 
 ### Funciones públicas
-Estas son todas las funciones que tenemos disponibles 
+Estas son todas las funciones que tenemos disponibles:
  
 `float GetTimeLeft()` -> Devuelve cuánto tiempo resta de partido.
  
@@ -130,6 +190,8 @@ Estas son todas las funciones que tenemos disponibles
 `PlayerDTO GetTeamMatesInformation()` -> Devuelve posición, dirección, y velocidad de tus jugadores.
  
 `PlayerDTO GetRivalsInformation()` -> Devuelve posición, dirección, y velocidad de los jugadores rivales.
+
+`void ShootBall(Vector3, ShootForce)` -> Patear la pelota en un direción dada con una fuerza dada.
  
 `void Stop()` -> Detiene el jugador donde está parado.
  
