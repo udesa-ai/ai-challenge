@@ -46,7 +46,7 @@ Te vamos a mostrar las cosas que pueden hacer los jugadores una por una para que
 
 Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo) .
 
-Como en muchos tutoriales de progrmaciñon recomendamos tipear el codigo en vez de hacer copy-paste para así retenerlo mejor.
+Como en muchos tutoriales de progrmación recomendamos tipear el codigo en vez de hacer copy-paste para así retenerlo mejor.
 
 Acordate de guardar para que los cambios que hagas surtan efecto!
 	
@@ -58,7 +58,7 @@ public override string GetPlayerDisplayName()
 	return "Turing";
 }
 ```
-Cuando le des play en el botón de play ubicado en la parte central superior del editor y elijas tu nuevo equipo deberias ver... como no hace nada aún, pero el jugador tiene un nuevo naombre, ahora le vamos a enseñar a moverse.
+Cuando le des play en el botón de play ubicado en la parte central superior del editor y elijas tu nuevo equipo deberias ver... como no hace nada aún, pero el jugador tiene un nuevo nombre, ahora le vamos a enseñar a moverse.
 
 Dentro de `OnUpdate` función que se ejecuta continuamente, vamos a agregar la linea `GoTo` y darle una [posición](#posición-en-el-campo) dentro de la cancha
 ```csharp
@@ -71,7 +71,7 @@ Al probarlo vas a ver como uno de los jugadores va hasta la linea central.
 
 Si queremos que el jugador vaya hacia a pelota podemos usar `MoveBy()` que nos deja mover un jugador en una dirección.
 
-Luego `GetDirectionTo()` nos dirve apra obtener la dirección hacia una posición.
+Luego `GetDirectionTo()` nos sirve para obtener la dirección hacia una posición.
 
 Finalemte udaremos `GetBallPosition()` que nos devuelve la posición de la pelota.
 Todo junto quedará como:
@@ -81,9 +81,9 @@ public override void OnUpdate()
  MoveBy(GetDirectionTo(GetBallPosition()));
 }
 ```
-Al probarlo (contra *participant team*) vas a notar como un jugador va a toda velocidad a buscar la pelota, muy bien ya tenemos movimiento.
+Al probarlo (contra *participant team*) vas a notar como un jugador va a toda velocidad a buscar la pelota. Muy bien ya tenemos movimiento!
 
-Ahor vamos a ver otra de las funciones, `OnReachBall()` se llama cada vez que el jugador toca la pelota.
+Ahora vamos a ver otra de las funciones, `OnReachBall()` se llama cada vez que el jugador toca la pelota.
 
 Vamos a usar `ShootBall()` para patear la pelota, en la dirección del arco enemigo usando `GetRivalGoalPosition()`
 ```csharp
@@ -92,11 +92,11 @@ public override void OnReachBall()
 	ShootBall(GetDirectionTo(GetRivalGoalPosition()),ShootForce.Medium);
 }
 ```
-Para ayudarle a uno a visualizar lo que está ocurriendo en la cancha podesmos crear ayudad visuales, que encendemos arriba a la derecha de la ventana clicando en *Gizmos*
+Para ayudarle a uno a visualizar lo que está ocurriendo en la cancha podemos crear ayudas visuales, que encendemos arriba a la derecha de la ventana clicando en *Gizmos*
 
 Para hacer esto vamos a usar `DrawLine()` que dibuja una linea de una posición a otra.
 
-También podes ver qeu usamos `GetPosition()` que es la posición de tu propio jugador en la cancha.
+También podes ver que usamos `GetPosition()` que es la posición de tu propio jugador en la cancha.
 
 (Puede que par usar las funciones *Debug* tengas que agregar la linea `using UnityEngine;` al principio del documento donde estan los otros *using*)
 
@@ -122,7 +122,7 @@ tip: podes tener varios archivos abiertos a al vez en el IDE, incluso ponerlos l
 
 Ahora vamos a volver al primer jugador que programamos y decirle que patee hacia su compañero.
 
-Para esto usaremos `GetTeamMatesInformation()` en programación solemos empezar a contar desde el 0 así que tus jugadores va a estar ordenado por nombre de aechivo ynumerados 0, 1 y 2, podes ir probando a ver cual es el correcto en este caso es el dos y como nos interesa la posición de el jugador dos agregamos `.Position`
+Para esto usaremos `GetTeamMatesInformation()` en programación solemos empezar a contar desde el 0 así que tus jugadores va a estar ordenado por nombre de archivo y numerados como 0, 1 y 2, podes ir probando a ver cual es el correcto en este caso es el dos y como nos interesa la posición de el jugador dos agregamos `.Position`
 
 ```csharp
 public override void OnReachBall()
@@ -135,7 +135,7 @@ Cuando lo pruebes vas a ver como un jugador se la pasa a otro. Igual que en la r
 
 ![Pase](ReadmeResources/pase.png)
 
-¿Podes hacer que el jugador de adelante la tire al arco caundo la recibe? vas a tener que modificar dentro de `OnReachBall()` de la misma manera que hicimos antes.
+¿Podes hacer que el jugador de adelante la tire al arco cuando la recibe? vas a tener que modificar dentro de `OnReachBall()` de la misma manera que hicimos antes.
 
 ¿Podes hacer que el otro jugador se acerque para recibirla cuando la pelota esta cerca? Hay una funcion llamada `Vector3.Distance()` que te puede servir.
 
@@ -143,7 +143,7 @@ De la misma manera que vimos la información de los jugadores de nuestro equipo 
 
 Si uno quiere usar Field positions como posiciones primero hay que convetirlos a *Vector3* con `GetPositionFor(FieldPosition.C2);`
 
-Hay muchas otras funciones disponibles que dan información util o hacen cosas, las podes mirar en:[Funciones públicas](#funciones-públicas)
+Hay muchas otras funciones disponibles que dan información util o hacen cosas, las podes mirar en: [Funciones públicas](#funciones-públicas)
 
 ### Probá tu equipo
 
@@ -238,6 +238,8 @@ public enum ShootForce
 
 Para ayudar al debuggeo hay disponibles alguna funciones adicionales que permiten imprimir el valor de las variables y otros mensajes.
 Todas estos mensajes aparecen en la console de Unity, es una de las pestañas de abajo que dice console, al lado de projects.
+(Puede que par usar las funciones *Debug* tengas que agregar la linea `using UnityEngine;` al principio del documento donde estan los otros *using*)
+
 
     Debug.Log("aquí va un mensaje");
     Debug.Log("Ball direction:" + ballVelocity.ToString());
