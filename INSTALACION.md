@@ -19,7 +19,7 @@ Para programar tu agente vas a necesitar un entorno de desarrollo integrado (IDE
 
 Recomendamos Visual Studio Code por ser liviano y simple:
 1. Descargar [Visual Studio Code](https://visualstudio.microsoft.com/es/) (la opción del medio)
-2. Dentro del programa sobre la izquierda en Extensions instalarcon el plugin para C# "C# for Visual Studio Code (powered by OmniSharp)"
+2. Dentro del programa sobre la izquierda en Extensions, instalar el plugin para C# llamado "C# for Visual Studio Code (powered by OmniSharp)"
 
 Otras opciones populares son: [Rider de jetbrains](https://www.jetbrains.com/es-es/rider/) y para Windows o mac, [Microsoft visual studio](https://visualstudio.microsoft.com/es/) 
 
