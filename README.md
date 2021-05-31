@@ -34,7 +34,7 @@ Te presentamos la AI challenge, el objetivo del evento es programar la inteligen
 ## Instalación
 Para poder participar deberás contar con Unity, un IDE y Discord.
 
-En [Instalación](INSTALACION.md) te vamos a enseñar como instalar todo lo nesesario.
+En [Instalación](INSTALACION.md) te vamos a enseñar como instalar todo lo necesario.
 
 ## Construí tu equipo
 En [Guia de Programación](GUIA.md) te ayudaremos a familiarizarte con el juego y a crear tu primer equipo!
