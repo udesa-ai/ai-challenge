@@ -4,14 +4,14 @@
 1. Abrir el proyecto desde unity Hub haciendo doble click y esperar que cargue
 2. Una vez en Unity, en la pestaña Project, navegá hasta la escena `Assets/Scenes/Application` y abrela en el editor dando doble click.
 3. Clicar en el botón de play ubicado en la parte central superior del editor
-4. Listo, deberias ver la seleción de equipos
+4. Listo, deberías ver la selección de equipos
  
 tip: en la parte superior derecha de la ventana podés apagar el audio
 
 ## Construí tu equipo
 
 1. Creá una copia de directorio llamado `ParticipantTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
-2. Luego dentro de PaticipantTeam.cs hay que cambiar el nombre default por el que elijas para tu equipo como se ve en la imagen:
+2. Luego dentro de PaticipantTeam.cs hay que cambiar el nombre por defecto, por el que vos elijas para tu equipo como se ve en la imagen:
    
 ![Team name chage](ReadmeResources/team_name.png)
 
@@ -22,7 +22,7 @@ tip: en la parte superior derecha de la ventana podés apagar el audio
 * Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName() como se ve en la imagen de arriba
 * Escudo: Podemos importar un png a gusto en la ruta `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo.
 * Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad PrimaryColor. Para definir un nuevo color desde los valores RGB podemos usar el constructor new Color(float r, float g, float b). Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo.  
-* Si bién no es nesesario, también es buena idea cambiar el nombre de los scripts y la carpeta contenedora, para mantener el orden.
+* Si bien no es necesario, también es buena idea cambiar el nombre de los scripts y la carpeta contenedora, para mantener el orden.
 
 ### Estructura
 
@@ -46,19 +46,19 @@ Te vamos a mostrar las cosas que pueden hacer los jugadores una por una para que
 
 Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo) .
 
-Como en muchos tutoriales de progrmación recomendamos tipear el codigo en vez de hacer copy-paste para así retenerlo mejor.
+Como en muchos tutoriales de programación recomendamos tipear el código en vez de hacer copy-paste para así retenerlo mejor.
 
 Acordate de guardar para que los cambios que hagas surtan efecto!
 	
 Vamos a empezar simple, abrí el código de uno de los jugadores por ejemplo `PlayerThree.cs` y cambiale el nombre que está entre comillas.
-Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automaticamnte en tu IDE.
+Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automáticamnte en tu IDE.
 ```csharp
 public override string GetPlayerDisplayName()
 {
 	return "Turing";
 }
 ```
-Cuando le des play en el botón de play ubicado en la parte central superior del editor y elijas tu nuevo equipo deberias ver... como no hace nada aún, pero el jugador tiene un nuevo nombre, ahora le vamos a enseñar a moverse.
+Cuando le des play en el botón de play ubicado en la parte central superior del editor y elijas tu nuevo equipo deberías ver... como no hace nada aún, pero el jugador tiene un nuevo nombre, ahora le vamos a enseñar a moverse.
 
 Dentro de `OnUpdate` función que se ejecuta continuamente, vamos a agregar la linea `GoTo` y darle una [posición](#posición-en-el-campo) dentro de la cancha
 ```csharp
@@ -73,7 +73,7 @@ Si queremos que el jugador vaya hacia a pelota podemos usar `MoveBy()` que nos d
 
 Luego `GetDirectionTo()` nos sirve para obtener la dirección hacia una posición.
 
-Finalemte udaremos `GetBallPosition()` que nos devuelve la posición de la pelota.
+Finalmente usaremos `GetBallPosition()` que nos devuelve la posición de la pelota.
 Todo junto quedará como:
 ```csharp
 public override void OnUpdate()
@@ -98,7 +98,7 @@ Para hacer esto vamos a usar `DrawLine()` que dibuja una linea de una posición 
 
 También podes ver que usamos `GetPosition()` que es la posición de tu propio jugador en la cancha.
 
-(Puede que par usar las funciones *Debug* tengas que agregar la linea `using UnityEngine;` al principio del documento donde estan los otros *using*)
+(Puede que par usar las funciones *Debug* tengas que agregar la linea `using UnityEngine;` al principio del documento donde están los otros *using*)
 
 ```csharp
 public override void OnReachBall()
@@ -111,7 +111,7 @@ Cuando pruebes esto vas a ver como aparece una linea rosa cuando el jugador pate
 
 Ahora vamos a hacer algo más interesante, un pase entre jugadores.
 
-Primero vamos a abrir otro jugador y hacerle ir arriba rapidamente, de la misma manera que vimos antes:
+Primero vamos a abrir otro jugador y hacerle ir arriba rápidamente, de la misma manera que vimos antes:
 ```csharp
 public override void OnUpdate()
 {
@@ -137,11 +137,11 @@ Cuando lo pruebes vas a ver como un jugador se la pasa a otro. Igual que en la r
 
 ¿Podes hacer que el jugador de adelante la tire al arco cuando la recibe? vas a tener que modificar dentro de `OnReachBall()` de la misma manera que hicimos antes.
 
-¿Podes hacer que el otro jugador se acerque para recibirla cuando la pelota esta cerca? Hay una funcion llamada `Vector3.Distance()` que te puede servir.
+¿Podes hacer que el otro jugador se acerque para recibirla cuando la pelota esta cerca? Hay una función llamada `Vector3.Distance()` que te puede servir.
 
 De la misma manera que vimos la información de los jugadores de nuestro equipo podemos hacer lo mismo con el equipo contrario usando `GetRivalsInformation()`
 
-Si uno quiere usar Field positions como posiciones primero hay que convetirlos a *Vector3* con `GetPositionFor(FieldPosition.C2);`
+Si uno quiere usar Field positions como posiciones primero hay que convertirlos a *Vector3* con `GetPositionFor(FieldPosition.C2);`
 
 Hay muchas otras funciones disponibles que dan información util o hacen cosas, las podes mirar en: [Funciones públicas](#funciones-públicas)
 
@@ -149,7 +149,7 @@ Hay muchas otras funciones disponibles que dan información util o hacen cosas, 
 
 El proyecto incluye un equipo pre-armado con su código visible para poder inspirarte en el y usarlo como contrincante, este equipo se encuentran en la ruta `Assets/Teams/ExampleTeam`
 
-Ya estás listo para crear tu propio equipo, te recomendomos empezar de "0" y pensar ¿Como me gustaria que se comporten los jugadores?¿Cuales son sus roles?¿todos hacen lo mismo?
+Ya estás listo para crear tu propio equipo, te recomendamos empezar de "0" y pensar ¿Como me gustaría que se comporten los jugadores?¿Cuales son sus roles?¿todos hacen lo mismo?
   
 ## API
  
@@ -160,7 +160,7 @@ Ya estás listo para crear tu propio equipo, te recomendomos empezar de "0" y pe
  
 `OnUpdate()` -> Esta función corre constantemente, es un lugar donde podemos manejar los estados según condiciones dadas por ejemplo.
  
-`OnReachBall()` -> Esta función se llama cuando el jugador toca la pelota, de esta manera, por ejemplo, podemos llamar a la función ShootBall especificando fuerza y direccion si queremos que este jugador haga un pase o disparo al arco en seguida entra en contacto con la pelota.
+`OnReachBall()` -> Esta función se llama cuando el jugador toca la pelota, de esta manera, por ejemplo, podemos llamar a la función ShootBall especificando fuerza y dirección si queremos que este jugador haga un pase o disparo al arco en seguida entra en contacto con la pelota.
  
 `OnScoreBoardChanged(Scoreboard)` ->  Cada vez que alguien anota un gol, esta función se llama, recibiendo el parámetro acorde. Ideal para implementar estrategias según la diferencia de goles.
  
@@ -202,7 +202,7 @@ Estas son todas las funciones que tenemos disponibles:
  
 `PlayerDTO GetRivalsInformation()` -> Devuelve posición, dirección, y velocidad de los jugadores rivales.
 
-`void ShootBall(Vector3, ShootForce)` -> Patear la pelota en un direción dada con una fuerza dada.
+`void ShootBall(Vector3, ShootForce)` -> Patear la pelota en un dirección dada con una fuerza dada.
  
 `void Stop()` -> Detiene el jugador donde está parado.
  
@@ -211,7 +211,7 @@ Estas son todas las funciones que tenemos disponibles:
 
 ### Otras funciones útiles
 
-[Mathf](https://docs.unity3d.com/ScriptReference/Mathf.html) tiene muchas funciones para hacer càlculos trigonometricos 
+[Mathf](https://docs.unity3d.com/ScriptReference/Mathf.html) tiene muchas funciones para hacer cálculos trigonométricos 
 
 [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) tiene muchas funciones para cálculos vectoriales 
 
