@@ -2,7 +2,7 @@
 
 ## Probá un partido
 1. Abrir el proyecto desde unity Hub haciendo doble click y esperar que cargue
-2. Una vez en Unity, en la pestaña Project, navegá hasta la escena `Assets/Scenes/Application` y abrela en el editor dando doble click.
+2. Una vez en Unity, en la pestaña Project, navegá hasta la escena `Assets/EterChallenge/Scenes/Application` y abrela en el editor dando doble click.
 3. Clicar en el botón de play ubicado en la parte central superior del editor
 4. Listo, deberías ver la selección de equipos
  
