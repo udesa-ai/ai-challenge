@@ -89,6 +89,8 @@ public override void OnReachBall()
 	ShootBall(GetDirectionTo(GetRivalGoalPosition()),ShootForce.Medium);
 }
 ```
+![Pase](ReadmeResources/patear.gif)
+
 Para ayudarle a uno a visualizar lo que está ocurriendo en la cancha podemos crear ayudas visuales, que encendemos arriba a la derecha de la ventana clicando en *Gizmos*
 
 Para hacer esto vamos a usar `DrawLine()` que dibuja una linea de una posición a otra.
@@ -105,6 +107,8 @@ public override void OnReachBall()
 }
 ```
 Cuando pruebes esto vas a ver como aparece una linea rosa cuando el jugador patea al arco. Hay otras funciones de debuggeo disponibles, las podes ver en la sección de [Debugging](#debugging)
+
+![Pase](ReadmeResources/guias_visuales.gif)
 
 Ahora vamos a hacer algo más interesante, un pase entre jugadores.
 
@@ -130,7 +134,7 @@ public override void OnReachBall()
 ```
 Cuando lo pruebes vas a ver como un jugador se la pasa a otro. Igual que en la realidad es mas facil patear si uno está de frente a la pelota y detenido, para tenerlo en cuenta!
 
-![Pase](ReadmeResources/pase.png)
+![Pase](ReadmeResources/patada_al_arco.gif)
 
 ¿Podes hacer que el jugador de adelante la tire al arco cuando la recibe? vas a tener que modificar dentro de `OnReachBall()` de la misma manera que hicimos antes.
 
