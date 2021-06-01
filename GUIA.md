@@ -20,7 +20,7 @@ tip: en la parte superior derecha de la ventana podés apagar el audio
 ### Customizá tu equipo
 
 * Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName() como se ve en la imagen de arriba
-* Escudo: Podemos importar un png a gusto en la ruta `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo.
+* Escudo: Podemos importar un png a gusto en la ruta `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo: `public string TeamShield => "nombre_de_la_imagen";`
 * Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad PrimaryColor. Para definir un nuevo color desde los valores RGB podemos usar el constructor new Color(float r, float g, float b). Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo.  
 * Si bien no es necesario, también es buena idea cambiar el nombre de los scripts y la carpeta contenedora, para mantener el orden.
 
@@ -51,12 +51,9 @@ Como en muchos tutoriales de programación recomendamos tipear el código en vez
 Acordate de guardar para que los cambios que hagas surtan efecto!
 	
 Vamos a empezar simple, abrí el código de uno de los jugadores por ejemplo `PlayerThree.cs` y cambiale el nombre que está entre comillas.
-Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automáticamnte en tu IDE.
+Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automáticamnte en tu IDE donde lo podrás editar.
 ```csharp
-public override string GetPlayerDisplayName()
-{
-	return "Turing";
-}
+public override string GetPlayerDisplayName() => "Turing";
 ```
 Cuando le des play en el botón de play ubicado en la parte central superior del editor y elijas tu nuevo equipo deberías ver... como no hace nada aún, pero el jugador tiene un nuevo nombre, ahora le vamos a enseñar a moverse.
 
@@ -122,13 +119,13 @@ tip: podes tener varios archivos abiertos a al vez en el IDE, incluso ponerlos l
 
 Ahora vamos a volver al primer jugador que programamos y decirle que patee hacia su compañero.
 
-Para esto usaremos `GetTeamMatesInformation()` en programación solemos empezar a contar desde el 0 así que tus jugadores va a estar ordenado por nombre de archivo y numerados como 0, 1 y 2, podes ir probando a ver cual es el correcto en este caso es el dos y como nos interesa la posición de el jugador dos agregamos `.Position`
+Para esto usaremos `GetTeamMatesInformation()` en programación solemos empezar a contar desde el 0 así que los otros jugadores va a estar numerados como 0 y 1, podes ir probando a ver cual es el correcto en este caso es el 1 y como nos interesa la posición de el jugador-1 agregamos `.Position`
 
 ```csharp
 public override void OnReachBall()
 {
-	ShootBall(GetDirectionTo(GetTeamMatesInformation()[2].Position),ShootForce.High);
-	Debug.DrawLine(GetTeamMatesInformation()[2].Position, GetPosition(), Color.magenta, 0.5f);
+	ShootBall(GetDirectionTo(GetTeamMatesInformation()[1].Position),ShootForce.High);
+	Debug.DrawLine(GetTeamMatesInformation()[1].Position, GetPosition(), Color.magenta, 0.5f);
 }
 ```
 Cuando lo pruebes vas a ver como un jugador se la pasa a otro. Igual que en la realidad es mas facil patear si uno está de frente a la pelota y detenido, para tenerlo en cuenta!
