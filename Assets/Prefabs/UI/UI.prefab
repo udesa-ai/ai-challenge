@@ -414,6 +414,8 @@ MonoBehaviour:
   BallStuckedAnimator: {fileID: 3812052428524851759}
   HomeImages: {fileID: 1809469855652981741}
   AwayImages: {fileID: 7086165191330740585}
+  HomeEmblemImages: {fileID: 1856384262814942687}
+  AwayEmblemImages: {fileID: 2244860627039074951}
   FinishGamePopup: {fileID: 75216801529674734}
   RandomWinnerPopup: {fileID: 5037339598288700064}
   UnityGame: {fileID: 0}

@@ -112,6 +112,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &93442548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1856384262814942687, guid: 4fb4cd2de36c544419c2c7ab0590240b,
+    type: 3}
+  m_PrefabInstance: {fileID: 269048855}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &168852188 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2244860627039074951, guid: 4fb4cd2de36c544419c2c7ab0590240b,
+    type: 3}
+  m_PrefabInstance: {fileID: 269048855}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &269048855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -670,6 +694,16 @@ PrefabInstance:
       propertyPath: UnityGame
       value: 
       objectReference: {fileID: 1316283645}
+    - target: {fileID: 8465006605776591810, guid: 4fb4cd2de36c544419c2c7ab0590240b,
+        type: 3}
+      propertyPath: HomeEmblemImages
+      value: 
+      objectReference: {fileID: 93442548}
+    - target: {fileID: 8465006605776591810, guid: 4fb4cd2de36c544419c2c7ab0590240b,
+        type: 3}
+      propertyPath: AwayEmblemImages
+      value: 
+      objectReference: {fileID: 168852188}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fb4cd2de36c544419c2c7ab0590240b, type: 3}
 --- !u!224 &269048856 stripped
