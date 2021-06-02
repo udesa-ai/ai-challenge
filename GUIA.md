@@ -11,17 +11,23 @@ tip: en la parte superior derecha de la ventana podés apagar el audio
 ## Construí tu equipo
 
 1. Creá una copia de directorio llamado `ParticipantTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
-2. Luego dentro de PaticipantTeam.cs hay que cambiar el nombre por defecto, por el que vos elijas para tu equipo como se ve en la imagen:
-   
-![Team name chage](ReadmeResources/team_name.png)
-
+2. Luego dentro de PaticipantTeam.cs en el principio del doumento hay que cambiar el *namespace* por defecto, por el que vos elijas para tu equipo:
+```csharp
+namespace Teams.nombre_de_tu_equipo
+``` 
 3. Luego dentro de `Offensive.cs`, `mid.cs` y `Goalkeeper.cs` se debe cambiar el *namespace* de la misma manera.
 
 ### Customizá tu equipo
 
-* Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName() como se ve en la imagen de arriba
+* Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName()
+```csharp
+public string GetName()
+{
+    return "Nombre de mi equipo";
+}
+```
 * Escudo: Podemos importar un png a gusto en la ruta `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo: `public string TeamShield => "nombre_de_la_imagen";`
-* Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad PrimaryColor. Para definir un nuevo color desde los valores RGB podemos usar el constructor new Color(float r, float g, float b). Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo.  
+* Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad PrimaryColor. Para definir un nuevo color desde los valores RGB podemos usar el constructor new Color(float r, float g, float b). Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo: `public Color PrimaryColor => new Color(255f/256, 100f/256, 255f/256);`
 * Si bien no es necesario, también es buena idea cambiar el nombre de los scripts y la carpeta contenedora, para mantener el orden.
 
 ### Estructura

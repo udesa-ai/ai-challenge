@@ -10,9 +10,10 @@ Unity es el motor de videojuegos que usaremos en la competencia, para instalar e
 4. Crear una cuenta [Unity ID](https://id.unity.com/account/new) .
 5. Loguearse en la esquina superior derecha de UnityHub.
 6. En el mismo lugar dentro de manage license elegir una licencia para uso personal.
-7. Descargar este repositorio de GitHub clicando "Code" y después "Download ZIP" en la esquina superior derecha del [directorio raiz]().
+7. Descargar este repositorio de GitHub clicando "Code" y después "Download ZIP" en la esquina superior derecha del [directorio raiz]().   
+![Team name chage](ReadmeResources/descargar.gif)
 8. Descomprimir el archivo *.zip* y guardarlo en una carpeta.
-9. En UnityHub en la pestaña Projects cliquear "Add" y buscar la carpeta del proyecto que recién creamos.
+9.  En UnityHub en la pestaña Projects cliquear "Add" y buscar la carpeta del proyecto que recién creamos.
    
 ## IDE/editor de texto
 Para programar tu agente vas a necesitar un entorno de desarrollo integrado (IDE) donde escribirás la lógica de tu programa:
