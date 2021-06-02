@@ -1,0 +1,56 @@
+fastlane_require 'fileutils'
+fastlane_require 'java-properties'
+fastlane_require 'aws-sdk'
+fastlane_require 'yaml'
+fastlane_version '2.110.0'
+
+UNITY_PROJECT = Fastlane::Helper::UnityProjectSettings.new('..')
+VERSION_HELPER = Fastlane::Helper::VersionHelper
+BUILD_SCHEME = 'Unity-iPhone'.freeze
+
+def unity_version
+  ENV.fetch('UNITY_VERSION')
+end
+
+lane :unit_tests do |options|
+  project_path = File.absolute_path(File.join(Dir.pwd, '..'))
+  results_path = File.join(project_path, 'unit-tests.xml')
+  logs_dir = File.join(Dir.pwd, '..', 'logs')
+  testplatform = options[:testplatform] || 'editmode'
+  FileUtils.mkdir_p logs_dir
+
+  success = unity(
+    platform: :ios,
+    project_path: project_path,
+    unity_version: unity_version,
+    unity_license_skip: false,
+    extra_args: "-runTests -logFile unity.log -testPlatform #{testplatform} -testResults #{results_path} -stackTraceLogType ScriptOnly",
+    flags: [:batch_mode]
+  ).zero?
+
+  if File.exist?(results_path)
+    test_results(
+      test_results_path: results_path
+    )
+  end
+
+  UI.user_error!('Scripts have compilation errors. Code must be fixed to continue.') unless success
+end
+
+lane :verify_changelog do |options|
+  warning = options[:warning] || false
+  validate_upm_package_changelog(
+    package_json_path: './package.json',
+    changelog_path: './CHANGELOG.md',
+    is_warning: warning
+  )
+end
+
+lane :verify_readme do |options|
+  warning = options[:warning] || false
+
+  validate_readme(
+    readme_path: './README.md',
+    is_warning: warning
+  )
+end

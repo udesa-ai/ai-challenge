@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 716ff4d38fb9ab44d851827e9ab19bff
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Brandon Text
+  fontNames:
+  - Brandon Text
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 60cb94f9af09940fbb116fa43fb62f09, type: 3}
+  - {fileID: 12800000, guid: d23b435d0dd5a42c7a239f9c3fc335a6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

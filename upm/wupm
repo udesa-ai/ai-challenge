@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#Purpose: Execute a defined version of UPM
+#USAGE: ./wupm (version) [command]
+#README: https://gitlab.etermax.net/unity/wupm
+
+UPM_VERSION=$1; shift
+
+cp package.json aux.package.json
+cp package-lock.json aux.package-lock.json
+
+npm install --registry https://verdaccio.etermax.net @etermax/upm@$UPM_VERSION
+mkdir aux && mv node_modules aux
+
+mv aux.package.json package.json
+mv aux.package-lock.json package-lock.json
+
+node aux/node_modules/@etermax/upm/bin/upm $@
+
+rm -rf aux

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tournament
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 609fa9d6bef03498caa93e8e3ec4f232, type: 3}
+    totalSpriteSurfaceArea: 1364371
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 529953a05c8894c638863ffcc9a0f658, type: 3}
+  - {fileID: 21300000, guid: c60411e17a674489d9df0fd1e2cef679, type: 3}
+  - {fileID: 21300000, guid: fc2be1b291b1142ea8321ff165759e09, type: 3}
+  - {fileID: 21300000, guid: b2a974441a5f54938b7021a08e58c2ca, type: 3}
+  - {fileID: 21300000, guid: b90395455798441f1a3d616d76ca9069, type: 3}
+  - {fileID: 21300000, guid: 3b68e8a678a27485dac4ad40a733def6, type: 3}
+  - {fileID: 21300000, guid: c9a3d5ed5f5a8433da49a0ef3d2330f5, type: 3}
+  - {fileID: 21300000, guid: 48858a2eb1fc84da1b4eaae4255735ee, type: 3}
+  - {fileID: 21300000, guid: 50a7943e303a64cc9a0229782e739746, type: 3}
+  - {fileID: 21300000, guid: cf53780f6f15b4c01b295698ad575dbf, type: 3}
+  - {fileID: 21300000, guid: ec03247f2e45d445fb84315a123639d3, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - VSWING
+  - TileBG
+  - BackgroundPartial
+  - VSBG
+  - AwayTeamRow
+  - ActiveRoundImg
+  - highlightBar
+  - TournamentArrow
+  - EterChallengeShield
+  - EterChallengeLogo
+  - Cup
+  m_Tag: Tournament
+  m_IsVariant: 0
