@@ -247,21 +247,23 @@ Para ayudar al debuggeo hay disponibles alguna funciones adicionales que permite
 Todas estos mensajes aparecen en la console de Unity, es una de las pestañas de abajo que dice console, al lado de projects.
 (Puede que par usar las funciones *Debug* tengas que agregar la linea `using UnityEngine;` al principio del documento donde estan los otros *using*)
 
-
-    Debug.Log("aquí va un mensaje");
-    Debug.Log("Ball direction:" + ballVelocity.ToString());
-    
+```csharp
+Debug.Log("aquí va un mensaje");
+Debug.Log("Ball direction:" + ballVelocity.ToString());
+```
 Esta funcion dentro de uno de los jugadores imprime posición, direcciónn y velocidad de ese jugador:
-    
-    Debug.Log(ToString()); 
-
+```csharp
+Debug.Log(ToString()); 
+```
 Así como tambien dibujar lineas de guía (presionar el botón Gizmos en la parte superior derecha de la ventana para verlos):
-
-    Debug.DrawLine(GetRivalGoalPosition(), GetPosition(), Color.magenta, 0.5f);
-    recibe: Vector3 start, Vector3 end, Color, Float duration
-    
-    Debug.DrawRay(GetPosition(), GetDirectionTo(ballPosition), Color.blue, 0.2f);
-    recibe: Vector3 start, Vector3 dir, Color, Float duration
+```csharp
+Debug.DrawLine(GetRivalGoalPosition(), GetPosition(), Color.magenta, 0.5f);
+```
+recibe: Vector3 start, Vector3 end, Color, Float duration
+```csharp
+Debug.DrawRay(GetPosition(), GetDirectionTo(ballPosition), Color.blue, 0.2f);
+```
+recibe: Vector3 start, Vector3 dir, Color, Float duration
      
 ## Ejemplos
  
@@ -324,13 +326,16 @@ public override void OnScoreBoardChanged(ScoreBoard scoreBoard)
 }
 ```
  
+
 ## Tutorial C#
 
 Para programar en Unity se usa el lenguaje de programación [C#](https://es.wikipedia.org/wiki/C_Sharp).
 
 El tutor te va a ayudar con todas las duda que tengas de como convertir tu idea de estrategia a código de máquina. Pero es recomendable intentar aprender lo más posible del lenguaje para no depender del tutor 100%, a continuación presentamos algunos tutoriales para empezar:
 
-[Tutorial en Español](https://youtu.be/6W2wYwHQNT4) para principiantes
+[Curso en Español](https://youtube.com/playlist?list=PLAzlSdU-KYwULKOjG-OxSZ2WCXiz05Ikz) completo para principiante con videos de 10 min 
+
+[Tutorial en Español](https://youtu.be/6W2wYwHQNT4) para principiantes 5hs
 
 [Tutorial en Ingles](https://youtu.be/gfkTfcpWqAY?t=1125) explica un poco de variables, sintaxis y operadores
 
