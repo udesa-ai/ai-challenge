@@ -3,29 +3,36 @@
 ## Probá un partido
 1. Abrir el proyecto desde unity Hub haciendo doble click y esperar que cargue
 2. Una vez en Unity, en la pestaña Project, navegá hasta la escena `Assets/Scenes/TeamSelection` y abrela en el editor dando doble click.
-3. Clicar en el botón de play ubicado en la parte central superior del editor
-4. Listo, deberías ver la selección de equipos
- 
-tip: en la parte superior derecha de la ventana podés apagar el audio
+3. Clicar en el botón de play ubicado en la parte central superior del editor.   
+![Pase](ReadmeResources/Play.gif)
+
+4. Listo, deberías ver la selección de equipos y jugar un partido.
+![Pase](ReadmeResources/team_selection.png)
+
+tip: en la parte superior derecha de la ventana podés apagar el audio con *Mute Audio*
 
 ## Construí tu equipo
 
 1. Creá una copia de directorio llamado `EmptyTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
-2. Luego dentro de `PaticipantTeam.cs` en el principio del doumento hay que cambiar el *namespace* por defecto, por el nombre que vos elijas para tu equipo:
+2. Luego dentro de los archivos `PaticipantTeam.cs`, `Player1.cs`, `Player2.cs` y `Player3.cs` en el principio del doumento hay que cambiar el *namespace* por defecto, por el nombre que vos elijas para tu equipo:
 ```csharp
 namespace Teams.nombre_de_tu_equipo
 ``` 
-3. Luego dentro de `Player1.cs`, `Player2.cs` y `Player3.cs` se debe cambiar el *namespace* de la misma manera.
 
 ### Customizá tu equipo
 
-* Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName()
+* Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName() dentro de `PaticipantTeam.cs`
 ```csharp
 public string GetName() => "nombre de tu equipo";
 ```
-* Escudo: Podemos elegir uno de los escudos en `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo: `public string TeamShield => "nombre_del_escudo";`
-* Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad PrimaryColor. Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo: `public Color PrimaryColor => new Color(256f/256, 100f/256, 256f/256);`
-* Si bien no es necesario, también es buena idea cambiar el nombre de los scripts y la carpeta contenedora, para mantener el orden.
+* Escudo: Podemos elegir uno de los escudos en `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo dentro de `PaticipantTeam.cs`: 
+```csharp
+public string TeamShield => "Orange";
+```
+* Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad *PrimaryColor* dentro de `PaticipantTeam.cs`. Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo. (el color se expresa en RGB como porcentajes de 0 a 1): 
+```csharp
+public Color PrimaryColor => new Color(1.0f, 0.6f, 0.0f);
+```
 
 ### Estructura
 
@@ -50,9 +57,10 @@ Te vamos a mostrar las cosas que pueden hacer los jugadores una por una para que
 
 Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo) .
 
-Como en muchos tutoriales de programación recomendamos tipear el código en vez de hacer copy-paste para así retenerlo mejor.
+- Como en muchos tutoriales de programación recomendamos tipear el código en vez de hacer copy-paste para así retenerlo mejor.
 
-Acordate de guardar para que los cambios que hagas surtan efecto!
+- Acordate de guardar para que los cambios que hagas surtan efecto! y luego darle play nuevamente en Unity para que esos cambios sean sumados a Unity.
+![Pase](ReadmeResources/Play.gif)
 	
 Vamos a empezar simple, abrí el código de uno de los jugadores por ejemplo `PlayerThree.cs` y cambiale el nombre que está entre comillas.
 Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automáticamnte en tu IDE donde lo podrás editar.
