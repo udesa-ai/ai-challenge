@@ -2,7 +2,7 @@
 
 ## Probá un partido
 1. Abrir el proyecto desde unity Hub haciendo doble click y esperar que cargue
-2. Una vez en Unity, en la pestaña Project, navegá hasta la escena `Assets/Scenes/Application` y abrela en el editor dando doble click.
+2. Una vez en Unity, en la pestaña Project, navegá hasta la escena `Assets/Scenes/TeamSelection` y abrela en el editor dando doble click.
 3. Clicar en el botón de play ubicado en la parte central superior del editor
 4. Listo, deberías ver la selección de equipos
  
@@ -10,30 +10,28 @@ tip: en la parte superior derecha de la ventana podés apagar el audio
 
 ## Construí tu equipo
 
-1. Creá una copia de directorio llamado `ParticipantTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
-2. Luego dentro de PaticipantTeam.cs en el principio del doumento hay que cambiar el *namespace* por defecto, por el que vos elijas para tu equipo:
+1. Creá una copia de directorio llamado `EmptyTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
+2. Luego dentro de `PaticipantTeam.cs` en el principio del doumento hay que cambiar el *namespace* por defecto, por el nombre que vos elijas para tu equipo:
 ```csharp
 namespace Teams.nombre_de_tu_equipo
 ``` 
-3. Luego dentro de `Offensive.cs`, `mid.cs` y `Goalkeeper.cs` se debe cambiar el *namespace* de la misma manera.
+3. Luego dentro de `Player1.cs`, `Player2.cs` y `Player3.cs` se debe cambiar el *namespace* de la misma manera.
 
 ### Customizá tu equipo
 
 * Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName()
 ```csharp
-public string GetName()
-{
-    return "Nombre de mi equipo";
-}
+public string GetName() => "nombre de tu equipo";
 ```
-* Escudo: Podemos importar un png a gusto en la ruta `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo: `public string TeamShield => "nombre_de_la_imagen";`
-* Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad PrimaryColor. Para definir un nuevo color desde los valores RGB podemos usar el constructor new Color(float r, float g, float b). Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo: `public Color PrimaryColor => new Color(255f/256, 100f/256, 255f/256);`
+* Escudo: Podemos elegir uno de los escudos en `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo: `public string TeamShield => "nombre_del_escudo";`
+* Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad PrimaryColor. Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo: `public Color PrimaryColor => new Color(256f/256, 100f/256, 256f/256);`
 * Si bien no es necesario, también es buena idea cambiar el nombre de los scripts y la carpeta contenedora, para mantener el orden.
 
 ### Estructura
 
 Dentro del directorio de equipo deberían haber 4 scripts:
-- `ExampleTeam.cs`
+
+- `ParticipantTeam.cs`
 Este script representa la información general de tu equipo, puedes renombrar la clase y el archivo con el nombre que quieras.
  
 - `PlayerOne.cs`
