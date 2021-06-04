@@ -10,10 +10,6 @@ namespace Teams.my_team
         public override void OnUpdate()
         {
             MoveBy(GetDirectionTo(GetBallPosition()));
-            Debug.Log("Ball pos:" + GetBallPosition().ToString());
-            Debug.Log("My   pos:" + GetPosition().ToString());
-            Debug.Log("Direction to ball:" + GetDirectionTo(GetBallPosition()));   
-            Debug.Log("estoy vivo");
         }
 
         public override void OnReachBall()
