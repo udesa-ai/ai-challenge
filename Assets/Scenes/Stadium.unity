@@ -448,6 +448,11 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4971827409490804769, guid: 4fb4cd2de36c544419c2c7ab0590240b,
+        type: 3}
+      propertyPath: m_Text
+      value: AI Challenge
+      objectReference: {fileID: 0}
     - target: {fileID: 5037339598288700064, guid: 4fb4cd2de36c544419c2c7ab0590240b,
         type: 3}
       propertyPath: AudioContext
