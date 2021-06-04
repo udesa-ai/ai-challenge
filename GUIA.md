@@ -7,6 +7,7 @@
 ![Pase](ReadmeResources/Play.gif)
 
 4. Listo, deberías ver la selección de equipos y jugar un partido.
+
 ![Pase](ReadmeResources/team_selection.png)
 
 tip: en la parte superior derecha de la ventana podés apagar el audio con *Mute Audio*
@@ -135,7 +136,7 @@ tip: podes tener varios archivos abiertos a al vez en el IDE, incluso ponerlos l
 
 Ahora vamos a volver al primer jugador que programamos y decirle que patee hacia su compañero.
 
-Para esto usaremos `GetTeamMatesInformation()` en programación solemos empezar a contar desde el 0 así que los otros jugadores va a estar numerados como 0 y 1, podes ir probando a ver cual es el correcto en este caso es el 1 y como nos interesa la posición de el jugador-1 agregamos `.Position`
+Para esto usaremos `GetTeamMatesInformation()` en programación solemos empezar a contar desde el 0 así que los otros jugadores van a estar numerados como 0 y 1, podes ir probando a ver cual es el correcto en este caso es el 1 y como nos interesa la posición de el jugador-1 agregamos `.Position`
 
 ```csharp
 public override void OnReachBall()
