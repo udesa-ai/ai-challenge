@@ -3,7 +3,7 @@ using Core.Player;
 using JetBrains.Annotations;
 using UnityEngine;
 
-namespace Teams.ExampleTeam
+namespace Teams.ParticipantTeam
 {
     [UsedImplicitly]
     public class ExampleTeam : Team
@@ -14,11 +14,12 @@ namespace Teams.ExampleTeam
 
         public TeamPlayer GetPlayerThree() => new Offensive();
         
-        public Color PrimaryColor => new Color(0.6f, 0.6f, 1f);
+        public Color PrimaryColor => new Color(150f/255, 150f/255, 150f/255);
 
-        public string GetName() => "Example team";
-        
-        public string TeamShield => "Blue";
+        public string GetName() => "Participant Team";
+
+        public string TeamShield => "Black";
+
 
     }
 }
