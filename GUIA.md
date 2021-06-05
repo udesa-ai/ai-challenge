@@ -19,6 +19,8 @@ tip: en la parte superior derecha de la ventana podés apagar el audio con *Mute
 ```csharp
 namespace Teams.nombre_de_tu_equipo
 ``` 
+3. Ahora, dentro de Unity, en la pestaña project navegá hasta tu equipo y dale doble click en el codigo de `PaticipantTeam.cs` y va a abrirse automáticamente en tu IDE donde lo podrás editar.
+(si no se abrió, podes configurar el IDE en *Edit > Preferences > External_Tools* como explica este [link](https://answers.unity.com/questions/1240640/how-do-i-change-the-default-script-editor.html))
 
 ### Customizá tu equipo
 
@@ -64,7 +66,7 @@ Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu e
 ![Pase](ReadmeResources/Play.gif)
 	
 Vamos a empezar simple, abrí el código de uno de los jugadores por ejemplo `PlayerThree.cs` y cambiale el nombre que está entre comillas.
-Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automáticamnte en tu IDE donde lo podrás editar.
+Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automáticamente en tu IDE donde lo podrás editar.
 ```csharp
 public override string GetPlayerDisplayName() => "Turing";
 ```
