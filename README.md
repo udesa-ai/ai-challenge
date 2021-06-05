@@ -1,4 +1,4 @@
-# AI Challenge
+# UdeSA AI Challenge
  
 Bienvenidos! En este desafío te retamos a crear tu propio equipo de fútbol usando programación y competir con otros equipos participantes.
  
