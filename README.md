@@ -15,7 +15,6 @@ Te presentamos el AI challenge, el objetivo del evento es programar la inteligen
 
 ## Competencia
 - Programar un equipo que juegue al fútbol en nuestro entorno.
-- Torneo de dos etapas, primero etapa de grupos con 2 ganadores por grupo y luego eliminación directa entre esos 8 equipos.
 
 ## Cronograma 
 
