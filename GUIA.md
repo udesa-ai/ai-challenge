@@ -60,7 +60,7 @@ Te vamos a mostrar las cosas que pueden hacer los jugadores una por una para que
 
 Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo) .
 
-- Como en muchos tutoriales de programación recomendamos tipear el código en vez de hacer copy-paste para así retenerlo mejor.
+- Como en muchos tutoriales de programación recomendamos tipear el código en vez de hacer copy-paste para así aprenderlo mejor.
 
 - Acordate de guardar para que los cambios que hagas surtan efecto! y luego darle play nuevamente en Unity para que esos cambios sean sumados a Unity.
 ![Pase](ReadmeResources/Play.gif)
