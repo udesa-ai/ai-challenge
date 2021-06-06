@@ -1,6 +1,6 @@
 # UdeSA AI Challenge
  
-Bienvenidos! En este desafío te retamos a crear tu propio equipo de fútbol usando programación y competir con otros equipos participantes.
+Bienvenidos al UdeSA AI Challenge! En este desafío te retamos a crear tu propio equipo de fútbol y competir con otros equipos participantes.
  
 - [AI Challenge](#ai-challenge)
   - [Introducción](#introducción)
@@ -11,7 +11,7 @@ Bienvenidos! En este desafío te retamos a crear tu propio equipo de fútbol usa
   - [Construí tu equipo](#construí-tu-equipo)
 
 ## Introducción
-Te presentamos la AI challenge, el objetivo del evento es programar la inteligencia artificial de los jugadores, usando tácticas, jugadas, mentalidad de equipo o individual, etc.
+Te presentamos el AI challenge, el objetivo del evento es programar la inteligencia artificial de los jugadores, usando tácticas, jugadas, mentalidad de equipo o individual, etc.
 
 ## Competencia
 - Programar un equipo que juegue al fútbol en nuestro entorno.
