@@ -18,17 +18,24 @@ Te presentamos el AI challenge, el objetivo del evento es programar la inteligen
 - Torneo de dos etapas, primero etapa de grupos con 2 ganadores por grupo y luego eliminación directa entre esos 8 equipos.
 
 ## Cronograma 
-14:00 : Entrega de códigos
+
+### Martes 8 de Junio
+
+20:00 : Release del challenge
+
+### Sábado 12 de Julio
+
+14:00 : Entrega de códigos por parte de los equipos
 
 16:00 a 17:30: Torneo online
 
 17:30 a 17:45: Entrega de premios 
 
-17:45 a 18:00: Cierre del evento y sorteos
+17:45 a 18:00: Sorteos y cierre del evento
 
 ## Reglas
 
-- No se pueden usar métodos que interactúen directamente con el motor físico. (preguntar a los organizadores si hay dudas acerca de qué está permitido)
+- No se pueden usar métodos que interactúen directamente con el motor físico del juego. (preguntar a los organizadores si hay dudas acerca de qué está permitido)
 - Solo está permitido usar FieldPositions como posiciones iniciales (no customizarlas), deben estar de tu lado de la cancha y estas deben ser distintas para cada jugador.
 
 ## Instalación
