@@ -109,8 +109,8 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Teams/my Team/Offensive.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/EmptyTeam/ExampleTeam.cs" />
       <option value="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" />
+      <option value="$PROJECT_DIR$/Assets/Teams/EmptyTeam/ExampleTeam.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tUFbTkdhiyGpKkblNAtzcGofbJ" />
@@ -155,7 +155,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622815832953</updated>
-      <workItem from="1622828275219" duration="1774000" />
+      <workItem from="1622828275219" duration="2505000" />
     </task>
     <servers />
   </component>
