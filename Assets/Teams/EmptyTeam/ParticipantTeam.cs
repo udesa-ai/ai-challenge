@@ -8,13 +8,13 @@ namespace Teams.ParticipantTeam
     [UsedImplicitly]
     public class ExampleTeam : Team
     {
-        public TeamPlayer GetPlayerOne() => new Goalkeeper();
+        public TeamPlayer GetPlayerOne() => new PlayerOne();
 
-        public TeamPlayer GetPlayerTwo() => new Mid();
+        public TeamPlayer GetPlayerTwo() => new PlayerTwo();
 
-        public TeamPlayer GetPlayerThree() => new Offensive();
+        public TeamPlayer GetPlayerThree() => new PlayerThree();
         
-        public Color PrimaryColor => new Color(150f/255, 150f/255, 150f/255);
+        public Color PrimaryColor => new Color(0.6f, 0.6f, 0.6f);
 
         public string GetName() => "Participant Team";
 

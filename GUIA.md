@@ -2,38 +2,46 @@
 
 ## Probá un partido
 1. Abrir el proyecto desde unity Hub haciendo doble click y esperar que cargue
-2. Una vez en Unity, en la pestaña Project, navegá hasta la escena `Assets/Scenes/Application` y abrela en el editor dando doble click.
-3. Clicar en el botón de play ubicado en la parte central superior del editor
-4. Listo, deberías ver la selección de equipos
- 
-tip: en la parte superior derecha de la ventana podés apagar el audio
+2. Una vez en Unity, en la pestaña Project, navegá hasta la escena `Assets/Scenes/TeamSelection` y abrela en el editor dando doble click.
+3. Clicar en el botón de play ubicado en la parte central superior del editor.   
+![Pase](ReadmeResources/Play.gif)
+
+4. Listo, deberías ver la selección de equipos y jugar un partido.
+
+![Pase](ReadmeResources/team_selection.png)
+
+tip: en la parte superior derecha de la ventana podés apagar el audio con *Mute Audio*
 
 ## Construí tu equipo
 
-1. Creá una copia de directorio llamado `ParticipantTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
-2. Luego dentro de PaticipantTeam.cs en el principio del doumento hay que cambiar el *namespace* por defecto, por el que vos elijas para tu equipo:
+1. Creá una copia de directorio llamado `EmptyTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
+2. Luego dentro de los archivos `PaticipantTeam.cs`, `Player1.cs`, `Player2.cs` y `Player3.cs` en el principio del doumento hay que cambiar el *namespace* por defecto, por el nombre que vos elijas para tu equipo:
 ```csharp
 namespace Teams.nombre_de_tu_equipo
 ``` 
-3. Luego dentro de `Offensive.cs`, `mid.cs` y `Goalkeeper.cs` se debe cambiar el *namespace* de la misma manera.
+Para hacer esto, dentro de Unity en la pestaña project navegá hasta tu equipo y dale doble click en el codigo de `PaticipantTeam.cs` y va a abrirse automáticamente en tu IDE donde lo podrás editar.
+(si no se abrió, podes configurar el IDE en *Edit > Preferences > External_Tools* como explica este [link](https://answers.unity.com/questions/1240640/how-do-i-change-the-default-script-editor.html))
 
 ### Customizá tu equipo
 
-* Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName()
+* Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName() dentro de `PaticipantTeam.cs`
 ```csharp
-public string GetName()
-{
-    return "Nombre de mi equipo";
-}
+public string GetName() => "nombre de tu equipo";
 ```
-* Escudo: Podemos importar un png a gusto en la ruta `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo: `public string TeamShield => "nombre_de_la_imagen";`
-* Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad PrimaryColor. Para definir un nuevo color desde los valores RGB podemos usar el constructor new Color(float r, float g, float b). Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo: `public Color PrimaryColor => new Color(255f/256, 100f/256, 255f/256);`
-* Si bien no es necesario, también es buena idea cambiar el nombre de los scripts y la carpeta contenedora, para mantener el orden.
+* Escudo: Podemos elegir uno de los escudos en `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo dentro de `PaticipantTeam.cs`: 
+```csharp
+public string TeamShield => "Orange";
+```
+* Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad *PrimaryColor* dentro de `PaticipantTeam.cs`. Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo. (el color se expresa en RGB como porcentajes de 0 a 1): 
+```csharp
+public Color PrimaryColor => new Color(1.0f, 0.6f, 0.0f);
+```
 
 ### Estructura
 
 Dentro del directorio de equipo deberían haber 4 scripts:
-- `ExampleTeam.cs`
+
+- `ParticipantTeam.cs`
 Este script representa la información general de tu equipo, puedes renombrar la clase y el archivo con el nombre que quieras.
  
 - `PlayerOne.cs`
@@ -52,12 +60,13 @@ Te vamos a mostrar las cosas que pueden hacer los jugadores una por una para que
 
 Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo) .
 
-Como en muchos tutoriales de programación recomendamos tipear el código en vez de hacer copy-paste para así retenerlo mejor.
+- Como en muchos tutoriales de programación recomendamos tipear el código en vez de hacer copy-paste para así aprenderlo mejor.
 
-Acordate de guardar para que los cambios que hagas surtan efecto!
+- Acordate de guardar para que los cambios que hagas surtan efecto! y luego darle play nuevamente en Unity para que esos cambios sean sumados a Unity.
+![Pase](ReadmeResources/Play.gif)
 	
 Vamos a empezar simple, abrí el código de uno de los jugadores por ejemplo `PlayerThree.cs` y cambiale el nombre que está entre comillas.
-Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automáticamnte en tu IDE donde lo podrás editar.
+Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automáticamente en tu IDE donde lo podrás editar.
 ```csharp
 public override string GetPlayerDisplayName() => "Turing";
 ```
@@ -129,7 +138,7 @@ tip: podes tener varios archivos abiertos a al vez en el IDE, incluso ponerlos l
 
 Ahora vamos a volver al primer jugador que programamos y decirle que patee hacia su compañero.
 
-Para esto usaremos `GetTeamMatesInformation()` en programación solemos empezar a contar desde el 0 así que los otros jugadores va a estar numerados como 0 y 1, podes ir probando a ver cual es el correcto en este caso es el 1 y como nos interesa la posición de el jugador-1 agregamos `.Position`
+Para esto usaremos `GetTeamMatesInformation()` en programación solemos empezar a contar desde el 0 así que los otros jugadores van a estar numerados como 0 y 1, podes ir probando a ver cual es el correcto en este caso es el 1 y como nos interesa la posición de el jugador-1 agregamos `.Position`
 
 ```csharp
 public override void OnReachBall()
