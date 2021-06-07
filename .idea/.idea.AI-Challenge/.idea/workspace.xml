@@ -3,92 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9caafecf-d44c-49e2-ab34-2141ede8eb21" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-Challenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-Challenge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/EterSoccer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/EterSoccer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stadium.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stadium.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Defensores.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Defensores/Garrafa.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Defensores/Garrafa.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Defensores/Goalkeeper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Defensores/Goalkeeper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Defensores/Mid.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Defensores/Mid.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Defensores/NachoTeam.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Defensores/NachoTeam.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/Ghersin.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/Ghersin.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/Giribet.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/Giribet.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/Mas.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/Mas.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/ParticipantTeam.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/ParticipantTeam.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Papas.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Papas/ParticipantTeam.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Papas/ParticipantTeam.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Papas/PlayerOne.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Papas/PlayerOne.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Papas/PlayerThree.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Papas/PlayerThree.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Papas/PlayerTwo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Papas/PlayerTwo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/black_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/black_shield.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/blue_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/blue_shield.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/cheat_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/cheat_shield.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/example_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/example_shield.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/green_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/green_shield.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/orange_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/orange_shield.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/pink_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/pink_shield.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/purple_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/purple_shield.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/red_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/red_shield.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/turquoise_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/turquoise_shield.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/TeamCheat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/TeamCheat/PlayerCheatOne.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/TeamCheat/PlayerCheatOne.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/TeamCheat/PlayerCheatThree.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/TeamCheat/PlayerCheatThree.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/TeamCheat/PlayerCheatTwo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/TeamCheat/PlayerCheatTwo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/TeamCheat/TeamCheat.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/TeamCheat/TeamCheat.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Zapla.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Zapla/Goalkeeper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Zapla/Goalkeeper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Zapla/Mid.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Zapla/Mid.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Zapla/Offensive.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Zapla/Offensive.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Zapla/ParticipantTeam.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Zapla/ParticipantTeam.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/my Team.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/my Team/ExampleTeam.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/my Team/ExampleTeam.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/my Team/Goalkeeper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/my Team/Goalkeeper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/my Team/Mid.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/my Team/Mid.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/my Team/Offensive.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/my Team/Offensive.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/part.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/part/ExampleTeam.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/part/ExampleTeam.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/part/Goalkeeper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/part/Goalkeeper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/part/Mid.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/part/Mid.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/part/Offensive.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/part/Offensive.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,18 +15,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Teams/my Team/Offensive.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Teams/my Team/Offensive.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Teams/EmptyTeam/ExampleTeam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/27338101-B373-4139-82FB-6C7D2129A90F/34/4de5ef13/TeamPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Teams/my Team/Offensive.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Teams/my Team/Offensive.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Teams/my Team/Offensive.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" />
       <option value="$PROJECT_DIR$/Assets/Teams/EmptyTeam/ExampleTeam.cs" />
+      <option value="$PROJECT_DIR$/Assets/Teams/EmptyTeam/Offensive.cs" />
+      <option value="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tUFbTkdhiyGpKkblNAtzcGofbJ" />
@@ -123,6 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -156,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622815832953</updated>
       <workItem from="1622828275219" duration="2505000" />
+      <workItem from="1623079008161" duration="1896000" />
     </task>
     <servers />
   </component>
@@ -184,5 +98,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

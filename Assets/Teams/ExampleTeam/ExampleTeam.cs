@@ -18,7 +18,7 @@ namespace Teams.ExampleTeam
 
         public string GetName() => "Example team";
         
-        public string TeamShield => "Blue";
+        public string TeamShield => "New";
 
     }
 }
