@@ -19,20 +19,28 @@ tip: en la parte superior derecha de la ventana podés apagar el audio con *Mute
 ```csharp
 namespace Teams.nombre_de_tu_equipo
 ``` 
+
 Para hacer esto, dentro de Unity en la pestaña project navegá hasta tu equipo y dale doble click en el codigo de `PaticipantTeam.cs` y va a abrirse automáticamente en tu IDE donde lo podrás editar.
 (si no se abrió, podes configurar el IDE en *Edit > Preferences > External_Tools* como explica este [link](https://answers.unity.com/questions/1240640/how-do-i-change-the-default-script-editor.html))
 
 ## Customizá tu equipo
 
-* Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName() dentro de `PaticipantTeam.cs`
+* Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName() dentro de `PaticipantTeam.cs`:
+
 ```csharp
 public string GetName() => "nombre de tu equipo";
 ```
+
+
 * Escudo: Podemos elegir uno de los escudos en `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo dentro de `PaticipantTeam.cs`: 
+
+
 ```csharp
 public string TeamShield => "Orange";
 ```
 * Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad *PrimaryColor* dentro de `PaticipantTeam.cs`. Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo. (el color se expresa en RGB como porcentajes de 0 a 1): 
+
+
 ```csharp
 public Color PrimaryColor => new Color(1.0f, 0.6f, 0.0f);
 ```
@@ -43,56 +51,71 @@ Dentro del directorio de equipo deberían haber 4 scripts:
 
 - `ParticipantTeam.cs` 
 
-Este script representa la información general de tu equipo, puedes renombrar la clase y el archivo con el nombre que quieras
+Este script representa la información general de tu equipo. Puedes renombrar el archivo y la clase con el nombre que quieras.
 
 - `PlayerOne.cs`
 - `PlayerTwo.cs`
 - `PlayerThree.cs`
  
 Cada uno de estos representa un jugador diferente. Dentro de estos tres scripts deberás programar el comportamiento de cada jugador!
-En la sección [API](#api) de este documento encontrarás toda la información necesaria para programar a tus jugadores.
 
-Podes cambiar el nombre que aparecerá debajo de cada jugador durante el partido modificando el texto que va desués de `GetPlayerDisplayName()`. 
+En la sección [API](#api) de este documento encontrarás una lista de funciones que podrás utilizar para programar a tus jugadores. 
 
-## Creá un Comportamiento
 
-Te vamos a mostrar las cosas que pueden hacer los jugadores una por una para que sepas algunas de las herramientas que tenés disponibles.
+## Dale vida a un jugador
 
-Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo) .
+Te vamos a mostrar ejemplos de las cosas que pueden hacer los jugadores para que veas algunas de las herramientas que tenés disponibles.
 
-- Como en muchos tutoriales de programación, recomendamos que escribas el código manualmente en vez de hacer copy-paste, ya que así aprenderás mejor y más rápido. 
+Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo).
+
+**Nota:** para este mini-tutorial lo ideal es jugar contra el equipo Participant Team, ya que este no tiene comportamiento y todos sus jugadores se quedan quietos.
+
+Tips:
+
+- Como en muchos tutoriales de programación, recomendamos que escribas el código vos misma, en lugar de hacer copy-paste, ya que así aprenderás mejor y más rápido! 
 
 - Acordate de guardar los cambios para que estos surtan efecto! Luego de guardar los cambios, podes apratar Play nuevamente en Unity para que esos cambios sean sumados a Unity.
+
 ![Pase](ReadmeResources/Play.gif)
 
-### Cambiale el nombre a un jugador 
+### Cambiale el nombre al jugador 
 Vamos a empezar de manera sencilla. Abrí el código de uno de los jugadores, por ejemplo `PlayerThree.cs`, y cambiale el nombre del jugador por "Maradona".
 Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automáticamente en tu IDE donde lo podrás editar.
+
+Cambiá el text que va despuués de ```GetPlayerDisplayName() =>```:
+
 ```csharp
 public override string GetPlayerDisplayName() => "Maradona";
 ```
-Guardá los cambios y luego apretá el botón Play ubicado en la parte central superior de Unity.  Luego elegí tu nuevo equipo y apretá el botón "Jugar". Si bien el quipo aún no hace nada, deberías notar que uno de los jugadores tiene el nombre "Maradona". 
+
+Guardá los cambios y luego apretá el botón Play ubicado en la parte central superior de Unity.  Luego elegí tu nuevo equipo y apretá el botón "Jugar". Si bien el quipo aún no hace nada, deberías notar que uno de los jugadores tiene el nombre "Maradona". Yay!
 
 ### Movimiento de un jugador
 
 Ahora le vamos a enseñar a moverse ;)
 
-Dentro de la función `OnUpdate`, función que se ejecuta continuamente, vamos a agregar la linea `GoTo` y darle una [posición](#posición-en-el-campo) dentro de la cancha
+#### GoTo( )
+Dentro de la función `OnUpdate`, función que se ejecuta continuamente, vamos a agregar la linea `GoTo` e indicarle que queremos que vaya a la posición **C3** en la cancha (ver el  [mapa de posiciones estandarizadas](#posición-en-el-campo) dentro de la cancha):
+
 ```csharp
 public override void OnUpdate()
 {
  GoTo(FieldPosition.C3);
 }
 ```
+
 Al probarlo vas a ver como uno de los jugadores va hasta el punto central de la cancha. 
+
+#### MoveBy( )
 
 Si queremos que el jugador vaya hacia la pelota podemos usar en vez `MoveBy()`, que nos deja mover un jugador en una dirección.
 
-Luego `GetDirectionTo()` nos sirve para obtener la dirección hacia una posición.
+Luego `GetDirectionTo()` nos sirve para obtener la dirección hacia una posición (desde la posición actual del jugador).
 
 Finalmente usaremos `GetBallPosition()` que nos devuelve la posición de la pelota.
 
 Todo junto quedará como:
+
 ```csharp
 public override void OnUpdate()
 {
@@ -101,13 +124,15 @@ public override void OnUpdate()
  MoveBy(directionToBall);
 }
 ```
+
 Al probarlo (contra *participant team*) vas a notar como el jugador "Maradona" va a toda velocidad a buscar la pelota. Muy bien, ya tenemos movimiento!
 
 ### Pegarle a la pelota
 
 Cada vez que el jugador toca la pelota se ejecuta el código que está adentro de la función `OnReachBall()`.
 
-Vamos a usar `ShootBall()` para patear la pelota, en la dirección del arco enemigo usando `GetRivalGoalPosition()`
+Vamos a usar `ShootBall()` para patear la pelota. En este caso patearemos en la dirección del arco enemigo usando `GetRivalGoalPosition()`, que nos devuelve la posición del arco del rival.
+
 ```csharp
 public override void OnReachBall()
 {
@@ -116,88 +141,77 @@ public override void OnReachBall()
 	ShootBall(rivalGoalDirection, ShootForce.Medium);
 }
 ```
+
 ![Pase](ReadmeResources/patear.gif)
 
-Para ayudarle a uno a visualizar lo que está ocurriendo en la cancha podemos crear ayudas visuales, que encendemos arriba a la derecha de la ventana clicando en *Gizmos*
-
-Para hacer esto vamos a usar `DrawLine()` que dibuja una linea de una posición a otra.
-
-También podes ver que usamos `GetPosition()` que es la posición de tu propio jugador en la cancha.
-
-(Puede que par usar las funciones *Debug* tengas que agregar la linea `using UnityEngine;` al principio del documento donde están los otros *using*)
-
-```csharp
-public override void OnReachBall()
-{
-	ShootBall(GetDirectionTo(GetRivalGoalPosition()),ShootForce.Medium);
-	Debug.DrawLine(GetRivalGoalPosition(), GetPosition(), Color.magenta, 0.2f);
-}
-```
-Cuando pruebes esto vas a ver como aparece una linea rosa cuando el jugador patea al arco. Hay otras funciones de debuggeo disponibles, las podes ver en la sección de [Debugging](#debugging)
-
-![Pase](ReadmeResources/guias_visuales.gif)
+### Pasarle la pelota a un compañero
 
 Ahora vamos a hacer algo más interesante, un pase entre jugadores.
 
-Primero vamos a abrir otro jugador y hacerle ir arriba rápidamente, de la misma manera que vimos antes:
+Primero vamos a abrir el archivo `PlayerTwo.cs` (archivo correspondiente al segundo jugador) y hacerle ir a una posición cerca del arco rival, utilizando la función ```GoTo()```, como vimos antes. En este caso, lo movemos a la posición D1 (ver [mapa de posiciones](#posición-en-el-campo)). 
+
 ```csharp
 public override void OnUpdate()
 {
 	GoTo(FieldPosition.D1);
 }
 ```
+
 tip: podes tener varios archivos abiertos a al vez en el IDE, incluso ponerlos lado a lado si tenes un monitor grande.
 
 Ahora vamos a volver al primer jugador que programamos y decirle que patee hacia su compañero.
 
-Para esto usaremos `GetTeamMatesInformation()` en programación solemos empezar a contar desde el 0 así que los otros jugadores van a estar numerados como 0 y 1, podes ir probando a ver cual es el correcto en este caso es el 1 y como nos interesa la posición de el jugador-1 agregamos `.Position`
+Para esto usaremos `GetTeamMatesInformation()`. Recordá que en programación solemos empezar a contar desde el 0 así que los otros jugadores van a estar numerados 0 y 1, ordenados siguiendo el ordan alfabético. En este caso es `PlayerTwo` es el 1 y como nos interesa la posición de el jugador agregamos `.Position`
 
 ```csharp
 public override void OnReachBall()
 {
-	ShootBall(GetDirectionTo(GetTeamMatesInformation()[1].Position),ShootForce.High);
-	Debug.DrawLine(GetTeamMatesInformation()[1].Position, GetPosition(), Color.magenta, 0.5f);
+	var playerTwoPosition = GetDirectionTo(GetTeamMatesInformation()[1].Position;
+	var directionToPlayerTwo = GetDirectionTo(playerTwoPosition)
+	ShootBall(directionToPlayerTwo, ShootForce.High);
 }
 ```
-Cuando lo pruebes vas a ver como un jugador se la pasa a otro. Igual que en la realidad es mas facil patear si uno está de frente a la pelota y detenido, para tenerlo en cuenta!
+Cuando lo pruebes vas a ver como un jugador se la pasa a otro. 
 
 ![Pase](ReadmeResources/patada_al_arco.gif)
 
-¿Podes hacer que el jugador de adelante la tire al arco cuando la recibe? vas a tener que modificar dentro de `OnReachBall()` de la misma manera que hicimos antes.
+### ¿Y ahora...?
+
+¿Podes hacer que el jugador de adelante le peque al arco cuando la recibe? Vas a tener que modificar algo dentro de `OnReachBall()`, de la misma manera que hicimos antes.
 
 ¿Podes hacer que el otro jugador se acerque para recibirla cuando la pelota esta cerca? Hay una función llamada `Vector3.Distance()` que te puede servir.
 
 De la misma manera que vimos la información de los jugadores de nuestro equipo podemos hacer lo mismo con el equipo contrario usando `GetRivalsInformation()`
 
-Si uno quiere usar Field positions como posiciones primero hay que convertirlos a *Vector3* con `GetPositionFor(FieldPosition.C2);`
+Si uno quiere usar los **FieldPositions** como posiciones, primero hay que convertirlos a *Vector3* con `GetPositionFor(FieldPosition.C2);`
 
 Hay muchas otras funciones disponibles que dan información util o hacen cosas, las podes mirar en: [Funciones públicas](#funciones-públicas)
 
-### Probá tu equipo
+## Probá tu equipo contra Example Team
 
 El proyecto incluye un equipo pre-armado con su código visible para poder inspirarte en el y usarlo como contrincante, este equipo se encuentran en la ruta `Assets/Teams/ExampleTeam`
 
 Ya estás listo para crear tu propio equipo, te recomendamos empezar de "0" y pensar ¿Como me gustaría que se comporten los jugadores?¿Cuales son sus roles?¿todos hacen lo mismo?
   
-## API
+## Funcinones disponibles
  
-## clase TeamPlayer
-
+### Funciones dentro de cada jugador
  
-### Funciones con posibilidad de sobreescritura
+`OnUpdate()` -> Esta función corre constantemente. Es un lugar donde podemos manejar los estados según condiciones dadas por ejemplo.
  
-`OnUpdate()` -> Esta función corre constantemente, es un lugar donde podemos manejar los estados según condiciones dadas por ejemplo.
- 
-`OnReachBall()` -> Esta función se llama cuando el jugador toca la pelota, de esta manera, por ejemplo, podemos llamar a la función ShootBall especificando fuerza y dirección si queremos que este jugador haga un pase o disparo al arco en seguida entra en contacto con la pelota.
+`OnReachBall()` -> Esta función se ejecuta solamente cuando el jugador toca la pelota. De esta manera, por ejemplo, podemos llamar a la función ShootBall cuando toca la pelota, especificando fuerza y dirección si queremos que este jugador haga un pase o disparo al arco, etc.
  
 `OnScoreBoardChanged(Scoreboard)` ->  Cada vez que alguien anota un gol, esta función se llama, recibiendo el parámetro acorde. Ideal para implementar estrategias según la diferencia de goles.
  
-`GetInitialPosition() : FieldPosition` -> Devuelve la posición inicial del jugador al comenzar el partido. Útil si deseas mantener formaciones defensivas. Solo está permitido usar FieldPositions como posiciones iniciales (no customizarlas), deben estar de tu lado de la cancha y estas deben ser distintas para cada jugador.
+`GetInitialPosition() : FieldPosition` -> Define la posición inicial del jugador al comenzar el partido. Útil si deseas mantener formaciones defensivas. 
+
+NOTA: solo está permitido usar FieldPositions como posiciones iniciales (no customizarlas). Lógicamente estas deben estar de tu lado de la cancha y deben ser distintas para cada jugador.
  
-`GetPlayerDisplayName() : string` -> Devuelve el nombre del jugador para mostrar en el partido.
+`GetPlayerDisplayName() : string` -> Define el nombre que se verá debajo de cada jugador durante el partido.
  
 
 ### Funciones públicas
+
 Estas son todas las funciones que tenemos disponibles:
  
 `float GetTimeLeft()` -> Devuelve cuánto tiempo resta de partido.
@@ -214,7 +228,7 @@ Estas son todas las funciones que tenemos disponibles:
  
 `Vector3 GetBallVelocity()` -> Devuelve el vector velocidad de la pelota. Con esto podemos saber que tan rápido se mueve y hacia donde, nos permite hacer cálculos de trayectoria.
  
-`Vector3 GetDirectionTo(Vector3)` -> Calcula la dirección hacia una posición dada.
+`Vector3 GetDirectionTo(Vector3)` -> Calcula la dirección hacia una posición dada, desde la posición actual del jugador.
  
 `Vector3 GetPositionFor(FieldPosition)` -> Retorna la posición de un cuadrante dado.
  
@@ -243,15 +257,13 @@ Estas son todas las funciones que tenemos disponibles:
 
 [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) tiene muchas funciones para cálculos vectoriales 
 
-## Interfaces
- 
-### Posición en el campo
+## Posición en el campo
  
 Interfaz que ayuda a posicionar a los jugadores en el campo:
  
 ![Field_pos](ReadmeResources/field-positions.png?raw=true "Title")
  
-### Fuerza de tiro
+## Fuerza de tiro
  
 Es posible que tengas que hacer un pase preciso, para eso podemos darle diferente intensidad a los tiros:
  
@@ -263,6 +275,29 @@ public enum ShootForce
 ```
  
 ## Debugging
+
+### Visualizar
+
+Para ayudarle a uno a visualizar lo que está ocurriendo en la cancha podemos crear ayudas visuales, que encendemos arriba a la derecha de la ventana clicando en *Gizmos*
+
+Para hacer esto vamos a usar `DrawLine()` que dibuja una linea de una posición a otra.
+
+También podes ver que usamos `GetPosition()` que es la posición de tu propio jugador en la cancha.
+
+(Puede que par usar las funciones *Debug* tengas que agregar la linea `using UnityEngine;` al principio del documento donde están los otros *using*)
+
+```csharp
+public override void OnReachBall()
+{
+	ShootBall(GetDirectionTo(GetRivalGoalPosition()),ShootForce.Medium);
+	Debug.DrawLine(GetRivalGoalPosition(), GetPosition(), Color.magenta, 0.2f);
+}
+```
+Cuando pruebes esto vas a ver como aparece una linea rosa cuando el jugador patea al arco. Hay otras funciones de debuggeo disponibles, las podes ver en la sección de [Debugging](#debugging)
+
+![Pase](ReadmeResources/guias_visuales.gif)
+
+### Escribir mensajes a la consola
 
 Para ayudar al debuggeo hay disponibles alguna funciones adicionales que permiten imprimir el valor de las variables y otros mensajes.
 Todas estos mensajes aparecen en la console de Unity, es una de las pestañas de abajo que dice console, al lado de projects.
@@ -348,7 +383,7 @@ public override void OnScoreBoardChanged(ScoreBoard scoreBoard)
 ```
  
 
-## Tutorial C#
+## Tutorial C*#*
 
 Para programar en Unity se usa el lenguaje de programación [C#](https://es.wikipedia.org/wiki/C_Sharp).
 
