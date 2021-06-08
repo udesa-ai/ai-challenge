@@ -59,7 +59,7 @@ Este script representa la información general de tu equipo. Puedes renombrar el
  
 Cada uno de estos representa un jugador diferente. Dentro de estos tres scripts deberás programar el comportamiento de cada jugador!
 
-En la sección [API](#api) de este documento encontrarás una lista de funciones que podrás utilizar para programar a tus jugadores. 
+En la sección [Funciones disponibles](#funciones-disponibles) de este documento encontrarás una lista de funciones que podrás utilizar para programar a tus jugadores. 
 
 
 ## Dale vida a un jugador
