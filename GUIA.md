@@ -177,7 +177,7 @@ Cuando lo pruebes vas a ver como un jugador se la pasa a otro.
 
 ### ¿Y ahora...?
 
-¿Podes hacer que el jugador de adelante le peque al arco cuando la recibe? Vas a tener que modificar algo dentro de `OnReachBall()`, de la misma manera que hicimos antes.
+¿Podes hacer que el jugador de adelante le pegue al arco cuando la recibe? Vas a tener que modificar algo dentro de `OnReachBall()`, de la misma manera que hicimos antes.
 
 ¿Podes hacer que el otro jugador se acerque para recibirla cuando la pelota esta cerca? Hay una función llamada `Vector3.Distance()` que te puede servir.
 
