@@ -195,7 +195,7 @@ Ya estás listo para crear tu propio equipo, te recomendamos empezar de "0" y pe
   
 ## Funciones disponibles
  
-### Funciones dentro de cada jugador
+### Funciones dentro del código de cada jugador (por ejemplo ```PlayerOne.cs```)
  
 `OnUpdate()` -> Esta función corre constantemente. Es un lugar donde podemos manejar los estados según condiciones dadas por ejemplo.
  
