@@ -193,7 +193,7 @@ El proyecto incluye un equipo pre-armado con su código visible para poder inspi
 
 Ya estás listo para crear tu propio equipo, te recomendamos empezar de "0" y pensar ¿Como me gustaría que se comporten los jugadores?¿Cuales son sus roles?¿todos hacen lo mismo?
   
-## Funcinones disponibles
+## Funciones disponibles
  
 ### Funciones dentro de cada jugador
  
