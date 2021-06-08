@@ -3,7 +3,7 @@ using Core.Player;
 using Core.Utils;
 using UnityEngine;
 
-namespace Teams.ParticipantTeam
+namespace Teams.EmptyTeam
 {
     public class PlayerThree : TeamPlayer
     {

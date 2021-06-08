@@ -14,11 +14,11 @@ namespace Teams.ExampleTeam
 
         public TeamPlayer GetPlayerThree() => new Offensive();
         
-        public Color PrimaryColor => new Color(0.6f, 0.6f, 1f);
+        public Color PrimaryColor => new Color(0.4f, 0.5f, 1.0f);
 
         public string GetName() => "Example team";
         
-        public string TeamShield => "Orange";
+        public string TeamShield => "Blue";
 
     }
 }
