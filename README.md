@@ -35,7 +35,7 @@ Te presentamos el AI challenge, el objetivo del evento es programar la inteligen
 ## Reglas
 
 - No se pueden usar métodos que interactúen directamente con el motor físico del juego. (preguntar a los organizadores si hay dudas acerca de qué está permitido)
-- Solo se pueden usar como lugar de inicio para los jugadores estas 9 [posiciones](#posición-en-el-campo): *A1, A2, A3, B1, B2, B3, C1, C2, C3*  y estas deben ser distintas para cada jugador del equipo.
+- Solo se pueden usar como lugar de inicio para los jugadores estas 9 [posiciones](https://github.com/UDESA-AI/AI-Challenge/blob/master/GUIA.md#posici%C3%B3n-en-el-campo): *A1, A2, A3, B1, B2, B3, C1, C2, C3*  y estas deben ser distintas para cada jugador del equipo.
 
 ## Instalación
 Para poder participar deberás contar con Unity, un IDE y Discord.
