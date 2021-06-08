@@ -209,9 +209,7 @@ Ya estás listo para crear tu propio equipo, te recomendamos empezar de "0" y pe
  
 `OnScoreBoardChanged(Scoreboard)` ->  Cada vez que alguien anota un gol, esta función se llama, recibiendo el parámetro acorde. Ideal para implementar estrategias según la diferencia de goles.
  
-`GetInitialPosition() : FieldPosition` -> Define la posición inicial del jugador al comenzar el partido. Útil si deseas mantener formaciones defensivas. 
-
-NOTA: solo está permitido usar FieldPositions como posiciones iniciales (no customizarlas). Lógicamente estas deben estar de tu lado de la cancha y deben ser distintas para cada jugador.
+`GetInitialPosition() : FieldPosition` -> Devuelve la posición inicial del jugador al comenzar el partido. En esta función indicamos donde empieza el partido el jugador, se debe elegir una de estas 9 [posiciones](#posición-en-el-campo): *A1, A2, A3, B1, B2, B3, C1, C2, C3*  y esta debe ser distinta para cada jugador del equipo.
  
 `GetPlayerDisplayName() : string` -> Define el nombre que se verá debajo de cada jugador durante el partido.
  
