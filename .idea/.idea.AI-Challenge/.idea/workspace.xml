@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9caafecf-d44c-49e2-ab34-2141ede8eb21" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-Challenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-Challenge/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/EterSoccer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/EterSoccer.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/Hola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Teams/Resources/Emblems/Hola.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +19,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C1806A14-6A31-4638-83E9-36CFCA4BAB65/12/c2422e1a/TeamPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/27338101-B373-4139-82FB-6C7D2129A90F/34/4de5ef13/TeamPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Teams/ExampleTeam/ExampleTeam.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -70,6 +73,7 @@
       <updated>1622815832953</updated>
       <workItem from="1622828275219" duration="2505000" />
       <workItem from="1623079008161" duration="1896000" />
+      <workItem from="1623163707604" duration="8000" />
     </task>
     <servers />
   </component>
