@@ -1,12 +1,12 @@
 # Guía de Programación
 
 ## Probá un partido
-1. Abrir el proyecto desde unity Hub haciendo doble click y esperar que cargue
-2. Una vez en Unity, en la pestaña Project, navegá hasta la escena `Assets/Scenes/TeamSelection` y abrela en el editor dando doble click.
-3. Clicar en el botón de play ubicado en la parte central superior del editor.   
+1. Abrir el proyecto *AI-Challenge* desde unity Hub haciendo doble click y esperar que cargue.
+2. Una vez en Unity, en la pestaña Project, navegá hasta la carpeta `Assets/Scenes/`, luego hacé doble click en el ícono de Unity que dice `TeamSelection`. 
+3. Luego clickeá el botón de *play* ubicado en la parte central superior del editor.   
 ![Pase](ReadmeResources/Play.gif)
 
-4. Listo, deberías ver la selección de equipos y jugar un partido.
+4. Listo, deberías ver la selección de equipos.  Elegí los equipos que queres que juegen, y apretá el botón "Jugar". El partido debería arrancar!
 
 ![Pase](ReadmeResources/team_selection.png)
 
@@ -14,7 +14,7 @@ tip: en la parte superior derecha de la ventana podés apagar el audio con *Mute
 
 ## Construí tu equipo
 
-1. Creá una copia de directorio llamado `EmptyTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
+1. Creá una copia del directorio llamado `EmptyTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
 2. Luego dentro de los archivos `PaticipantTeam.cs`, `Player1.cs`, `Player2.cs` y `Player3.cs` en el principio del doumento hay que cambiar el *namespace* por defecto, por el nombre que vos elijas para tu equipo:
 ```csharp
 namespace Teams.nombre_de_tu_equipo
@@ -22,7 +22,7 @@ namespace Teams.nombre_de_tu_equipo
 Para hacer esto, dentro de Unity en la pestaña project navegá hasta tu equipo y dale doble click en el codigo de `PaticipantTeam.cs` y va a abrirse automáticamente en tu IDE donde lo podrás editar.
 (si no se abrió, podes configurar el IDE en *Edit > Preferences > External_Tools* como explica este [link](https://answers.unity.com/questions/1240640/how-do-i-change-the-default-script-editor.html))
 
-### Customizá tu equipo
+## Customizá tu equipo
 
 * Nombre: Podemos asignar el nombre del equipo en el código del mismo, modificando el valor de GetName() dentro de `PaticipantTeam.cs`
 ```csharp
@@ -37,71 +37,83 @@ public string TeamShield => "Orange";
 public Color PrimaryColor => new Color(1.0f, 0.6f, 0.0f);
 ```
 
-### Estructura
+## Estructura del código
 
 Dentro del directorio de equipo deberían haber 4 scripts:
 
-- `ParticipantTeam.cs`
-Este script representa la información general de tu equipo, puedes renombrar la clase y el archivo con el nombre que quieras.
- 
+- `ParticipantTeam.cs` 
+
+Este script representa la información general de tu equipo, puedes renombrar la clase y el archivo con el nombre que quieras
+
 - `PlayerOne.cs`
 - `PlayerTwo.cs`
 - `PlayerThree.cs`
  
-Cada uno de estos representa un jugador diferente. Dentro de estos scripts encontrarás métodos que debes implementar para lograr que tus jugadores respondan de manera inteligente a lo que pasa dentro del partido.
+Cada uno de estos representa un jugador diferente. Dentro de estos tres scripts deberás programar el comportamiento de cada jugador!
 En la sección [API](#api) de este documento encontrarás toda la información necesaria para programar a tus jugadores.
 
-Se puede editar el nombre de cualquier jugador para que sea visible durante el partido modificando dentro de `GetPlayerDisplayName`
+Podes cambiar el nombre que aparecerá debajo de cada jugador durante el partido modificando el texto que va desués de `GetPlayerDisplayName()`. 
 
-
-### Comportamientos
+## Creá un Comportamiento
 
 Te vamos a mostrar las cosas que pueden hacer los jugadores una por una para que sepas algunas de las herramientas que tenés disponibles.
 
 Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu equipo](#construí-tu-equipo) .
 
-- Como en muchos tutoriales de programación recomendamos tipear el código en vez de hacer copy-paste para así aprenderlo mejor.
+- Como en muchos tutoriales de programación, recomendamos que escribas el código manualmente en vez de hacer copy-paste, ya que así aprenderás mejor y más rápido. 
 
-- Acordate de guardar para que los cambios que hagas surtan efecto! y luego darle play nuevamente en Unity para que esos cambios sean sumados a Unity.
+- Acordate de guardar los cambios para que estos surtan efecto! Luego de guardar los cambios, podes apratar Play nuevamente en Unity para que esos cambios sean sumados a Unity.
 ![Pase](ReadmeResources/Play.gif)
-	
-Vamos a empezar simple, abrí el código de uno de los jugadores por ejemplo `PlayerThree.cs` y cambiale el nombre que está entre comillas.
+
+### Cambiale el nombre a un jugador 
+Vamos a empezar de manera sencilla. Abrí el código de uno de los jugadores, por ejemplo `PlayerThree.cs`, y cambiale el nombre del jugador por "Maradona".
 Esto lo haces dando doble click desde unity en el código en cuestión, y va a abrirse automáticamente en tu IDE donde lo podrás editar.
 ```csharp
-public override string GetPlayerDisplayName() => "Turing";
+public override string GetPlayerDisplayName() => "Maradona";
 ```
-Cuando le des play en el botón de play ubicado en la parte central superior del editor y elijas tu nuevo equipo deberías ver... como no hace nada aún, pero el jugador tiene un nuevo nombre, ahora le vamos a enseñar a moverse.
+Guardá los cambios y luego apretá el botón Play ubicado en la parte central superior de Unity.  Luego elegí tu nuevo equipo y apretá el botón "Jugar". Si bien el quipo aún no hace nada, deberías notar que uno de los jugadores tiene el nombre "Maradona". 
 
-Dentro de `OnUpdate` función que se ejecuta continuamente, vamos a agregar la linea `GoTo` y darle una [posición](#posición-en-el-campo) dentro de la cancha
+### Movimiento de un jugador
+
+Ahora le vamos a enseñar a moverse ;)
+
+Dentro de la función `OnUpdate`, función que se ejecuta continuamente, vamos a agregar la linea `GoTo` y darle una [posición](#posición-en-el-campo) dentro de la cancha
 ```csharp
 public override void OnUpdate()
 {
  GoTo(FieldPosition.C3);
 }
 ```
-Al probarlo vas a ver como uno de los jugadores va hasta la linea central.
+Al probarlo vas a ver como uno de los jugadores va hasta el punto central de la cancha. 
 
-Si queremos que el jugador vaya hacia a pelota podemos usar `MoveBy()` que nos deja mover un jugador en una dirección.
+Si queremos que el jugador vaya hacia la pelota podemos usar en vez `MoveBy()`, que nos deja mover un jugador en una dirección.
 
 Luego `GetDirectionTo()` nos sirve para obtener la dirección hacia una posición.
 
 Finalmente usaremos `GetBallPosition()` que nos devuelve la posición de la pelota.
+
 Todo junto quedará como:
 ```csharp
 public override void OnUpdate()
 {
- MoveBy(GetDirectionTo(GetBallPosition()));
+ var ballPosition = GetBallPosition();
+ var directionToBall = GetDirectionTo(ballPosition);
+ MoveBy(directionToBall);
 }
 ```
-Al probarlo (contra *participant team*) vas a notar como un jugador va a toda velocidad a buscar la pelota. Muy bien ya tenemos movimiento!
+Al probarlo (contra *participant team*) vas a notar como el jugador "Maradona" va a toda velocidad a buscar la pelota. Muy bien, ya tenemos movimiento!
 
-Ahora vamos a ver otra de las funciones, `OnReachBall()` se llama cada vez que el jugador toca la pelota.
+### Pegarle a la pelota
+
+Cada vez que el jugador toca la pelota se ejecuta el código que está adentro de la función `OnReachBall()`.
 
 Vamos a usar `ShootBall()` para patear la pelota, en la dirección del arco enemigo usando `GetRivalGoalPosition()`
 ```csharp
 public override void OnReachBall()
 {
-	ShootBall(GetDirectionTo(GetRivalGoalPosition()),ShootForce.Medium);
+	var rivalGoalPosition = GetRivalGoalPosition();
+	var rivalGoalDirection = GetDirectionTo(rivalGoalPosition);
+	ShootBall(rivalGoalDirection, ShootForce.Medium);
 }
 ```
 ![Pase](ReadmeResources/patear.gif)
