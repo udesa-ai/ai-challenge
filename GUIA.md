@@ -119,6 +119,7 @@ public override void OnReachBall()
 ![Pase](ReadmeResources/patear.gif)
 
 Para ayudarle a uno a visualizar lo que está ocurriendo en la cancha podemos crear ayudas visuales, que encendemos arriba a la derecha de la ventana clicando en *Gizmos*
+![gizmos](ReadmeResources/gizmo.gif)
 
 Para hacer esto vamos a usar `DrawLine()` que dibuja una linea de una posición a otra.
 
