@@ -1,5 +1,11 @@
 # Guía de Programación
 
+## Descargá el Juego
+1. Descargar este repositorio de GitHub clicando "Code" y después "Download ZIP" en la esquina superior derecha del [directorio raiz](https://github.com/UDESA-AI/AI-Challenge).   
+![Team name chage](ReadmeResources/descargar.gif)
+2. Descomprimir el archivo *.zip* y guardarlo en una carpeta.
+3. En UnityHub en la pestaña Projects clicar "Add" y buscar la carpeta del proyecto `AI-Challenge-master`.
+
 ## Probá un partido
 1. Abrir el proyecto *AI-Challenge* desde unity Hub haciendo doble click y esperar que cargue.
 2. Una vez en Unity, en la pestaña Project, navegá hasta la carpeta `Assets/Scenes/`, luego hacé doble click en el ícono de Unity que dice `TeamSelection`. 
@@ -14,7 +20,7 @@ tip: en la parte superior derecha de la ventana podés apagar el audio con *Mute
 
 ## Construí tu equipo
 
-1. Creá una copia del directorio llamado `EmptyTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
+1. Creá una copia del directorio llamado ^EmptyTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
 2. Luego dentro de los archivos `PaticipantTeam.cs`, `Player1.cs`, `Player2.cs` y `Player3.cs` en el principio del doumento hay que cambiar el *namespace* por defecto, por el nombre que vos elijas para tu equipo:
 ```csharp
 namespace Teams.nombre_de_tu_equipo
