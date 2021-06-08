@@ -30,14 +30,14 @@ Para hacer esto, dentro de Unity en la pestaña project navegá hasta tu equipo 
 ```csharp
 public string GetName() => "nombre de tu equipo";
 ```
-
-
-* Escudo: Podemos elegir uno de los escudos en `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo dentro de `PaticipantTeam.cs`: 
-
-
+* Escudo: Podemos importar un *.png* a gusto (250x250 pixeles) en la ruta `Assets/Teams/Resources/Emblems` y luego asignarlo por nombre en el código del equipo:
 ```csharp
-public string TeamShield => "Orange";
+public string TeamShield => "nombre_de_la_imagen";
 ```
+Se lo debe configurar como un *Sprite* en el Inspector de Unity para que el juego lo reconozca.
+
+![Pase](ReadmeResources/emblem.gif)
+
 * Color Primario: Para definir el color primario podemos definirlo en el código del equipo en la propiedad *PrimaryColor* dentro de `PaticipantTeam.cs`. Podes ayudarte con un [Selector de colores](https://htmlcolorcodes.com/es/) para elegirlo. (el color se expresa en RGB como porcentajes de 0 a 1): 
 
 
@@ -255,9 +255,28 @@ Estas son todas las funciones que tenemos disponibles:
 
 ### Otras funciones útiles
 
-[Mathf](https://docs.unity3d.com/ScriptReference/Mathf.html) tiene muchas funciones para hacer cálculos trigonométricos 
+[Mathf:](https://docs.unity3d.com/ScriptReference/Mathf.html) tiene muchas funciones para hacer cálculos trigonométricos 
 
-[Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) tiene muchas funciones para cálculos vectoriales 
+[Vector3:](https://docs.unity3d.com/ScriptReference/Vector3.html) tiene muchas funciones para cálculos vectoriales 
+
+Normalizar(magnitud 1) una dirección
+```csharp
+using UnityEngine;
+```
+```csharp
+var normalizedDirection = Vector3.Normalize(direction);
+```
+
+
+[HandleUtility:](https://docs.unity3d.com/ScriptReference/HandleUtility.html) tiene muchas funciones geometricas de ayuda como la intersección entre un punto y una linea
+
+Obtener la distancia del jugador a la linea imagianria entre la pelota y el arco:
+```csharp
+using UnityEditor;
+```
+```csharp
+var distance2BallPath = HandleUtility.DistancePointLine(GetPosition(),GetBallPosition(),GetMyGoalPosition());
+```
 
 ## Posición en el campo
  
