@@ -228,17 +228,19 @@ Estas son todas las funciones que tenemos disponibles:
  
 `Vector3 GetBallVelocity()` -> Devuelve el vector velocidad de la pelota. Con esto podemos saber que tan rápido se mueve y hacia donde, nos permite hacer cálculos de trayectoria.
  
-`Vector3 GetDirectionTo(Vector3)` -> Calcula la dirección hacia una posición dada, desde la posición actual del jugador.
+`Vector3 GetDirectionTo(Vector3)` -> Calcula la dirección desde el jugador hacia una posición dada.
  
-`Vector3 GetPositionFor(FieldPosition)` -> Retorna la posición de un cuadrante dado.
+`Vector3 GetPositionFor(FieldPosition)` -> Retorna la posición de una [cuadrante (*FieldPosition*)](#posición-en-el-campo) dada.
  
-`void GoTo(FieldPosition)` -> Mueve al jugador hacia el cuadrante específico y se detiene al llegar al mismo.
+`void GoTo(FieldPosition)` -> Mueve al jugador hacia el [cuadrante (*FieldPosition*)](#posición-en-el-campo) específico y se detiene al llegar al mismo.
+
+`void GoTo(Vector3)` -> Mueve al jugador hacia una posición dada y se detiene al llegar al mismo.
  
 `void MoveBy(Vector3)` -> Mueve al jugador en la dirección dada.
  
-`Vector3 GetRivalGoalPosition()` -> Devuelve la posición del arco rival.
+`Vector3 GetRivalGoalPosition()` -> Devuelve la posición del centro del arco rival.
  
-`Vector3 GetMyGoalPosition()` -> Devuelve la posición del arco propio.
+`Vector3 GetMyGoalPosition()` -> Devuelve la posición del centro del arco propio.
  
 `PlayerDTO GetTeamMatesInformation()` -> Devuelve posición, dirección, y velocidad de tus jugadores.
  
