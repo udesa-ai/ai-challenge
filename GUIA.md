@@ -1,4 +1,6 @@
-# Guía de Programación
+# Guía de Programación 
+
+Acá tienen un tutorial en forma de [video](https://www.youtube.com/watch?v=MVhzcFPgEKU).  
 
 ## Descargá el Juego
 1. Descargar este repositorio de GitHub clicando "Code" y después "Download ZIP" en la esquina superior derecha del [directorio raiz](https://github.com/UDESA-AI/AI-Challenge).   
