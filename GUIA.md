@@ -300,6 +300,16 @@ var distance2BallPath = HandleUtility.DistancePointLine(GetPosition(),GetBallPos
 Interfaz que ayuda a posicionar a los jugadores en el campo:
  
 ![Field_pos](ReadmeResources/field-positions.png?raw=true "Title")
+
+## Coordenadas
+
+El area de juego mide aproximadamnte 20 x 20, es decir que los limites de la cancha están en:
+ - 10 y -10 en X
+ - 10 y -10 en Z
+
+**Nota Importante:** los equipos deben poder usarse de ambos lados de la cancha, no escribir funciones que usen coordenas absolutas y por lo tanto solo funcionen de un lado de la cancha.
+  
+![coords](ReadmeResources/coordinates.png?raw=true "Title")
  
 ## Fuerza de tiro
  
