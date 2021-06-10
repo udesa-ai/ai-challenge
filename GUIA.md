@@ -406,7 +406,7 @@ public override void OnUpdate()
 }
 ```
  
-Si el jugador esta cerca de la pelota, moverlo hacia la misma y si no, pararse cerca de la posición A2 (posicion defensiva):
+Si la pelota esta cerca del arco, moverse hacia la misma y si no, pararse cerca de la posición A2 (posicion defensiva):
  
 ```csharp
 public override void OnUpdate()
