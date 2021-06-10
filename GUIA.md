@@ -372,7 +372,27 @@ recibe: Vector3 start, Vector3 end, Color, Float duration
 Debug.DrawRay(GetPosition(), GetDirectionTo(ballPosition), Color.blue, 0.2f);
 ```
 recibe: Vector3 start, Vector3 dir, Color, Float duration
-     
+
+## Vectores
+
+Para definir un vector entre dos puntos: (x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) y (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>)
+
+Lo hacemos restando componente a componente: Vector = (x<sub>1</sub>-x<sub>0</sub> , y<sub>1</sub>-y<sub>0</sub> , z<sub>1</sub>-z<sub>0</sub>)
+
+Vector A = (3-0, 0-0, 1-0) = (3, 0, 1) y Vector C = (5-0, 0-0, 4-0) = (5, 0, 4)
+
+![coords](ReadmeResources/vector.png?raw=true "Title")
+
+
+Vector B = (5-3, 0-0, 4-1) = (2, 0, 3) = Vector C - Vector A = (5, 0, 4) - (3, 0, 1)
+
+Para hacer el cálculo de la imagen en C#:
+```csharp
+var vectorA = new Vector3(3.0f, 0.0f, 1.0f);
+var vectorC = new Vector3(5.0f, 0.0f, 4.0f);
+var vectorB = vectorC - vectorA;
+```
+
 ## Ejemplos
  
 Mover el jugador hacia la pelota:
@@ -434,6 +454,16 @@ public override void OnScoreBoardChanged(ScoreBoard scoreBoard)
 }
 ```
  
+Obtener la distancia de la pelota a la recta imaginaria entre el jugador y el arco:
+ 
+```csharp
+var startingPoint = GetPosition();
+var direction = GetDirectionTo(GetRivalGoalPosition());
+var point = GetBallPosition();
+
+Ray ray = new Ray(startingPoint, Vector3.Normalize(direction));
+float distance = Vector3.Cross(ray.direction, point - ray.origin).magnitude;
+```
 
 ## Tutorial C#
 
