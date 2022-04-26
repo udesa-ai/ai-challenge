@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44686925, g: 0.49674875, b: 0.5749889, a: 1}
+  m_IndirectSpecularColor: {r: 0.44945252, g: 0.49952567, b: 0.5757004, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1529,7 +1529,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323650419}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 0.98039216, g: 0.68235296, b: 0.5411765, a: 1}
@@ -1758,11 +1758,61 @@ PrefabInstance:
       propertyPath: AudioContext
       value: 
       objectReference: {fileID: 682132655}
+    - target: {fileID: 1331319392417287463, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392417287463, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392417287463, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392417287463, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392417287463, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1331319392549980946, guid: f249c04a83ed425795420b445f68cf3f,
         type: 3}
       propertyPath: AudioContext
       value: 
       objectReference: {fileID: 682132655}
+    - target: {fileID: 1331319392709655854, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392709655854, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392709655854, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392709655854, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392709655854, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Bias
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 1331319392709655855, guid: f249c04a83ed425795420b445f68cf3f,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -1792,6 +1842,56 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -323.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392779686897, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392779686897, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392779686897, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392779686897, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392779686897, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Bias
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392867808357, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392867808357, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392867808357, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392867808357, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319392867808357, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Bias
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1331319393584061753, guid: f249c04a83ed425795420b445f68cf3f,
         type: 3}
@@ -1868,6 +1968,31 @@ PrefabInstance:
       propertyPath: AudioContext
       value: 
       objectReference: {fileID: 682132655}
+    - target: {fileID: 1331319394162375777, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319394162375777, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319394162375777, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319394162375777, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331319394162375777, guid: f249c04a83ed425795420b445f68cf3f,
+        type: 3}
+      propertyPath: m_Shadows.m_Bias
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 1904307864245662246, guid: f249c04a83ed425795420b445f68cf3f,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -741,7 +741,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Inicio rapido
+  m_Text: Amistoso
 --- !u!222 &775637284
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1315,7 +1315,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Iniciar Torneo
+  m_Text: Torneo
 --- !u!222 &1652892376
 CanvasRenderer:
   m_ObjectHideFlags: 0
