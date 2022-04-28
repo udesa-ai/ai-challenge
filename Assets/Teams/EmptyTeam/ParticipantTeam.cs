@@ -19,7 +19,5 @@ namespace Teams.ParticipantTeam
         public string GetName() => "Participant Team";
 
         public string TeamShield => "Black";
-
-
     }
 }

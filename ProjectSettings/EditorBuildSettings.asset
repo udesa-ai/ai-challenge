@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Stadium.unity
     guid: 623365f96874f4887a8b08896fa92597
   - enabled: 1
-    path: Assets/Scenes/Index.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 3b8c1e0565e22466fbd230cf688e0a08
   - enabled: 1
     path: Assets/Scenes/TournamentSetUp.unity
