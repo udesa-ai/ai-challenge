@@ -21,28 +21,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7298A3B-6A7E-447D-9452-CDC5DA11CB49/79/b7e06b10/TeamPlayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7298A3B-6A7E-447D-9452-CDC5DA11CB49/08/222697ab/Team.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
-    <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/Papas/ParticipantTeam.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/Zapla/ParticipantTeam.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/TeamCheat/TeamCheat.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/LAR/ParticipantTeam.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/Papas/PlayerThree.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/Papas/PlayerTwo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/Defensores/NachoTeam.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/Papas/PlayerOne.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/LAR/Ghersin.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/LAR/Giribet.cs" />
-      <option value="$PROJECT_DIR$/Assets/Teams/LAR/Mas.cs" />
-    </changedPaths>
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1t2ag3sdwCxMwSCoC0xsnyPE4bL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,24 +49,19 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2c9000cc-a420-45ad-a02e-79c8e192c528" name="Default Changelist" comment="" />
@@ -96,6 +80,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
