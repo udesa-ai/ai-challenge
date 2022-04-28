@@ -1,5 +1,6 @@
 using System.Collections;
 using System.IO;
+using System.Security.Cryptography;
 using Core.Utils;
 using DataObjects;
 using Newtonsoft.Json;
@@ -19,23 +20,29 @@ public class TournamentViewLoader : MonoBehaviour
 
     void ConvertSvg(string url)
     {
-        var rawBody = new SvgConverterBody
+        var rawBody = new
         {
             Parameters = new object[]
-            {
-                new SvgConverterFileParameter
-                {
-                    Name = "File",
-                    FileValue = new SvgConverterFileValue { Url = url}
-                }, 
-                new SvgConverterOptionParameter
-                {
-                    Name = "StoreFile",
-                    Value = true
-                }
-            }
+                {new {Name = "File", FileValue = new {Url = url}}, new {Name = "StoreFile", Value = true}}
         };
         
+        // var rawBody = new SvgConverterBody
+        // {
+        //     Parameters = new object[]
+        //     {
+        //         new SvgConverterFileParameter
+        //         {
+        //             Name = "File",
+        //             FileValue = new SvgConverterFileValue { Url = url}
+        //         }, 
+        //         new SvgConverterOptionParameter
+        //         {
+        //             Name = "StoreFile",
+        //             Value = true
+        //         }
+        //     }
+        // };
+
         Debug.Log(JsonConvert.SerializeObject(rawBody));
 
         web.Post("https://v2.convertapi.com/convert/svg/to/png?Secret=LxFjHfkOFFKkyXcT", rawBody, ParseResponse);
