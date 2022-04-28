@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Linq;
+using Core.Core.Manager;
 using Core.Utils;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -12,7 +13,8 @@ public class TournamentViewLoader : MonoBehaviour
     [SerializeField] WebHelper web;
     void Start()
     {
-        ConvertSvg($"https://challonge.com/{tournament}.svg");
+        var url = MainManager.Instance != null ? MainManager.Instance.SelectedTournament.Url : tournament;
+        ConvertSvg($"https://challonge.com/{url}.svg");
     }
 
     void ConvertSvg(string url)
