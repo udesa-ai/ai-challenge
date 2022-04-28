@@ -11,33 +11,31 @@ public class TournamentViewLoader : MonoBehaviour
     [SerializeField] LayoutElement scalableContainer;
     [SerializeField] string tournament;
     [SerializeField] WebHelper web;
-    void Start()
-    {
-        ConvertSvg($"https://challonge.com/{tournament}.svg");
-    }
+    void Start() => LoadBracketView($"https://challonge.com/{tournament}.svg");
 
-    void ConvertSvg(string url)
-    {
-        var rawBody = new
+    void LoadBracketView(string targetFile) => 
+        web.Post("https://v2.convertapi.com/convert/svg/to/png?Secret=LxFjHfkOFFKkyXcT", SvgConverterBody(targetFile), ParseConverterResponse);
+
+    object SvgConverterBody(string targetFile) =>
+        new
         {
             Parameters = new object[]
             {
-                new {Name = "File", FileValue = new {Url = url}}, 
+                new {Name = "File", FileValue = new {Url = targetFile}}, 
                 new {Name = "StoreFile", Value = true},
                 new {Name = "TransparentColor", Value = "255,255,255"},
                 new {Name = "ImageQuality", Value = "100"}
             }
         };
-        web.Post("https://v2.convertapi.com/convert/svg/to/png?Secret=LxFjHfkOFFKkyXcT", rawBody, ParseResponse);
-    }
 
-    void ParseResponse(string response)
+    void ParseConverterResponse(string response)
     {
         var extractedPngUrl = response.Split('"').First(s => s.Contains("https"));
-        StartCoroutine(GetPlayerImage(extractedPngUrl));
+        StartCoroutine(DownloadPngIntoRenderer(extractedPngUrl));
     }
 
-    IEnumerator GetPlayerImage(string url)
+    //TODO: Build a GetSprite in the WebHelper class and use that here
+    IEnumerator DownloadPngIntoRenderer(string url)
     {
         UnityWebRequest www = UnityWebRequestTexture.GetTexture(url);
         yield return www.SendWebRequest();
