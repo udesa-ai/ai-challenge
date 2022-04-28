@@ -1,9 +1,6 @@
 using System.Collections;
-using System.IO;
-using System.Security.Cryptography;
+using System.Linq;
 using Core.Utils;
-using DataObjects;
-using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -23,34 +20,20 @@ public class TournamentViewLoader : MonoBehaviour
         var rawBody = new
         {
             Parameters = new object[]
-                {new {Name = "File", FileValue = new {Url = url}}, new {Name = "StoreFile", Value = true}}
+            {
+                new {Name = "File", FileValue = new {Url = url}}, 
+                new {Name = "StoreFile", Value = true},
+                new {Name = "TransparentColor", Value = "255,255,255"},
+                new {Name = "ImageQuality", Value = "100"}
+            }
         };
-        
-        // var rawBody = new SvgConverterBody
-        // {
-        //     Parameters = new object[]
-        //     {
-        //         new SvgConverterFileParameter
-        //         {
-        //             Name = "File",
-        //             FileValue = new SvgConverterFileValue { Url = url}
-        //         }, 
-        //         new SvgConverterOptionParameter
-        //         {
-        //             Name = "StoreFile",
-        //             Value = true
-        //         }
-        //     }
-        // };
-
-        Debug.Log(JsonConvert.SerializeObject(rawBody));
-
         web.Post("https://v2.convertapi.com/convert/svg/to/png?Secret=LxFjHfkOFFKkyXcT", rawBody, ParseResponse);
     }
 
-    void ParseResponse(string obj)
+    void ParseResponse(string response)
     {
-        Debug.Log(obj);
+        var extractedPngUrl = response.Split('"').First(s => s.Contains("https"));
+        StartCoroutine(GetPlayerImage(extractedPngUrl));
     }
 
     IEnumerator GetPlayerImage(string url)
