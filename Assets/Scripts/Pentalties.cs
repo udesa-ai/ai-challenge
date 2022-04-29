@@ -5,19 +5,32 @@ using UnityEngine;
 
 public class Pentalties : MonoBehaviour
 {
-    [SerializeField] Rigidbody ball;
     [SerializeField] Transform[] targets;
     [SerializeField] Animator keeperAnimator;
     [SerializeField] Transform penaltySpot;
+    [SerializeField] Collider goalCollider;
+    [SerializeField] PenaltyBall ball;
     
     [SerializeField] float aimRandomness;
     [SerializeField] float kickForceMin;
     [SerializeField] float kickForceMax;
     [SerializeField] float resetTime;
+
+    int scoreHome;
+    int scoreAway;
+    bool homeToKick = true;
     
     bool readyToShoot = true;
     string[] diveTriggers = new[] {"None", "DiveRight", "DiveLeft"};
-    
+
+    void Start() => 
+        ball.Initialize(OnGoal, OnSave);
+
+    void OnSave()
+    {
+        Debug.Log("What a save!");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) & readyToShoot)
@@ -35,10 +48,31 @@ public class Pentalties : MonoBehaviour
     IEnumerator WaitAndReset()
     {
         yield return new WaitForSeconds(resetTime);
-        ball.velocity = Vector3.zero;
-        ball.angularVelocity = Vector3.zero;
-        ball.transform.position = penaltySpot.transform.position;
+        Reset();
+    }
+
+    void Reset()
+    {
+        ball.Reset(penaltySpot.transform.position);
         readyToShoot = true;
+        goalCollider.enabled = true;
+        SwitchTeams();
+    }
+
+    void SwitchTeams()
+    {
+        homeToKick = !homeToKick;
+    }
+
+    void OnGoal()
+    {
+        goalCollider.enabled = false;
+        if (homeToKick)
+            scoreHome++;
+        else
+            scoreAway++;
+        
+        Debug.Log($"Goal!!! Home-{scoreHome} Away-{scoreAway}");
     }
 
     Vector3 RandomTarget() =>
@@ -48,7 +82,7 @@ public class Pentalties : MonoBehaviour
     {
         var aimedTarget = target + Random.insideUnitSphere * aimRandomness;
         var direction = (aimedTarget - ball.transform.position).normalized;
-        ball.AddForce(direction * Random.Range(kickForceMin, kickForceMax));
+        ball.ShootTo(direction * Random.Range(kickForceMin, kickForceMax));
     }
     
 }
