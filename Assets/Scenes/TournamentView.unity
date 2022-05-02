@@ -1081,6 +1081,7 @@ MonoBehaviour:
   AwayShieldImage: {fileID: 1643418249}
   HomeTeamName: {fileID: 1782412536}
   AwayTeamName: {fileID: 1108370969}
+  RoundText: {fileID: 861465592}
 --- !u!222 &693907101
 CanvasRenderer:
   m_ObjectHideFlags: 0
