@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayNextMatch: {fileID: 1274191312}
-  GoBack: {fileID: 1115591319}
+  GoBackButton: {fileID: 1115591319}
   WebHelper: {fileID: 1000138049}
   HomeShieldImage: {fileID: 616304591}
   AwayShieldImage: {fileID: 1643418249}
