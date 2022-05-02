@@ -1074,9 +1074,13 @@ MonoBehaviour:
   m_Script: {fileID: 85302653, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayNextMatch: {fileID: 0}
-  GoBack: {fileID: 0}
+  PlayNextMatch: {fileID: 1274191312}
+  GoBack: {fileID: 1115591319}
   WebHelper: {fileID: 1000138049}
+  HomeShieldImage: {fileID: 616304591}
+  AwayShieldImage: {fileID: 1643418249}
+  HomeTeamName: {fileID: 1782412536}
+  AwayTeamName: {fileID: 1108370969}
 --- !u!222 &693907101
 CanvasRenderer:
   m_ObjectHideFlags: 0
