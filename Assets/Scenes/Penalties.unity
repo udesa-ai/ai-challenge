@@ -1778,8 +1778,6 @@ MonoBehaviour:
   kickForceMax: 1200
   resetTime: 1.5
   shotTime: 0.5
-  homeJersey: {r: 0.8490566, g: 0.18823424, b: 0.18823424, a: 1}
-  awayJersey: {r: 0.20496619, g: 0.4684838, b: 0.8867924, a: 1}
   kicker: {fileID: 1065210262}
   keeper: {fileID: 1896557815}
   homeScoreBoard: {fileID: 1048688351831637118}
@@ -8493,68 +8491,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!33 &582299188869772840
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582299188869772844}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &582299188869772842
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582299188869772844}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 0dd4a97f1c461a549b7f832a8912e702, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &582299188869772843
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582299188869772844}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &582299188869772844
 GameObject:
   m_ObjectHideFlags: 0
@@ -8564,9 +8500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 582299188869772845}
-  - component: {fileID: 582299188869772840}
-  - component: {fileID: 582299188869772843}
-  - component: {fileID: 582299188869772842}
+  - component: {fileID: 582299188869772846}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -8581,13 +8515,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582299188869772844}
-  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.29, y: 0, z: -0.06999999}
-  m_LocalScale: {x: 24.587954, y: 0.10692224, z: 16.57295}
+  m_LocalScale: {x: 18, y: 28, z: 1}
   m_Children: []
   m_Father: {fileID: 444564319}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!64 &582299188869772846
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582299188869772844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &582299188881021680
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22731,6 +22679,7 @@ MonoBehaviour:
   - {fileID: 1309663563}
   - {fileID: 566493106}
   - {fileID: 1720675664}
+  teamEmblem: {fileID: 1856384263083825608}
   teamName: {fileID: 7066805814636827357}
 --- !u!224 &1066881007344867591
 RectTransform:
@@ -31363,6 +31312,7 @@ MonoBehaviour:
   - {fileID: 1301354281}
   - {fileID: 1155736640}
   - {fileID: 1091549267}
+  teamEmblem: {fileID: 2244860626770192016}
   teamName: {fileID: 5105580686117118119}
 --- !u!114 &5409605684097624746
 MonoBehaviour:

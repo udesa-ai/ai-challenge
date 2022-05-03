@@ -24,6 +24,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltyScoreBoard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ExtensionMethods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D4ABE2C9-20DA-41D5-867E-2FE827B4345E/64/99c6eb14/TeamPersistence.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E00B12F-17EA-49DA-99C9-BF47096244DF/7d/a0ba7e6a/DownloadHandlerFile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TeamPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltyBall.cs" root0="FORCE_HIGHLIGHTING" />
@@ -38,9 +39,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Keeper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltyBall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PenaltyScoreBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeamPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ExtensionMethods.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PenaltyScoreBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pentalties.cs" />
       </list>
     </option>

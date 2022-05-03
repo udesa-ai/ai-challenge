@@ -1,3 +1,5 @@
+using Core.Games;
+using Core.Utils;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +12,7 @@ namespace DefaultNamespace
         [SerializeField] Color pipMiss;
 
         [SerializeField] Image[] pips;
+        [SerializeField] Image teamEmblem;
         [SerializeField] Text teamName;
         
         int nextPipIndex = 0;
@@ -33,6 +36,12 @@ namespace DefaultNamespace
         {
             pips[nextPipIndex].color = pipMiss;
             nextPipIndex++;
+        }
+
+        public void SetTeamInfo(Team team)
+        {
+            teamEmblem.sprite = team.GetTeamShield();
+            teamName.text = team.GetName();
         }
     }
 }

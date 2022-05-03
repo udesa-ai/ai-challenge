@@ -1,4 +1,5 @@
 using System.Collections;
+using Core.TeamSelector;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,8 +18,8 @@ public class Pentalties : MonoBehaviour
     [SerializeField] float resetTime;
     [SerializeField] float shotTime;
 
-    [SerializeField] Color homeJersey;
-    [SerializeField] Color awayJersey;
+    Color homeJersey;
+    Color awayJersey;
     [SerializeField] TeamPlayer kicker;
     [SerializeField] TeamPlayer keeper;
 
@@ -37,8 +38,20 @@ public class Pentalties : MonoBehaviour
 
     void Start()
     {
+        LoadTeams();
         ball.Initialize(OnGoal, OnSave);
         StartCoroutine(WaitAndTakeShot());
+    }
+
+    void LoadTeams()
+    {
+        homeJersey = TeamPersistence.Home.PrimaryColor;
+        awayJersey = TeamPersistence.Away.PrimaryColor;
+        homeScoreBoard.SetTeamInfo(TeamPersistence.Home);
+        awayScoreBoard.SetTeamInfo(TeamPersistence.Away);
+        
+        kicker.ChangeTeam(homeJersey);
+        keeper.ChangeTeam(awayJersey);
     }
 
     IEnumerator WaitAndTakeShot()
@@ -75,16 +88,33 @@ public class Pentalties : MonoBehaviour
         readyToShoot = true;
         goalCollider.enabled = true;
         scored = false;
-        
+
+        if (PenaltiesCompleted())
+        {
+            Debug.Log($"Penalty round ended, Home-{scoreHome} Away-{scoreAway}");
+        }
+        else
+        {
+            ResetPips();
+            SwitchTeams();
+            StartCoroutine(WaitAndTakeShot());
+        }
+    }
+
+    bool PenaltiesCompleted()
+    {
+        if (scoreHome != scoreAway)
+            return shots == 6 || (shots > 6 && shots % 2 == 0);
+        return false;
+    }
+
+    void ResetPips()
+    {
         if (shots % 6 == 0)
         {
             homeScoreBoard.Reset();
             awayScoreBoard.Reset();
         }
-        
-        SwitchTeams();
-        
-        StartCoroutine(WaitAndTakeShot());
     }
 
     void ResolveMiss()
@@ -118,8 +148,6 @@ public class Pentalties : MonoBehaviour
             ScoreHome();
         else
             ScoreAway();
-        
-        Debug.Log($"Goal!!! Home-{scoreHome} Away-{scoreAway}");
     }
 
     void ScoreAway()
