@@ -1011,6 +1011,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff067de2195a0464abdbc025a1c6cfa1, type: 3}
+--- !u!114 &274868328 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8959141253761782456, guid: ff067de2195a0464abdbc025a1c6cfa1,
+    type: 3}
+  m_PrefabInstance: {fileID: 274868327}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1611872203, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &284739145
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,6 +4411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1764271661}
   - component: {fileID: 1764271662}
+  - component: {fileID: 1764271663}
   m_Layer: 0
   m_Name: Penalties
   m_TagString: Untagged
@@ -4456,6 +4469,23 @@ MonoBehaviour:
   homeScoreBoard: {fileID: 1048688351831637118}
   awayScoreBoard: {fileID: 5409330016323004296}
   shotCounter: {fileID: 1815870414266875273}
+  audio: {fileID: 1764271663}
+--- !u!114 &1764271663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764271660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f130c6bc9b444dabbdc44b3f10b1df5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 274868328}
+  cheerClip: {fileID: 8300000, guid: 5afcfedb8067b4c9ea38a7696f9f08be, type: 3}
+  kickClip: {fileID: 8300000, guid: 83c96c329d54e489f863e619713ba9f1, type: 3}
+  ambientClip: {fileID: 8300000, guid: e64d44687262049ac816749a415235d5, type: 3}
 --- !u!1 &1764512999
 GameObject:
   m_ObjectHideFlags: 0

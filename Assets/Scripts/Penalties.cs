@@ -1,4 +1,5 @@
 using System.Collections;
+using Core.Audio;
 using Core.TeamSelector;
 using DefaultNamespace;
 using Presentation.FinishGame;
@@ -29,6 +30,8 @@ public class Penalties : MonoBehaviour
     [SerializeField] PenaltyScoreBoard homeScoreBoard;
     [SerializeField] PenaltyScoreBoard awayScoreBoard;
     [SerializeField] Text shotCounter;
+
+    [SerializeField] PenaltiesAudio audio;
 
     int scoreHome;
     int scoreAway;
@@ -66,6 +69,7 @@ public class Penalties : MonoBehaviour
     void OnSave()
     {
         Debug.Log("What a save!");
+        audio.PlayCheer();
     }
 
     void KickPenalty()
@@ -75,6 +79,7 @@ public class Penalties : MonoBehaviour
         readyToShoot = false;
         shots++;
         shotCounter.text = shots.ToString();
+        audio.PlayKick();
         StartCoroutine(WaitAndReset());
     }
 
@@ -152,6 +157,8 @@ public class Penalties : MonoBehaviour
             ScoreHome();
         else
             ScoreAway();
+        
+        audio.PlayCheer();
     }
 
     void ScoreAway()
