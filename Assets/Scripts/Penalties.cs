@@ -1,10 +1,11 @@
 using System.Collections;
 using Core.TeamSelector;
 using DefaultNamespace;
+using Presentation.FinishGame;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Pentalties : MonoBehaviour
+public class Penalties : MonoBehaviour
 {
     [SerializeField] Transform[] targets;
     [SerializeField] Animator keeperAnimator;
@@ -17,6 +18,8 @@ public class Pentalties : MonoBehaviour
     [SerializeField] float kickForceMax;
     [SerializeField] float resetTime;
     [SerializeField] float shotTime;
+
+    [SerializeField] private FinishGameView FinishGameView;
 
     Color homeJersey;
     Color awayJersey;
@@ -91,6 +94,7 @@ public class Pentalties : MonoBehaviour
 
         if (PenaltiesCompleted())
         {
+            FinishGameView.Initialize(scoreHome, scoreAway);
             Debug.Log($"Penalty round ended, Home-{scoreHome} Away-{scoreAway}");
         }
         else
