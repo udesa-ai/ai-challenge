@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9caafecf-d44c-49e2-ab34-2141ede8eb21" name="Default Changelist" comment="Add index and tournament set up screen">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.etersoccer-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.etersoccer-unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Penalties.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Penalties.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Penalties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Penalties.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-Challenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-Challenge/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +130,7 @@
       <workItem from="1623163707604" duration="8000" />
       <workItem from="1650996207474" duration="505000" />
       <workItem from="1651085312374" duration="5874000" />
-      <workItem from="1651503368954" duration="6584000" />
+      <workItem from="1651503368954" duration="7348000" />
     </task>
     <servers />
   </component>
