@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9caafecf-d44c-49e2-ab34-2141ede8eb21" name="Default Changelist" comment="Add index and tournament set up screen">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-Challenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-Challenge/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.etersoccer-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.etersoccer-unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Penalties.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Penalties.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Penalties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Penalties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +20,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Scripts/Penalties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Scripts/Penalties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Scripts/Penalties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Scripts/Penalties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Scripts/Penalties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/27338101-B373-4139-82FB-6C7D2129A90F/34/4de5ef13/TeamPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/44457339-28EF-43C3-9924-DDA4123524FA/1b/e93a226f/TeamPlayer.cs" root0="SKIP_HIGHLIGHTING" />
@@ -124,7 +136,7 @@
       <workItem from="1623163707604" duration="8000" />
       <workItem from="1650996207474" duration="505000" />
       <workItem from="1651085312374" duration="5874000" />
-      <workItem from="1651503368954" duration="6267000" />
+      <workItem from="1651503368954" duration="6584000" />
     </task>
     <servers />
   </component>
