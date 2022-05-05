@@ -38,7 +38,6 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataObjects/SvgConverterBody.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Keeper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltyBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeamPlayer.cs" />
@@ -48,6 +47,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Penalties.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" />
       </list>
     </option>
   </component>
