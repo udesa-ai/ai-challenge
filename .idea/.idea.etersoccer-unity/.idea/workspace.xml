@@ -28,6 +28,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TeamPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ExtensionMethods.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Penalties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltyBall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,6 +47,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Pentalties.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Penalties.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" />
       </list>
     </option>
   </component>

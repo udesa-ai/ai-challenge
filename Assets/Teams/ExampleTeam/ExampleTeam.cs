@@ -16,7 +16,7 @@ namespace Teams.ExampleTeam
         
         public Color PrimaryColor => new Color(0.6f, 0.6f, 1f);
 
-        public string GetName() => "Example team";
+        public string GetName() => "Example Team";
         
         public string TeamShield => "Orange";
 

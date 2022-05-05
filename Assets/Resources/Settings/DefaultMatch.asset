@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 2145420097, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: DefaultMatch
   m_EditorClassIdentifier: 
-  MatchLength: 60
-  OvertimeLength: 45
+  MatchLength: 40
+  OvertimeLength: 0
