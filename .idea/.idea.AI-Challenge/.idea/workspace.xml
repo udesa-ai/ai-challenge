@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9caafecf-d44c-49e2-ab34-2141ede8eb21" name="Default Changelist" comment="Add index and tournament set up screen">
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Spinner.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Spinner/spin.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Spinner/spin.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/football.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/gearIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/gearIcon.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-Challenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-Challenge/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.etersoccer-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.etersoccer-unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/EterSoccer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/EterSoccer.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/DefaultMatch.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/DefaultMatch.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Penalties.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Penalties.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TournamentMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TournamentMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TournamentView.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TournamentView.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TournamentViewSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TournamentViewSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TournamentView.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TournamentView.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/icons8-settings-80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/icons8-settings-80.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/football.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +38,12 @@
     <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/Assets/Scripts/Penalties.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/diegobecco/Documents/proyectos/AI-Challenge/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/27338101-B373-4139-82FB-6C7D2129A90F/34/4de5ef13/TeamPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/44457339-28EF-43C3-9924-DDA4123524FA/1b/e93a226f/TeamPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/44457339-28EF-43C3-9924-DDA4123524FA/cd/e1a82f6c/UnityPlayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/781bba4f92734be995c349ac89ec8b871c800/15/92a1a918/FinishGameView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/781bba4f92734be995c349ac89ec8b871c800/bd/b35a9a1b/WebHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/781bba4f92734be995c349ac89ec8b871c800/15/92a1a918/FinishGameView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/781bba4f92734be995c349ac89ec8b871c800/bd/b35a9a1b/WebHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9e67b8dd38744db49a5347f12a14c50d1c600/32/a317bcbd/FinishGameView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C1806A14-6A31-4638-83E9-36CFCA4BAB65/12/c2422e1a/TeamPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b0b2d27732af4e0fa4e4ec63c001ce0712800/03/f0b04c9d/Team.cs" root0="SKIP_HIGHLIGHTING" />
@@ -137,7 +148,7 @@
       <workItem from="1623163707604" duration="8000" />
       <workItem from="1650996207474" duration="505000" />
       <workItem from="1651085312374" duration="5874000" />
-      <workItem from="1651503368954" duration="8349000" />
+      <workItem from="1651503368954" duration="9516000" />
     </task>
     <servers />
   </component>

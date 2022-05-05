@@ -9,6 +9,8 @@ using UnityEngine.UI;
 public class TournamentViewLoader : MonoBehaviour
 {
     [SerializeField] Image viewport;
+    [SerializeField] Image viewportMask;
+    [SerializeField] GameObject spinner;
     [SerializeField] LayoutElement scalableContainer;
     [SerializeField] string tournament;
     [SerializeField] WebHelper web;
@@ -49,6 +51,8 @@ public class TournamentViewLoader : MonoBehaviour
         Sprite spriteToUse = Sprite.Create(myTexture, rec, new Vector2(0.5f, 0.5f), 100);
 
         viewport.sprite = spriteToUse;
+        viewportMask.color = Color.white;
+        spinner.SetActive(false);
         scalableContainer.minWidth = myTexture.width;
         scalableContainer.minHeight = myTexture.height;
     }

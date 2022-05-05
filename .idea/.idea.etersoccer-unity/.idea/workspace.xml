@@ -28,6 +28,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TeamPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ExtensionMethods.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Penalties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltyBall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,7 +38,6 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataObjects/SvgConverterBody.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Keeper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltyBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeamPlayer.cs" />
@@ -46,6 +46,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Pentalties.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Penalties.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" />
       </list>
     </option>
   </component>
