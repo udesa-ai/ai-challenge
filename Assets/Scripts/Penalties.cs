@@ -1,5 +1,8 @@
 using System.Collections;
+using Core.Core.Manager;
+using Core.Games.Models;
 using Core.TeamSelector;
+using Core.Utils;
 using DefaultNamespace;
 using Presentation.FinishGame;
 using UnityEngine;
@@ -20,6 +23,7 @@ public class Penalties : MonoBehaviour
     [SerializeField] float shotTime;
 
     [SerializeField] private FinishGameView FinishGameView;
+    [SerializeField] private WebHelper webHelper;
 
     Color homeJersey;
     Color awayJersey;
@@ -95,6 +99,10 @@ public class Penalties : MonoBehaviour
         if (PenaltiesCompleted())
         {
             FinishGameView.Initialize(scoreHome, scoreAway);
+            if (MainManager.Instance != null && MainManager.Instance.isTournament)
+                webHelper.Put(
+                    $"https://{PlayerPrefs.GetString("username")}:{PlayerPrefs.GetString("api_key")}@api.challonge.com/v1/tournaments/{MainManager.Instance.SelectedTournament.Url}/matches/{MainManager.Instance.CurrentMatch.Id}.json",
+                    MatchResultBody(), OnComplete);
             Debug.Log($"Penalty round ended, Home-{scoreHome} Away-{scoreAway}");
         }
         else
@@ -104,6 +112,26 @@ public class Penalties : MonoBehaviour
             StartCoroutine(WaitAndTakeShot());
         }
     }
+    
+    private void OnComplete(string obj)
+    {
+        Debug.Log(obj);
+    }
+
+    private object MatchResultBody()
+    {
+        return new Root
+        {
+            Match = new Match
+            {
+                ScoresCsv = $"{scoreHome}-{scoreAway}",
+                WinnerId = GetWinnerId()
+            }
+        };
+    }
+    
+    private int GetWinnerId() => scoreHome > scoreAway ? MainManager.Instance.HomeTeam.Id : MainManager.Instance.AwayTeam.Id;
+
 
     bool PenaltiesCompleted()
     {
