@@ -26,7 +26,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D4ABE2C9-20DA-41D5-867E-2FE827B4345E/64/99c6eb14/TeamPersistence.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E00B12F-17EA-49DA-99C9-BF47096244DF/7d/a0ba7e6a/DownloadHandlerFile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TeamPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ExtensionMethods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Teams/EmptyTeam/ParticipantTeam.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/AnimationTriggers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Penalties.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,7 +37,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataObjects/SvgConverterBody.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Keeper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltyBall.cs" />
@@ -44,10 +44,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ExtensionMethods.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltyScoreBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pentalties.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Penalties.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" />
-        <option value="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TournamentViewLoader.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Teams/EmptyTeam/ParticipantTeam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Penalties.cs" />
       </list>
     </option>
   </component>

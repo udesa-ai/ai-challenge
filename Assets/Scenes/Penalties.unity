@@ -4452,8 +4452,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targets:
   - {fileID: 2054432181}
-  - {fileID: 476669275}
   - {fileID: 977242011}
+  - {fileID: 476669275}
   keeperAnimator: {fileID: 1896557813}
   penaltySpot: {fileID: 2006055371}
   goalCollider: {fileID: 4731806613051280401}

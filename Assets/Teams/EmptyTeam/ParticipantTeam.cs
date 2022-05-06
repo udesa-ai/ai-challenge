@@ -9,6 +9,10 @@ namespace Teams.ParticipantTeam
     [UsedImplicitly]
     public class ExampleTeam : Team
     {
+        public TargetPreference PenaltyDivePreference { get; } = new TargetPreference(3,1,4);
+
+        public TargetPreference PenaltyKickPreference { get; } = new TargetPreference(2,1,2);
+        
         public TeamPlayer GetPlayerOne() => new PlayerOne();
 
         public TeamPlayer GetPlayerTwo() => new PlayerTwo();

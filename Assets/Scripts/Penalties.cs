@@ -1,6 +1,6 @@
 using System.Collections;
-using Core.Audio;
 using Core.Core.Manager;
+using Core.Games;
 using Core.Games.Models;
 using Core.TeamSelector;
 using Core.Utils;
@@ -26,8 +26,9 @@ public class Penalties : MonoBehaviour
     [SerializeField] private FinishGameView FinishGameView;
     [SerializeField] private WebHelper webHelper;
 
-    Color homeJersey;
-    Color awayJersey;
+    Team homeTeam;
+    Team awayTeam;
+    
     [SerializeField] TeamPlayer kicker;
     [SerializeField] TeamPlayer keeper;
 
@@ -44,7 +45,6 @@ public class Penalties : MonoBehaviour
     bool scored;
     
     bool readyToShoot = true;
-    string[] diveTriggers = new[] {"None", "DiveRight", "DiveLeft"};
 
     void Start()
     {
@@ -55,13 +55,13 @@ public class Penalties : MonoBehaviour
 
     void LoadTeams()
     {
-        homeJersey = TeamPersistence.Home.PrimaryColor;
-        awayJersey = TeamPersistence.Away.PrimaryColor;
-        homeScoreBoard.SetTeamInfo(TeamPersistence.Home);
-        awayScoreBoard.SetTeamInfo(TeamPersistence.Away);
+        homeTeam = TeamPersistence.Home;
+        awayTeam = TeamPersistence.Away;
+        homeScoreBoard.SetTeamInfo(homeTeam);
+        awayScoreBoard.SetTeamInfo(awayTeam);
         
-        kicker.ChangeTeam(homeJersey);
-        keeper.ChangeTeam(awayJersey);
+        kicker.ChangeTeam(homeTeam.PrimaryColor);
+        keeper.ChangeTeam(awayTeam.PrimaryColor);
     }
 
     IEnumerator WaitAndTakeShot()
@@ -78,13 +78,23 @@ public class Penalties : MonoBehaviour
 
     void KickPenalty()
     {
-        KickBall(RandomTarget());
-        keeperAnimator.SetTrigger(diveTriggers.PickOne());
+        KickBall();
+        KeeperDive();
         readyToShoot = false;
         shots++;
         shotCounter.text = shots.ToString();
         audio.PlayKick();
         StartCoroutine(WaitAndReset());
+    }
+
+    void KeeperDive()
+    {
+        string diveTrigger;
+        if (homeToKick)
+            diveTrigger = GetTargetTrigger(awayTeam.PenaltyKickPreference.GetTarget());
+        else
+            diveTrigger = GetTargetTrigger(homeTeam.PenaltyKickPreference.GetTarget());
+        keeperAnimator.SetTrigger(diveTrigger);
     }
 
     IEnumerator WaitAndReset()
@@ -168,13 +178,13 @@ public class Penalties : MonoBehaviour
         homeToKick = !homeToKick;
         if (homeToKick)
         {
-            kicker.ChangeTeam(homeJersey);
-            keeper.ChangeTeam(awayJersey);
+            kicker.ChangeTeam(homeTeam.PrimaryColor);
+            keeper.ChangeTeam(awayTeam.PrimaryColor);
         }
         else
         {
-            kicker.ChangeTeam(awayJersey);
-            keeper.ChangeTeam(homeJersey);
+            kicker.ChangeTeam(awayTeam.PrimaryColor);
+            keeper.ChangeTeam(homeTeam.PrimaryColor);
         }
     }
 
@@ -206,11 +216,46 @@ public class Penalties : MonoBehaviour
     Vector3 RandomTarget() =>
         targets.PickOne().position;
 
-    void KickBall(Vector3 target)
+    void KickBall()
     {
+        Vector3 target;
+        if (homeToKick)
+            target = GetTargetPosition(homeTeam.PenaltyKickPreference.GetTarget());
+        else
+            target = GetTargetPosition(awayTeam.PenaltyKickPreference.GetTarget());
+
         var aimedTarget = target + Random.insideUnitSphere * aimRandomness;
         var direction = (aimedTarget - ball.transform.position).normalized;
         ball.ShootTo(direction * Random.Range(kickForceMin, kickForceMax));
     }
+
+    Vector3 GetTargetPosition(PenaltyTarget target)
+    {
+        switch (target)
+        {
+            case PenaltyTarget.Right:
+                return targets[0].position;
+            case PenaltyTarget.Center:
+                return targets[1].position;
+            case PenaltyTarget.Left:
+                return targets[2].position;
+        }
+        
+        return targets[1].position;
+    }
     
+    string GetTargetTrigger(PenaltyTarget target)
+    {
+        switch (target)
+        {
+            case PenaltyTarget.Right:
+                return "DiveRight";
+            case PenaltyTarget.Center:
+                return "None";
+            case PenaltyTarget.Left:
+                return "DiveLeft";
+        }
+        
+        return "None";
+    }
 }
