@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c9000cc-a420-45ad-a02e-79c8e192c528" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Scoreboard/ScoreBoardAnims.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Scoreboard/ScoreBoardAnims.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/EterSoccer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/EterSoccer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/UI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stadium.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stadium.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Game/ScoreBoard/ScoreCenter.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Game/ScoreBoard/ScoreCenter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Game/ScoreBoard/ScoreCenter.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Game/ScoreBoard/ScoreCenter.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/Ghersin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teams/LAR/Ghersin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/Giribet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teams/LAR/Giribet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/LAR/Mas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teams/LAR/Mas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teams/Papas/PlayerOne.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teams/Papas/PlayerOne.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TeamMenuItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TeamMenuItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TeamSelector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TeamSelector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.etersoccer-unity/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.etersoccer-unity/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.etersoccer-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.etersoccer-unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Menus/SettingsModal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Menus/SettingsModal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Menus/TournamentView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Menus/TournamentView.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TournamentSetUp.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TournamentSetUp.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +28,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D4ABE2C9-20DA-41D5-867E-2FE827B4345E/64/99c6eb14/TeamPersistence.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E00B12F-17EA-49DA-99C9-BF47096244DF/7d/a0ba7e6a/DownloadHandlerFile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TeamPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TeamSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Teams/EmptyTeam/ParticipantTeam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/AnimationTriggers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TeamMenuItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltiesAudio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Penalties.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,6 +54,8 @@
         <option value="$PROJECT_DIR$/Assets/Teams/ExampleTeam/ExampleTeam.cs" />
         <option value="$PROJECT_DIR$/Assets/Teams/EmptyTeam/ParticipantTeam.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Penalties.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TeamMenuItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TeamSelector.cs" />
       </list>
     </option>
   </component>
@@ -63,8 +69,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -76,10 +84,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3933">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="3933" />
+      <option name="pid" />
       <method v="2" />
     </configuration>
   </component>
@@ -97,11 +105,12 @@
       <workItem from="1621969758066" duration="1759000" />
       <workItem from="1622475555977" duration="2898000" />
       <workItem from="1622637174425" duration="1272000" />
+      <workItem from="1652284297108" duration="3977000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
@@ -110,7 +119,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
