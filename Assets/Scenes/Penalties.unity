@@ -2598,7 +2598,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1065210260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da40ddeb7de6431b8030fdbfcc1f8bbd, type: 3}
+  m_Script: {fileID: 1881408464, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 1913233208}
@@ -4406,8 +4406,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1764271661}
-  - component: {fileID: 1764271662}
   - component: {fileID: 1764271663}
+  - component: {fileID: 1764271662}
   m_Layer: 0
   m_Name: Penalties
   m_TagString: Untagged
@@ -4443,17 +4443,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1764271660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4ddbe04922b4481cb0cef16abf4bcef, type: 3}
+  m_Script: {fileID: -760655654, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets:
-  - {fileID: 2054432181}
-  - {fileID: 977242011}
-  - {fileID: 476669275}
+  targets: []
   keeperAnimator: {fileID: 1896557813}
   penaltySpot: {fileID: 2006055371}
   goalCollider: {fileID: 4731806613051280401}
-  ball: {fileID: 1331319392420855452}
+  ball: {fileID: 0}
   aimRandomness: 0.6
   kickForceMin: 900
   kickForceMax: 1200
@@ -4476,7 +4473,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1764271660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f130c6bc9b444dabbdc44b3f10b1df5f, type: 3}
+  m_Script: {fileID: 1713240650, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 274868328}
@@ -4849,7 +4846,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896557810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da40ddeb7de6431b8030fdbfcc1f8bbd, type: 3}
+  m_Script: {fileID: 1881408464, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 685996243}
@@ -25728,12 +25725,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1048688351831637117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56f00cc0d3934c97b67c32cc3546df8e, type: 3}
+  m_Script: {fileID: 1987072172, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipNeutral: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 1}
-  pipScore: {r: 0, g: 1, b: 0.31479836, a: 1}
-  pipMiss: {r: 1, g: 0, b: 0, a: 1}
+  pipNeutral: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 0}
+  pipScore: {r: 0, g: 1, b: 0.3137255, a: 0}
+  pipMiss: {r: 1, g: 0, b: 0, a: 0}
   pips:
   - {fileID: 1309663563}
   - {fileID: 566493106}
@@ -32082,12 +32079,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5409330016323004295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56f00cc0d3934c97b67c32cc3546df8e, type: 3}
+  m_Script: {fileID: 1987072172, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipNeutral: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 1}
-  pipScore: {r: 0, g: 1, b: 0.31479836, a: 1}
-  pipMiss: {r: 1, g: 0, b: 0, a: 1}
+  pipNeutral: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 0}
+  pipScore: {r: 0, g: 1, b: 0.3137255, a: 0}
+  pipMiss: {r: 1, g: 0, b: 0, a: 0}
   pips:
   - {fileID: 1301354281}
   - {fileID: 1155736640}

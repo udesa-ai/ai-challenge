@@ -87,8 +87,10 @@ namespace DefaultNamespace
             var tournament = JsonConvert.DeserializeObject<Root>(obj).Tournament;
             MainManager.Instance.SelectedTournament = tournament;
             MainManager.Instance.isTournament = true;
+            
             SceneManager.LoadScene(Scenes.Menu, LoadSceneMode.Single);
         }
+        
 
         private object CreateTournamentBody()
         {

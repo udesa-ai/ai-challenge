@@ -4491,7 +4491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2036699903}
   - component: {fileID: 2036699904}
-  - component: {fileID: 2036699905}
+  - component: {fileID: 2036699906}
   m_Layer: 5
   m_Name: TeamSelector
   m_TagString: Untagged
@@ -4546,7 +4546,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &2036699905
+--- !u!114 &2036699906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4555,10 +4555,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2036699902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60598e0799a8441da8b448aea7019305, type: 3}
+  m_Script: {fileID: -657751650, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamMenuItemPrefab: {fileID: 2413375803525819499, guid: b09cd536d66d243a0bb87436e3906083,
+  teamMenuItemPrefab: {fileID: 5889497843226035032, guid: b09cd536d66d243a0bb87436e3906083,
     type: 3}
   availableContainer: {fileID: 1036131712}
   selectedContainer: {fileID: 545112465}

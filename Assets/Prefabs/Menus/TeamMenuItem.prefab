@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1045792556499566436}
   - component: {fileID: 1045792556499566439}
   - component: {fileID: 1045792556499566438}
-  - component: {fileID: 2413375803525819499}
+  - component: {fileID: 5889497843226035032}
   m_Layer: 5
   m_Name: TeamMenuItem
   m_TagString: Untagged
@@ -143,8 +143,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2413375803525819499}
-        m_TargetAssemblyTypeName: DefaultNamespace.TeamMenuItem, Assembly-CSharp
+      - m_Target: {fileID: 5889497843226035032}
+        m_TargetAssemblyTypeName: Presentation.Tournament.TeamMenuItem, EterSoccer.Core
         m_MethodName: OnClicked
         m_Mode: 1
         m_Arguments:
@@ -155,7 +155,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2413375803525819499
+--- !u!114 &5889497843226035032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1045792556499566424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5f5d7d34e744e29884504af173f8456, type: 3}
+  m_Script: {fileID: 601135636, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonText: {fileID: 1045792556998496189}
