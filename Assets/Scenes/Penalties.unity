@@ -25731,9 +25731,9 @@ MonoBehaviour:
   m_Script: {fileID: 1987072172, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipNeutral: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 0}
-  pipScore: {r: 0, g: 1, b: 0.3137255, a: 0}
-  pipMiss: {r: 1, g: 0, b: 0, a: 0}
+  pipNeutral: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 1}
+  pipScore: {r: 0, g: 1, b: 0.3137255, a: 1}
+  pipMiss: {r: 1, g: 0, b: 0, a: 1}
   pips:
   - {fileID: 1309663563}
   - {fileID: 566493106}
@@ -32085,9 +32085,9 @@ MonoBehaviour:
   m_Script: {fileID: 1987072172, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipNeutral: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 0}
-  pipScore: {r: 0, g: 1, b: 0.3137255, a: 0}
-  pipMiss: {r: 1, g: 0, b: 0, a: 0}
+  pipNeutral: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 1}
+  pipScore: {r: 0, g: 1, b: 0.3137255, a: 1}
+  pipMiss: {r: 1, g: 0, b: 0, a: 1}
   pips:
   - {fileID: 1301354281}
   - {fileID: 1155736640}
