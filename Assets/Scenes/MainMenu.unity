@@ -643,7 +643,12 @@ PrefabInstance:
         type: 3}
       propertyPath: TournamentView
       value: 
-      objectReference: {fileID: 20822030}
+      objectReference: {fileID: 20822032}
+    - target: {fileID: 6477223947995860186, guid: d75735b03eec64672ba2a79d47c91ce2,
+        type: 3}
+      propertyPath: TournamentSetUp
+      value: 
+      objectReference: {fileID: 748704975}
     - target: {fileID: 6477223947995860262, guid: d75735b03eec64672ba2a79d47c91ce2,
         type: 3}
       propertyPath: m_IsActive
