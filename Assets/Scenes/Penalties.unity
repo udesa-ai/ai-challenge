@@ -4443,7 +4443,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1764271660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -760655654, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
+  m_Script: {fileID: -1396943583, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 274868328}
+  cheerClip: {fileID: 0}
+  kickClip: {fileID: 8300000, guid: 83c96c329d54e489f863e619713ba9f1, type: 3}
+  ambientClip: {fileID: 0}
+--- !u!114 &1764271663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764271660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 926572195, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targets:
@@ -4466,23 +4482,7 @@ MonoBehaviour:
   homeScoreBoard: {fileID: 1048688351831637118}
   awayScoreBoard: {fileID: 5409330016323004296}
   shotCounter: {fileID: 1815870414266875273}
-  audio: {fileID: 1764271663}
---- !u!114 &1764271663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764271660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1713240650, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audio: {fileID: 274868328}
-  cheerClip: {fileID: 8300000, guid: 5afcfedb8067b4c9ea38a7696f9f08be, type: 3}
-  kickClip: {fileID: 8300000, guid: 83c96c329d54e489f863e619713ba9f1, type: 3}
-  ambientClip: {fileID: 8300000, guid: e64d44687262049ac816749a415235d5, type: 3}
+  audio: {fileID: 1764271662}
 --- !u!1 &1764512999
 GameObject:
   m_ObjectHideFlags: 0
@@ -25963,7 +25963,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1331319392420855451}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1826883056, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
+  m_Script: {fileID: 445434310, guid: f2e8fb3daddee40af8382a63d17d291c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myBody: {fileID: 1331319392420855446}
