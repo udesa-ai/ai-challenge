@@ -4447,9 +4447,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 274868328}
-  cheerClip: {fileID: 0}
+  cheerClip: {fileID: 8300000, guid: 5afcfedb8067b4c9ea38a7696f9f08be, type: 3}
   kickClip: {fileID: 8300000, guid: 83c96c329d54e489f863e619713ba9f1, type: 3}
-  ambientClip: {fileID: 0}
+  ambientClip: {fileID: 8300000, guid: e64d44687262049ac816749a415235d5, type: 3}
 --- !u!114 &1764271663
 MonoBehaviour:
   m_ObjectHideFlags: 0
