@@ -1,0 +1,456 @@
+Unity Editor version:    2020.3.22f1 (e1a7f79fd887)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.4 (Build 21F79)
+Darwin version:          21.5.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.22f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/diego.becco/Documents/proyects/etersoccer-unity
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52149
+Successfully changed project path to: /Users/diego.becco/Documents/proyects/etersoccer-unity
+/Users/diego.becco/Documents/proyects/etersoccer-unity
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 62.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.22f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/diego.becco/Documents/proyects/etersoccer-unity/Assets
+GfxDevice: creating device client; threaded=0
+2022-05-31 10:37:58.439 Unity[14549:715486] Color LCD preferred device: AMD Radeon Pro 5300M (high power)
+2022-05-31 10:37:58.439 Unity[14549:715486] Metal devices available: 2
+2022-05-31 10:37:58.439 Unity[14549:715486] 0: AMD Radeon Pro 5300M (high power)
+2022-05-31 10:37:58.439 Unity[14549:715486] 1: Intel(R) UHD Graphics 630 (low power)
+2022-05-31 10:37:58.440 Unity[14549:715486] Using device AMD Radeon Pro 5300M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5300M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.22f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.22f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.22f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56549
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.22f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001486 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 48.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.210 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2210ms)
+		BeginReloadAssembly (48ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (578ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (213ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (220ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (9ms)
+				ProcessInitializeOnLoadAttributes (119ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.013500 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.421 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1423ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1209ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (394ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (481ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (314ms)
+				ProcessInitializeOnLoadMethodAttributes (73ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.007020 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.007834 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.22f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Initializing Unity extensions:
+2022-05-31 10:38:05.842 Unity[14549:715486] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000aca140 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-05-31 10:38:05.846 Unity[14549:715486] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000ab10a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2119 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.8 MB.
+System memory in use after: 187.1 MB.
+
+Unloading 137 unused Assets to reduce memory usage. Loaded Objects now: 2597.
+Total: 8.212982 ms (FindLiveObjects: 0.256899 ms CreateObjectMapping: 0.106109 ms MarkObjects: 7.247689 ms  DeleteObjects: 0.601177 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Textures/Campos de futbolBMP.png
+  artifactKey: Guid(42c2873671c8bde4ea6637a0c1cdfa4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Campos de futbolBMP.png using Guid(42c2873671c8bde4ea6637a0c1cdfa4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01ed7e0940ab6a0a99c5fe77758c8967') in 1.196328 seconds 
+  Import took 1.200874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004500 seconds.
+  path: Assets/Textures/CarteleEtermaxCentro.png
+  artifactKey: Guid(a56628cd0d79f9b4eb8e447e0ccb1b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/CarteleEtermaxCentro.png using Guid(a56628cd0d79f9b4eb8e447e0ccb1b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e391b0619dbb19137077f5348cb052e7') in 0.016495 seconds 
+  Import took 0.021759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/Textures/CartelesArriba.png
+  artifactKey: Guid(15205e7c9c736ee478e420325267d781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/CartelesArriba.png using Guid(15205e7c9c736ee478e420325267d781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893ffc1db1bc38cef41ba4fc2fbc68b3') in 0.018670 seconds 
+  Import took 0.023434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Textures/Gradas.png
+  artifactKey: Guid(00aa05176f23f194f8c813ad7e699a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Gradas.png using Guid(00aa05176f23f194f8c813ad7e699a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4666d66e9bf3cb16a1b9d4cd25c35465') in 0.014756 seconds 
+  Import took 0.018828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Textures/SoporteTecho_Base_Colo.png
+  artifactKey: Guid(d5fa7e4901d619246891e7dee42a367b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/SoporteTecho_Base_Colo.png using Guid(d5fa7e4901d619246891e7dee42a367b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cc8f83ad4fab95d22519566e5edbd86') in 0.010446 seconds 
+  Import took 0.014323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Textures/Cancha02.png
+  artifactKey: Guid(95a2941df4835b34b82ca6a54b96a2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Cancha02.png using Guid(95a2941df4835b34b82ca6a54b96a2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d9257c43b2e525db04194a8d9135e17') in 0.084747 seconds 
+  Import took 0.088573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Textures/Cancha03.png
+  artifactKey: Guid(2d259f03ae0f27b468cc09ccfc70f2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Cancha03.png using Guid(2d259f03ae0f27b468cc09ccfc70f2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7608393c0e344c6cbf0f5f378a715f9') in 0.011042 seconds 
+  Import took 0.015631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000714 seconds.
+  path: Assets/Textures/HomeText.jpg
+  artifactKey: Guid(3810cc9d96109ac4f9831fcbd58a0b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HomeText.jpg using Guid(3810cc9d96109ac4f9831fcbd58a0b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d55e5f62d53f43b9b4d8e13855a732') in 1.209421 seconds 
+  Import took 1.213972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004392 seconds.
+  path: Assets/Textures/Campos de futbol.png
+  artifactKey: Guid(ad96f689b666964439e7c38f7b4e2f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Campos de futbol.png using Guid(ad96f689b666964439e7c38f7b4e2f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69afdcc6197525b2618f3236b9e85bf0') in 0.012652 seconds 
+  Import took 0.016965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Textures/CartelesLaterales.png
+  artifactKey: Guid(72c2011cd7d905e4e9f5fede4222c5ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/CartelesLaterales.png using Guid(72c2011cd7d905e4e9f5fede4222c5ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e616fd21f05a97c061da6b652bdd95') in 0.024041 seconds 
+  Import took 0.028384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Textures/CarteleUDESACentro.png
+  artifactKey: Guid(b4b1a3f6a141505418d9816b8cfde35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/CarteleUDESACentro.png using Guid(b4b1a3f6a141505418d9816b8cfde35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a3ab1a39cc31d54a0ce88cfbc0c669') in 0.014291 seconds 
+  Import took 0.018147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Textures/CartelesLaterales (1).png
+  artifactKey: Guid(5c403ed69f9bb9c469d6f0f2ff2eca3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/CartelesLaterales (1).png using Guid(5c403ed69f9bb9c469d6f0f2ff2eca3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377e5afd776d6e57405a751529c02147') in 0.016593 seconds 
+  Import took 0.021261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Textures/ball.png
+  artifactKey: Guid(56366d4025fcb430a976afcc53582b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/ball.png using Guid(56366d4025fcb430a976afcc53582b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60b1f6156a8cc8fa3b8e91a7fd7d5abf') in 0.017644 seconds 
+  Import took 0.021843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000847 seconds.
+  path: Assets/Textures/BG.jpg
+  artifactKey: Guid(1903719fbf8224548a5f29cce1edc31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BG.jpg using Guid(1903719fbf8224548a5f29cce1edc31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df401ba02f4fd58498c3ec47e903c09') in 0.015295 seconds 
+  Import took 0.020172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Textures/Separadores_Base_Color.png
+  artifactKey: Guid(0ae73ad2988bebd45b67d5a70dd337e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Separadores_Base_Color.png using Guid(0ae73ad2988bebd45b67d5a70dd337e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc72e9725c1f762b5bc60e871d5cca2') in 0.015932 seconds 
+  Import took 0.019486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Textures/Cancha.png
+  artifactKey: Guid(333bec052f03144b2a4b705c0b5b333c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Cancha.png using Guid(333bec052f03144b2a4b705c0b5b333c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74bd6998f1b494d8ead8727f5e91b8bd') in 0.025677 seconds 
+  Import took 0.029986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Textures/AwayText.jpg
+  artifactKey: Guid(d046a6bf26dfccc489e320ac443831e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/AwayText.jpg using Guid(d046a6bf26dfccc489e320ac443831e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc738485d9d69930ee0ebbd81251e01') in 0.010436 seconds 
+  Import took 0.014412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Textures/ThanosPill.jpg
+  artifactKey: Guid(c00aff7b383faa2439a659217812735b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/ThanosPill.jpg using Guid(c00aff7b383faa2439a659217812735b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2c33b3aa368fae25ffa17827289adf') in 0.014472 seconds 
+  Import took 0.018854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Textures/HulkPill.jpg
+  artifactKey: Guid(37ad93450ce12ea41b54e4a7ce0a214c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HulkPill.jpg using Guid(37ad93450ce12ea41b54e4a7ce0a214c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05198422896714d5ea1eb6bb54bb9bf') in 0.018329 seconds 
+  Import took 0.022573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Textures/floorStadium.jpg
+  artifactKey: Guid(0102e2efd152d2b47b53834a65fd69fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/floorStadium.jpg using Guid(0102e2efd152d2b47b53834a65fd69fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e304e12a58536c9056649f7f1fe54e2') in 0.015978 seconds 
+  Import took 0.020138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Textures/CartelesArriba 1.png
+  artifactKey: Guid(9b858865d4742f3409f2062e6a517d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/CartelesArriba 1.png using Guid(9b858865d4742f3409f2062e6a517d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd75528cad42bd6ed66bbca99599140') in 0.013405 seconds 
+  Import took 0.018111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000442 seconds.
+  path: Assets/Textures/CartelesLaterales2.png
+  artifactKey: Guid(0603e1d84d67743ad878362448024242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/CartelesLaterales2.png using Guid(0603e1d84d67743ad878362448024242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '338dcd2e9a212397f6bf2c36f3fcba14') in 0.015740 seconds 
+  Import took 0.019600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.322067 seconds.
+  path: Assets/Models/Stadium/BG.fbx
+  artifactKey: Guid(8fb442b358d87d84e95c32d7fc2e7ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/BG.fbx using Guid(8fb442b358d87d84e95c32d7fc2e7ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f13f575f03272268143c08f83a996c4') in 1.658291 seconds 
+  Import took 1.663035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002628 seconds.
+  path: Assets/Models/Stadium/shade.fbx
+  artifactKey: Guid(ba3acc0c693ef974a941b23ac8c11744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/shade.fbx using Guid(ba3acc0c693ef974a941b23ac8c11744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b98fd028ddb314780005c9eca6f9d2') in 0.021269 seconds 
+  Import took 0.025587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Models/Stadium/Soporte.fbx
+  artifactKey: Guid(7d821090a85bac64d8dd6f23716daf58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/Soporte.fbx using Guid(7d821090a85bac64d8dd6f23716daf58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '623c7206b11f6360121f5b582f933006') in 0.030707 seconds 
+  Import took 0.034605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Models/Stadium/SoporteTechos.fbx
+  artifactKey: Guid(53026fb5b136b7d43a5ca5f1af8bdc34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/SoporteTechos.fbx using Guid(53026fb5b136b7d43a5ca5f1af8bdc34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f0ce673d202f7b9e4822c61e1ef4ba') in 0.035165 seconds 
+  Import took 0.039561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Models/Stadium/steps.fbx
+  artifactKey: Guid(e35e3b79b79c42d46a3e0b74bf11c5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/steps.fbx using Guid(e35e3b79b79c42d46a3e0b74bf11c5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4afa659951eb437bfe50478db882121') in 0.022967 seconds 
+  Import took 0.027612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Models/Stadium/division.fbx
+  artifactKey: Guid(a46e32cb009545940837941a6300bc23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/division.fbx using Guid(a46e32cb009545940837941a6300bc23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff4b3cd6e6b88eb1159a9b62cd077a7') in 0.015774 seconds 
+  Import took 0.021204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Models/Stadium/CartelGrande.fbx
+  artifactKey: Guid(0aaa3a073222f154baf11275ea28246a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/CartelGrande.fbx using Guid(0aaa3a073222f154baf11275ea28246a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d265a25315674897a1b617c459c172') in 0.029445 seconds 
+  Import took 0.033916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Models/Stadium/collider.fbx
+  artifactKey: Guid(425cc9d464740604599f136eb66a1d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/collider.fbx using Guid(425cc9d464740604599f136eb66a1d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f445c4be7d148a04886043ec3e0c2e9') in 0.029185 seconds 
+  Import took 0.033203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Models/Stadium/CartelesArriba.fbx
+  artifactKey: Guid(3e0b9ccaa8369da4691251f389f58530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/CartelesArriba.fbx using Guid(3e0b9ccaa8369da4691251f389f58530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1070c94ede375218ee4d50517a6346') in 0.033922 seconds 
+  Import took 0.038995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Models/Stadium/Separadores.fbx
+  artifactKey: Guid(19a540eb6979d124b830e82e2427e950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/Separadores.fbx using Guid(19a540eb6979d124b830e82e2427e950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64b742552d5e57335cea75c56ccc0136') in 0.041176 seconds 
+  Import took 0.045199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Models/Stadium/Tribunas.fbx
+  artifactKey: Guid(99dffbee75be02648999aa19576ff247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/Tribunas.fbx using Guid(99dffbee75be02648999aa19576ff247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bece2df7713a54f9cd46e1a772d85b1') in 0.039920 seconds 
+  Import took 0.045103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000859 seconds.
+  path: Assets/Models/Stadium/Techo.fbx
+  artifactKey: Guid(aa5bcf89c973f1b42ad6c6658baa832a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/Techo.fbx using Guid(aa5bcf89c973f1b42ad6c6658baa832a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee16e963dd87576a286099cac5919f0') in 0.037292 seconds 
+  Import took 0.041571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Models/Stadium/Suelo.fbx
+  artifactKey: Guid(d664519179fa7b645aa403fd18faf86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/Suelo.fbx using Guid(d664519179fa7b645aa403fd18faf86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4789eab2b5ba5b4a89dde51682efd836') in 0.025231 seconds 
+  Import took 0.029138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Models/Stadium/CartelesLaterales.fbx
+  artifactKey: Guid(33541d59e152c2c49999e903a0bdd296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/CartelesLaterales.fbx using Guid(33541d59e152c2c49999e903a0bdd296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5f2ae7f16277988eae3bf17ca1e7497') in 0.037400 seconds 
+  Import took 0.041336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Models/Stadium/brick.fbx
+  artifactKey: Guid(7201ad60c87a1e948aa1100959ab314f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/brick.fbx using Guid(7201ad60c87a1e948aa1100959ab314f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab4d16b54cd9f9499382e100439b3cc') in 0.016511 seconds 
+  Import took 0.020889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000768 seconds.
+  path: Assets/Models/Stadium/filler.fbx
+  artifactKey: Guid(1359f3a983ab997419337982a2a39ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Stadium/filler.fbx using Guid(1359f3a983ab997419337982a2a39ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb863bed19ce29bfcf97ee3b8ec34f3') in 0.021711 seconds 
+  Import took 0.026610 seconds .
+
