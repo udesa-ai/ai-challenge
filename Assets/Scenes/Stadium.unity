@@ -41505,7 +41505,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0acf74926a9a54a98965f7fa6b7b1d07,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0acf74926a9a54a98965f7fa6b7b1d07,
         type: 3}
@@ -51604,7 +51604,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0acf74926a9a54a98965f7fa6b7b1d07,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0acf74926a9a54a98965f7fa6b7b1d07,
         type: 3}
@@ -51921,7 +51921,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  m_Intensity: 0.4
+  m_Intensity: 0.3
   m_Range: 39.96041
   m_SpotAngle: 72.7
   m_InnerSpotAngle: 55.752365
@@ -52567,7 +52567,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  m_Intensity: 0.4
+  m_Intensity: 0.3
   m_Range: 33.793377
   m_SpotAngle: 72.7
   m_InnerSpotAngle: 55.752365
@@ -52751,7 +52751,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  m_Intensity: 0.4
+  m_Intensity: 0.3
   m_Range: 42.269154
   m_SpotAngle: 72.7
   m_InnerSpotAngle: 55.752365
@@ -52895,7 +52895,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  m_Intensity: 0.4
+  m_Intensity: 0.3
   m_Range: 33.72449
   m_SpotAngle: 72.7
   m_InnerSpotAngle: 55.752365
@@ -53055,13 +53055,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331319394156221308}
-  m_LocalRotation: {x: 0.06407555, y: -0.8520684, z: 0.26297465, w: -0.4480158}
-  m_LocalPosition: {x: -14.507611, y: 24.780775, z: -15.228472}
+  m_LocalRotation: {x: 0.08040531, y: 0.2616969, z: -0.021883322, w: 0.96154606}
+  m_LocalPosition: {x: -34, y: 20, z: -18.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1331319393873662660}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 23, y: -240, z: -22}
+  m_LocalEulerAnglesHint: {x: 9.56, y: 30.45, z: 0}
 --- !u!108 &1331319394156221311
 Light:
   m_ObjectHideFlags: 0
@@ -53074,7 +53074,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9137255, g: 0.654902, b: 0.36862746, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 40
   m_SpotAngle: 179
   m_InnerSpotAngle: 178.60872
@@ -53106,7 +53106,7 @@ Light:
       e33: 1
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
-  m_DrawHalo: 1
+  m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
