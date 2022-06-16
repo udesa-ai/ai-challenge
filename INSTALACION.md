@@ -5,7 +5,7 @@
 Unity es el motor de videojuegos que usaremos en la competencia, para instalar el entorno de desarrollo Unity seguí los siguientes pasos:
 
 1. Descargar [UnityHub](https://unity3d.com/get-unity/download) e instalarlo.
-2. En la pestaña Installs de UnityHub clicar ADD y elegir "2020.3.35f1(LTS)" (si no vé esta pestaña clicar la flecha de atrás arriba a la izquierda)
+2. En la pestaña Installs de UnityHub clicar ADD y elegir "2020.3.26f(LTS)" dentro de `archive/download archive` (si no vé esta pestaña clicar la flecha de atrás arriba a la izquierda)
 3. Elegir NEXT y luego de-selecionamos todos los módulos, pues no usaremos ningún módulo adicional y le damos a DONE.
 4. Crear una cuenta [Unity ID](https://id.unity.com/account/new) .
 5. Loguearse en la esquina superior derecha de UnityHub.
