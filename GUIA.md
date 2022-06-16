@@ -15,7 +15,7 @@ tip: en la parte superior derecha de la ventana podés apagar el audio con *Mute
 ## Construí tu equipo
 
 1. Creá una copia del directorio llamado `EmptyTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
-2. Luego dentro de los archivos `PaticipantTeam.cs`, `Player1.cs`, `Player2.cs` y `Player3.cs` en el principio del doumento hay que cambiar el *namespace* por defecto, por el nombre que vos elijas para tu equipo:
+2. Luego dentro de los archivos `PaticipantTeam.cs`, `Player1.cs`, `Player2.cs` y `Player3.cs` en el principio de cada doumento hay que cambiar el *namespace* por defecto, por el nombre que vos elijas para tu equipo:
 ```csharp
 namespace Teams.nombre_de_tu_equipo
 ``` 
