@@ -18,7 +18,7 @@ Te presentamos el AI challenge, el objetivo del evento es programar la inteligen
 
 ## Cronograma 
 
-### Martes 24 de Junio
+### Viernes 24 de Junio
 
 20:00 : Release del challenge
 
