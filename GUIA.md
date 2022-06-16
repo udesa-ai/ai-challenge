@@ -13,7 +13,10 @@
 tip: en la parte superior derecha de la ventana podés apagar el audio con *Mute Audio*
 
 ## Construí tu equipo
-
+Aquí tenés dos opciones, empezar de un equipo base ó empezar de 0 con tus ideas:
+- Equipo base:
+1. Creá una copia del directorio llamado `ExampleTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
+- Equipo en blanco:
 1. Creá una copia del directorio llamado `EmptyTeam` dentro de `Assets/Teams` para crear un equipo nuevo.
 2. Luego dentro de los archivos `PaticipantTeam.cs`, `Player1.cs`, `Player2.cs` y `Player3.cs` en el principio de cada doumento hay que cambiar el *namespace* por defecto, por el nombre que vos elijas para tu equipo:
 ```csharp
@@ -72,7 +75,7 @@ Para este tutorial vas a ir modificando el equipo que creaste en [Construí tu e
 
 Tips:
 
-- Como en muchos tutoriales de programación, recomendamos que escribas el código vos misma, en lugar de hacer copy-paste, ya que así aprenderás mejor y más rápido! 
+- Como en muchos tutoriales de programación, recomendamos que escribas el código vos mismo, en lugar de hacer copy-paste, ya que así aprenderás mejor y más rápido! 
 
 - Acordate de guardar los cambios para que estos surtan efecto! Luego de guardar los cambios, podes apratar Play nuevamente en Unity para que esos cambios sean sumados a Unity.
 
@@ -404,7 +407,7 @@ public override void OnScoreBoardChanged(ScoreBoard scoreBoard)
 ```
  
 
-## Tutorial C*#*
+## Tutorial C#
 
 Para programar en Unity se usa el lenguaje de programación [C#](https://es.wikipedia.org/wiki/C_Sharp).
 
