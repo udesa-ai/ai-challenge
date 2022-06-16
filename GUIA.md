@@ -190,9 +190,11 @@ Si uno quiere usar los **FieldPositions** como posiciones, primero hay que conve
 
 Hay muchas otras funciones disponibles que dan información util o hacen cosas, las podes mirar en: [Funciones públicas](#funciones-públicas)
 
-## Probá tu equipo contra Example Team
+## Probá tu equipo!
 
 El proyecto incluye un equipo pre-armado con su código visible para poder inspirarte en el y usarlo como contrincante, este equipo se encuentran en la ruta `Assets/Teams/ExampleTeam`
+
+También hay 5 equipos más con variadas estrategias contra los que jugar.
 
 Ya estás listo para crear tu propio equipo, te recomendamos empezar de "0" y pensar ¿Como me gustaría que se comporten los jugadores?¿Cuales son sus roles?¿todos hacen lo mismo?
   
