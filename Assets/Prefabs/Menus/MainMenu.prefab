@@ -932,7 +932,7 @@ MonoBehaviour:
   StartTournamentButton: {fileID: 5477359885117577144}
   WebHelper: {fileID: 0}
   TournamentMenu: {fileID: 0}
-  MainMenu: {fileID: 5477359886523150594}
+  MainMenu: {fileID: 5477359885378283139}
   FriendlyMenu: {fileID: 0}
 --- !u!1 &5477359886635631579
 GameObject:
