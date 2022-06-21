@@ -2,7 +2,7 @@
 
 
 ## Unity
-Unity es el motor de videojuegos que usaremos en la competencia, para instalar el entorno de desarrollo Unity seguí los siguientes pasos:
+Unity es el motor de simulación que usaremos en la competencia. Para instalar Unity seguí los siguientes pasos:
 
 1. Descargar [UnityHub](https://unity3d.com/get-unity/download) e instalarlo.
 2. En la pestaña Installs de UnityHub clicar ADD y elegir "2020.3.26f(LTS)" dentro de `archive/download archive` (si no vé esta pestaña clicar la flecha de atrás arriba a la izquierda)
@@ -17,17 +17,21 @@ Unity es el motor de videojuegos que usaremos en la competencia, para instalar e
 10. Elegir la versión de Unity que intalamos y darle ok (puede aparecer un warning de que las versiones de Unity no son las mismas, ingorarlo)
    
 ## IDE/editor de texto
-Para programar tu agente vas a necesitar un entorno de desarrollo integrado (IDE) donde escribirás la lógica de tu programa:
+Para programar tu AI vas a necesitar un entorno de desarrollo integrado (Integrated Development Environment = IDE) donde escribirás la lógica de tu programa:
 
 Recomendamos Visual Studio Code por ser liviano y simple:
 1. Descargar [Visual Studio Code](https://code.visualstudio.com/) 
 2. Dentro del VSCode sobre la barra de la izquierda en Extensions, instalar el plugin para C# llamado "C# for Visual Studio Code (powered by OmniSharp)"
 
-Otras opciones populares de IDE son: [Rider de jetbrains](https://www.jetbrains.com/es-es/rider/) y para Windows o mac, [Microsoft visual studio](https://visualstudio.microsoft.com/es/) 
 
+Otras opciones populares de IDE son: [Rider de jetbrains](https://www.jetbrains.com/es-es/rider/) y para Windows o mac, [Microsoft visual studio](https://visualstudio.microsoft.com/es/) 
 
 ## Discord
 Todas las comunicaciones oficiales así como también el vinculo con los tutores se hará mediante discord:
 
 1.  Sumarse al [servidor de Discord](https://discord.gg/Hx3jBwsYua)
-2.  Indicar tu nombre en el canal de bienvenida para que te agreguemos a los canales correspondientes y te asignemos un tutor
+2.  Indicar tu nombre en el canal de *bienvenida* para que te agreguemos a los canales correspondientes y te asignemos un tutor
+
+## Video de Instalación
+
+Si te trabaste en algún paso tenemos un [video](https://youtu.be/bGUSJax_osQ) donde te explicamos cómo hacerlo.
