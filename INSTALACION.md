@@ -16,7 +16,7 @@ Presionar la rueda de ajustes ("Preferences") arriba a la izquierda. Luego apret
 ![Team name chage](ReadmeResources/descargar.gif)
 8. Descomprimir el archivo *.zip* y guardarlo en una carpeta.
 9. En UnityHub en la pestaña Projects cliquear "Open" y buscar la carpeta del proyecto que recién creamos.
-10. Elegir la versión de Unity que intalamos y darle ok (puede aparecer un warning de que las versiones de Unity no son las mismas, ingorarlo)
+10. Sobre el nuevo projecto, en la solapa "Editor version", elegir la versión de Unity que intalamos y darle ok (puede aparecer un warning de que las versiones de Unity no son las mismas, ingorarlo).
    
 ## IDE/editor de texto
 Para programar tu AI vas a necesitar un entorno de desarrollo integrado (Integrated Development Environment = IDE) donde escribirás la lógica de tu programa:
