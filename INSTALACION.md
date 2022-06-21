@@ -35,3 +35,15 @@ Todas las comunicaciones oficiales así como también el vinculo con los tutores
 ## Video de Instalación
 
 Si te trabaste en algún paso tenemos un [video](https://youtu.be/bGUSJax_osQ) donde te explicamos cómo hacerlo.
+
+## Tutorial C#
+
+Para programar en Unity se usa el lenguaje de programación [C#](https://es.wikipedia.org/wiki/C_Sharp).
+
+Si bien el Tutor puede ayudarte a convertir tu estrategia de juego en código, es recomendable aprender lo más posible del lenguaje para no depender tanto del Tutor. A continuación presentamos algunos tutoriales para empezar:
+
+[Curso en Español](https://youtube.com/playlist?list=PLAzlSdU-KYwULKOjG-OxSZ2WCXiz05Ikz) completo para principiante con videos de 10 min 
+
+[Tutorial en Español](https://youtu.be/6W2wYwHQNT4) para principiantes 5hs
+
+[Tutorial en Ingles](https://youtu.be/gfkTfcpWqAY?t=1125) explica un poco de variables, sintaxis y operadores
