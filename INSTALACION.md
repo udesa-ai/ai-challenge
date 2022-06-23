@@ -34,7 +34,7 @@ Todas las comunicaciones oficiales así como también el vinculo con los tutores
 
 ## Video de Instalación
 
-Si te trabaste en algún paso tenemos un [video](https://youtu.be/bGUSJax_osQ) donde te explicamos cómo hacerlo.
+Si te trabaste en algún paso tenemos un [video](https://www.youtube.com/watch?v=m0YxWy0YFxI) donde te explicamos cómo hacerlo.
 
 ## Tutorial C#
 
