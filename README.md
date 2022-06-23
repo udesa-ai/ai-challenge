@@ -7,8 +7,8 @@ Bienvenidos al UdeSA AI Challenge! En este desafío te retamos a crear tu propio
   - [Competencia](#competencia)
   - [Cronograma](#cronograma)
   - [Reglas](#reglas)
-  - [Instalación](#instalación)
-  - [Construí tu equipo](#construí-tu-equipo)
+  - [Instalación](INSTALACION.md)
+  - [Construí tu equipo](GUIA.md)
 
 ## Introducción
 Te presentamos el AI challenge, el objetivo del evento es programar la inteligencia artificial de los jugadores, usando tácticas, jugadas, mentalidad de equipo o individual, etc.
@@ -18,19 +18,19 @@ Te presentamos el AI challenge, el objetivo del evento es programar la inteligen
 
 ## Cronograma 
 
-### Martes 8 de Junio
+### Viernes 24 de Junio
 
 20:00 : Release del challenge
 
-### Sábado 12 de Julio
+### Sábado 2 de Julio
 
-14:00 : Entrega de códigos por parte de los equipos
+12:00 : Entrega de códigos por parte de los equipos
 
 16:00 a 17:30: Torneo online
 
 17:30 a 17:45: Entrega de premios 
 
-17:45 a 18:00: Sorteos y cierre del evento
+17:45 a 18:00: Cierre del evento
 
 ## Reglas
 
