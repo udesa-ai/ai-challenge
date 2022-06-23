@@ -11,7 +11,8 @@ Unity es el motor de simulación que usaremos en la competencia. Para instalar U
  > En caso de que no les aparezca dicha ventana, pueden crear la licencia mediante de la siguiente forma:
 Presionar la rueda de ajustes ("Preferences") arriba a la izquierda. Luego apretar el botón "Licenses", seleccionar "Add license" y elegir una licencia para uso personal ("Get a free personal license").
 5. En la pestaña "Installs" de UnityHub clickear el botón "Install Editor", e instalar la versión "2020.3.36f1 (LTS)" en "Official releases". 
-6. En la ventana emergente de-selecionamos todos los módulos, pues no usaremos ningún módulo adicional y le damos a "Install".
+6. En la ventana emergente dejamos seleccionados los modulos que vienen por defecto. Luego presionamos el botón "Done" y luego "Install".
+> Importante: Verificar que se encuentre seleccionado el siguiente módulo: "Microsoft Visual Studio Community"
 7. Descargar este repositorio de GitHub clicando "Code" y después "Download ZIP" en la esquina superior derecha del [directorio raiz]().   
 ![Team name chage](ReadmeResources/descargar.gif)
 8. Descomprimir el archivo *.zip* y guardarlo en una carpeta.
@@ -21,10 +22,7 @@ Presionar la rueda de ajustes ("Preferences") arriba a la izquierda. Luego apret
 ## IDE/editor de texto
 Para programar tu AI vas a necesitar un entorno de desarrollo integrado (Integrated Development Environment = IDE) donde escribirás la lógica de tu programa:
 
-Recomendamos Visual Studio Code por ser liviano y simple:
-1. Descargar [Visual Studio Code](https://code.visualstudio.com/) 
-2. Dentro del programa, sobre la izquierda en "Extensions", buscar e instalar el plugin para C# llamado "C# for Visual Studio Code (powered by OmniSharp)"
-
+Recomendamos utilizar Visual Studio, el cual instalamos en la sección anterior. En caso de no tenerlo instalado, descargar la version "Community" mediante el siguiente [enlace](https://visualstudio.microsoft.com/es/).
 
 Otras opciones populares de IDE son: [Rider de jetbrains](https://www.jetbrains.com/es-es/rider/) y para Windows o mac, [Microsoft visual studio](https://visualstudio.microsoft.com/es/) 
 
