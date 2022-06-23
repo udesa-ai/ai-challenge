@@ -11,7 +11,7 @@ Unity es el motor de simulación que usaremos en la competencia. Para instalar U
  > En caso de que no les aparezca dicha ventana, pueden crear la licencia mediante de la siguiente forma:
 Presionar la rueda de ajustes ("Preferences") arriba a la izquierda. Luego apretar el botón "Licenses", seleccionar "Add license" y elegir una licencia para uso personal ("Get a free personal license").
 5. En la pestaña "Installs" de UnityHub clickear el botón "Install Editor", e instalar la versión "2020.3.36f1 (LTS)" en "Official releases". 
-6. En la ventana emergente dejamos seleccionados los modulos que vienen por defecto. Luego presionamos el botón "Done" y luego "Install".
+6. En la ventana emergente dejamos seleccionados los modulos que vienen por defecto. Luego presionamos el botón "Continue", aceptamos los terminos y condiciones y luego presionamos "Install".
 > Importante: Verificar que se encuentre seleccionado el siguiente módulo: "Microsoft Visual Studio Community"
 7. Descargar este repositorio de GitHub clicando "Code" y después "Download ZIP" en la esquina superior derecha del [directorio raiz]().   
 ![Team name chage](ReadmeResources/descargar.gif)
