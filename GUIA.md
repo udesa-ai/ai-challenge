@@ -187,9 +187,19 @@ Cuando lo pruebes vas a ver como un jugador se la pasa a otro.
 
 ![Pase](ReadmeResources/patada_al_arco.gif)
 
-### Penales
-TODO: Explicar aleatoridad. Mostrar codigo.
-En caso de empate, el partido pasa a los penales.
+### Penales (desempate)
+
+En caso de empate, el partido pasa a penales.
+Se puede elegir con que probabilidad el jugador va a patear a la izquierda, medio y derecha, para esto hay que modificar los tres numeros en `TargetPreference(izquierda, medio, derecha)` cuanto mas altos mas probabilidad tienen los jugadores de patear para ese lado
+```csharp
+public TargetPreference PenaltyKickPreference { get; } = new TargetPreference(2,2,10);
+```
+Se puede elegir con que probabilidad el arquero se tira a la izquierda, medio y derecha, para esto hay que modificar los tres numeros en `TargetPreference(izquierda, medio, derecha)` cuanto mas altos mas probabilidad tienen los jugadores de tirarse para ese lado
+```csharp
+public TargetPreference PenaltyDivePreference { get; } = new TargetPreference(2,2,10);
+```
+*nota: tirarse al lugar correcto no garantiza atajar.*
+*nota2: patear al lugar correcto no garantiza anotar.*
 
 
 ### ¿Y ahora...?
