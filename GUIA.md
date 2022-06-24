@@ -486,6 +486,9 @@ var point = GetBallPosition();
 Ray ray = new Ray(startingPoint, Vector3.Normalize(direction));
 float distance = Vector3.Cross(ray.direction, point - ray.origin).magnitude;
 ```
+## Programación colaborativa
+
+Una herramienta muy útil que permite escribir código de manera colaborativa como si fuese un Google Docs es Live Share, viene por default en visual studio 2019 y se puede instalar facilmente en VSCode. Es muy facil de setear, el que comparte se loguea con una cuenta de GitHub o Microsoft, manda un link y los otros pueden escribir en tiempo real en su código. Para usarlo seguir el siguente [instructivo](https://docs.microsoft.com/es-es/visualstudio/liveshare/quickstart/share)
 
 ## Tutorial C#
 
