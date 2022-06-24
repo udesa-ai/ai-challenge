@@ -30,7 +30,7 @@ Otras opciones populares de IDE son: [Rider de jetbrains](https://www.jetbrains.
 Todas las comunicaciones oficiales así como también el vinculo con los tutores se hará mediante discord:
 
 1.  Sumarse al [servidor de Discord](https://discord.gg/Hx3jBwsYua)
-2.  Indicar tu nombre en el canal de *bienvenida* para que te agreguemos a los canales correspondientes y te asignemos un tutor
+2.  Indicar tu nombre y el de tu equipo en el canal de *bienvenida* para que te agreguemos a los canales correspondientes.
 
 ## Video de Instalación
 
