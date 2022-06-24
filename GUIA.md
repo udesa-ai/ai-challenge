@@ -312,7 +312,7 @@ El area de juego mide aproximadamnte 20 x 20, es decir que los limites de la can
 
 **Nota Importante:** los equipos deben poder usarse de ambos lados de la cancha, no escribir funciones que usen coordenas absolutas y por lo tanto solo funcionen de un lado de la cancha.
   
-![coords](ReadmeResources/coordinates.png?raw=true "Title")
+![coords](ReadmeResources/coordinates.png "Title")
  
 ## Fuerza de tiro
  
@@ -378,18 +378,32 @@ recibe: Vector3 start, Vector3 dir, Color, Float duration
 
 ## Vectores
 
-Para definir un vector entre dos puntos: (x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) y (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>)
+La presente sección muestra como realizar el cálculo de un vector que describe la dirección entre dos puntos.
 
-Lo hacemos restando componente a componente: Vector = (x<sub>1</sub>-x<sub>0</sub> , y<sub>1</sub>-y<sub>0</sub> , z<sub>1</sub>-z<sub>0</sub>)
+Para esto, supongamos que tenemos los 3 puntos que se muestran en la imagen siguiente. 
 
-Vector A = (3-0, 0-0, 1-0) = (3, 0, 1) y Vector C = (5-0, 0-0, 4-0) = (5, 0, 4)
+Estos son:
+- El origen: (x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) = (0, 0, 0)
+- Punto 1: (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) = (3, 0, 1)
+- Punto 2: (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) = (5, 0, 4)
 
-![coords](ReadmeResources/vector.png?raw=true "Title")
+![vec](ReadmeResources/vector.png "Title")
 
+Para definir un vector entre dos puntos: (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) y (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>)
 
-Vector B = (5-3, 0-0, 4-1) = (2, 0, 3) = Vector C - Vector A = (5, 0, 4) - (3, 0, 1)
+Lo hacemos restando componente a componente: Vector = (x<sub>2</sub>-x<sub>1</sub> , y<sub>2</sub>-y<sub>1</sub> , z<sub>2</sub>-z<sub>1</sub>)
 
-Para hacer el cálculo de la imagen en C#:
+En este caso nos interesa conocer la dirección del punto 2 respecto al punto 1 (vector **B**). Esto lo podemos hacer de la siguiente manera:
+
+Vector **B** = (x<sub>2</sub>-x<sub>1</sub> , y<sub>2</sub>-y<sub>1</sub> , z<sub>2</sub>-z<sub>1</sub>) = (5-3, 0-0, 4-1) = (2, 0, 3) 
+
+Las coordenadas del punto 1 respecto al origen: (3, 0, 1), están determinadas por el vector **A** que parte del origen. Lo mismo ocurre con el punto 2, en donde su ubicación respecto al origen esta definida por el vector **C**. 
+
+Por lo tanto, el calculo del vector B se puede calcular de la siguiente forma:
+
+Vector **B** = vector **C** - vector **A** = (5, 0, 4) - (3, 0, 1) = (5-3, 0-0, 4-1) = (2, 0, 3)
+
+Para hacer el cálculo en C#:
 ```csharp
 var vectorA = new Vector3(3.0f, 0.0f, 1.0f);
 var vectorC = new Vector3(5.0f, 0.0f, 4.0f);
