@@ -496,6 +496,22 @@ var point = GetBallPosition();
 Ray ray = new Ray(startingPoint, Vector3.Normalize(direction));
 float distance = Vector3.Cross(ray.direction, point - ray.origin).magnitude;
 ```
+
+Mover a un jugador de manera circular al rededor de un punto de origen y siempre apuntando a la pelota:
+
+```csharp
+var ballPosition = GetBallPosition();
+Vector3 origin = new Vector3(0.0f, 0.0f, 0.0f);
+var radius = 3;
+
+Vector3 originToBall = ballPosition - origin;
+Vector3 originToBallNorm = originToBall.normalized;
+Vector3 originToPos = radius * originToBallNorm;
+Vector3 posFinal = origin + originToPos;
+
+MoveBy(GetDirectionTo(posFinal));
+```
+
 ## Programación colaborativa
 
 Una herramienta muy útil que permite escribir código de manera colaborativa como si fuese un Google Docs es Live Share, viene por default en visual studio 2019 y se puede instalar facilmente en VSCode. Es muy facil de setear, el que comparte se loguea con una cuenta de GitHub o Microsoft, manda un link y los otros pueden escribir en tiempo real en su código. Para usarlo seguir el siguente [instructivo](https://docs.microsoft.com/es-es/visualstudio/liveshare/quickstart/share)
