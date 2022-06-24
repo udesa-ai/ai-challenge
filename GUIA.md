@@ -187,6 +187,11 @@ Cuando lo pruebes vas a ver como un jugador se la pasa a otro.
 
 ![Pase](ReadmeResources/patada_al_arco.gif)
 
+### Penales
+TODO: Explicar aleatoridad. Mostrar codigo.
+En caso de empate, el partido pasa a los penales.
+
+
 ### ¿Y ahora...?
 
 ¿Podes hacer que el jugador de adelante patee al arco cuando la recibe? Vas a tener que modificar algo dentro de `OnReachBall()`, de la misma manera que hicimos antes.
