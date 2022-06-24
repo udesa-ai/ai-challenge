@@ -24,7 +24,7 @@ Para programar tu AI vas a necesitar un entorno de desarrollo integrado (Integra
 
 Recomendamos utilizar Visual Studio, el cual instalamos en la sección anterior. En caso de no tenerlo instalado, descargar la version "Community" mediante el siguiente [enlace](https://visualstudio.microsoft.com/es/).
 
-Otras opciones populares de IDE son: [Rider de jetbrains](https://www.jetbrains.com/es-es/rider/) y para Windows o mac, [Microsoft visual studio](https://visualstudio.microsoft.com/es/) 
+Otras opciones populares de IDE son: [Rider de jetbrains](https://www.jetbrains.com/es-es/rider/) y [Visual studio Code](https://code.visualstudio.com/) 
 
 ## Discord
 Todas las comunicaciones oficiales así como también el vinculo con los tutores se hará mediante discord:
