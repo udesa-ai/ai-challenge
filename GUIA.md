@@ -251,7 +251,7 @@ Estas son todas las funciones que tenemos disponibles:
  
 `float GetTimeLeft()` -> Devuelve cuánto tiempo resta de partido.
  
-`TeamType GetTeamType()` -> Devuelve el tipo de equipo.
+`TeamType GetTeamType()` -> Devuelve el tipo de equipo (Local o visitante).
  
 `int GetMyScore()` -> Devuelve tu marcador.
  
