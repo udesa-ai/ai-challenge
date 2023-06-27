@@ -10,7 +10,7 @@ Acá está un tutorial resumido en forma de [video](https://www.youtube.com/watc
 
 ## Probá un partido
 1. Abrir el proyecto *AI-Challenge* desde unity Hub haciendo doble click y esperar que cargue.
-2. Una vez en Unity, en la pestaña Project, navegá hasta la carpeta `Assets/Scenes/`, luego hacé doble click en el ícono de Unity que dice `TeamSelection`. 
+2. Una vez en Unity, en la pestaña Project, navegá hasta la carpeta `Assets/Scenes/`, luego hacé doble click en el ícono de Unity que dice `MainMenu`. 
 3. Luego clickeá el botón de *play* ubicado en la parte central superior del editor.   
 ![Pase](ReadmeResources/Play.gif)
 
