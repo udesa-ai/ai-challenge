@@ -10,7 +10,7 @@ Unity es el motor de simulación que usaremos en la competencia. Para instalar U
 4. Se les va a pedir que creen una licencia. En la ventana emergente "Get Personal Edition License", presionen el botón: "Agree and get personal edition license".
  > En caso de que no les aparezca dicha ventana, pueden crear la licencia mediante de la siguiente forma:
 Presionar la rueda de ajustes ("Preferences") arriba a la izquierda. Luego apretar el botón "Licenses", seleccionar "Add license" y elegir una licencia para uso personal ("Get a free personal license").
-5. En la pestaña "Installs" de UnityHub clickear el botón "Install Editor", e instalar la versión "2020.3.46f1 (LTS)" en "Official releases". 
+5. Abrir la página con las versiones de Unity para instalar [Download Archive](https://unity.com/releases/editor/archive) y elegir la versión "Unity 2020.3.36" tocando el botón azul "Unity Hub". Esto abrirá el Unity Hub y ahí instalaremos la versión 2020.3.36f1. ![Unity version select](ReadmeResources/unity-hub-version.png).
 6. En la ventana emergente dejamos seleccionados los modulos que vienen por defecto. Luego presionamos el botón "Continue", aceptamos los terminos y condiciones y luego presionamos "Install".
 > Importante: Verificar que se encuentre seleccionado el siguiente módulo: "Microsoft Visual Studio Community"
 7. Descargar este repositorio de GitHub clicando "Code" y después "Download ZIP" en la esquina superior derecha del [directorio raiz]().   
