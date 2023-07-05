@@ -178,7 +178,7 @@ Para esto usaremos `GetTeamMatesInformation()`. Recordá que en programación so
 ```csharp
 public override void OnReachBall()
 {
-	var playerTwoPosition = GetDirectionTo(GetTeamMatesInformation()[1].Position;
+	var playerTwoPosition = GetDirectionTo(GetTeamMatesInformation()[1].Position);
 	var directionToPlayerTwo = GetDirectionTo(playerTwoPosition)
 	ShootBall(directionToPlayerTwo, ShootForce.High);
 }
